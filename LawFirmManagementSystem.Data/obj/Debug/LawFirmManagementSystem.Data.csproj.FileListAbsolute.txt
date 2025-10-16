@@ -1,0 +1,6 @@
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Data\bin\Debug\LawFirmManagementSystem.Data.dll
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Data\bin\Debug\LawFirmManagementSystem.Data.pdb
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Data\obj\Debug\LawFirmManagementSystem.Data.csproj.AssemblyReference.cache
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Data\obj\Debug\LawFirmManagementSystem.Data.csproj.CoreCompileInputs.cache
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Data\obj\Debug\LawFirmManagementSystem.Data.dll
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Data\obj\Debug\LawFirmManagementSystem.Data.pdb

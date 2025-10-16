@@ -1,0 +1,9 @@
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Business\bin\Debug\LawFirmManagementSystem.Business.dll
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Business\bin\Debug\LawFirmManagementSystem.Business.pdb
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Business\bin\Debug\LawFirmManagementSystem.Data.dll
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Business\bin\Debug\LawFirmManagementSystem.Data.pdb
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Business\obj\Debug\LawFirmManagementSystem.Business.csproj.AssemblyReference.cache
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Business\obj\Debug\LawFirmManagementSystem.Business.csproj.CoreCompileInputs.cache
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Business\obj\Debug\LawFirmM.7C90900F.Up2Date
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Business\obj\Debug\LawFirmManagementSystem.Business.dll
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Business\obj\Debug\LawFirmManagementSystem.Business.pdb

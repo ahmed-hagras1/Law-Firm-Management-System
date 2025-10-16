@@ -1,0 +1,15 @@
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\bin\Debug\LawFirmManagementSystem.Presentation.exe.config
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\bin\Debug\LawFirmManagementSystem.Presentation.exe
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\bin\Debug\LawFirmManagementSystem.Presentation.pdb
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.csproj.AssemblyReference.cache
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Properties.Resources.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.csproj.GenerateResource.cache
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.csproj.CoreCompileInputs.cache
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.exe
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.pdb
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.frmLogin.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.frmMainScreen.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.frmClients.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\bin\Debug\LawFirmManagementSystem.Business.dll
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\bin\Debug\LawFirmManagementSystem.Business.pdb
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmM.9D0BD94A.Up2Date
