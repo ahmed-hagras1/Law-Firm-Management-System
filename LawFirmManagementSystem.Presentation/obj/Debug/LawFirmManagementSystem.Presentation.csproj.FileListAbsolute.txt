@@ -9,7 +9,8 @@ C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\Law
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.pdb
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.frmLogin.resources
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.frmMainScreen.resources
-C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.frmClients.resources
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\bin\Debug\LawFirmManagementSystem.Business.dll
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\bin\Debug\LawFirmManagementSystem.Business.pdb
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmM.9D0BD94A.Up2Date
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\bin\Debug\LawFirmManagementSystem.Data.dll
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\bin\Debug\LawFirmManagementSystem.Data.pdb

@@ -42,8 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="CasesDataAccess.cs" />
+    <Compile Include="ClientsDataAccess.cs" />
+    <Compile Include="DataAccessSettings.cs" />
+    <Compile Include="InvoicesDataAccess.cs" />
+    <Compile Include="LawyersDataAccess.cs" />
+    <Compile Include="PeopleDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionsDataAccess.cs" />
+    <Compile Include="TrackingChangesDataAccess.cs" />
+    <Compile Include="UsersDataAccess.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

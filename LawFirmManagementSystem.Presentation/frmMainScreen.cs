@@ -1,9 +1,11 @@
-﻿using System;
+﻿using LawFirmManagementSystem_Business;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +14,680 @@ namespace LawFirmManagementSystem.Presentation
 {
     public partial class frmMainScreen: Form
     {
+        private enum enPages { ClientsPage, LawyersPage, CasesPage, SessionsPage, InvoicesPage, UsersPage }
+        enPages page = enPages.ClientsPage; // Default page.
+        private string FilterColumn = string.Empty;
+
+        // Clients list.
+        private static DataTable _dtAllClients = Client.GetAllClients();
+        private DataTable _dtClients = _dtAllClients.DefaultView.ToTable(false, "ClientId", "FullName", "Phone", "Address", "JoinDate",
+            "CreatedBy", "UpdatedBy", "Notes");
+
+        // Lawyer List.
+        private static DataTable _dtAllLawyers = Lawyer.GetAllLawyers();
+        private DataTable _dtLawyers = _dtAllLawyers.DefaultView.ToTable(false, "LawyerId", "FullName", "Phone", "Address", "JoinDate",
+            "CreatedBy", "UpdatedBy", "Notes");
+
+        // Cases List.
+        private static DataTable _dtAllCases = Case.GetAllCases();
+        private DataTable _dtCases = _dtAllCases.DefaultView.ToTable(false, "CaseId", "CaseNumber", "Title", "Court", "ClientName",
+            "ClientStatus", "ClientAddress", "ClientPhone", "OpponentName", "OpponentStatus", "OpponentAddress", "OpponentPhone",
+            "CreatedBy", "LastUpdatedBy", "Notes");
+
+        // Sessions List.
+        private static DataTable _dtAllSessions = Session.GetAllSessions();
+        private DataTable _dtSessions = _dtAllSessions.DefaultView.ToTable(false, "SessionId", "CaseNumber", "Title", "RollNumber", "Date",
+            "Court", "ClientName", "LawyerName", "Requests", "Decision", "CreatedBy", "LastUpdatedBy", "SessionStatus", "Notes");
+
+        // Invoices List.
+        private static DataTable _dtAllInvoices = Invoice.GetAllInvoices();
+        private DataTable _dtInvoices = _dtAllInvoices.DefaultView.ToTable(false, "InvoiceId", "ClientName", "CaseNumber",
+            "Title", "CreatedBy", "IssueDate", "LastUpdatedBy", "TotalAmount", "AmountPaid", "AmountDue", "Notes");
+
+        // Users List.
+        private static DataTable _dtAllUsers = User.GetAllUsers();
+        private DataTable _dtUsers = _dtAllUsers.DefaultView.ToTable(false, "UserId", "Username", "UserStatus",
+            "JoinDate", "CreatedBy", "LastUpdatedBy", "Notes");
+        private string GetFilterColumn()
+        {
+            txtFilter.Text = string.Empty;
+            txtFilter.Visible = true;
+            cbFilter.Visible = false;
+            dtpFilter.Visible = false;
+
+            if (page == enPages.ClientsPage || page == enPages.LawyersPage)
+            {
+                switch (cbFilterBy.Text)
+                {
+                    case "بدون":
+                        txtFilter.Visible = false;
+                        return "None";
+                    case "الاسم الكامل":
+                        return "FullName";
+                    case "رقم الهاتف":
+                        return "Phone";
+                    case "العنوان":
+                        return "Address";
+                    case "تاريخ الانضمام":
+                        dtpFilter.Visible = true;
+                        txtFilter.Visible = false;
+                        return "JoinDate";
+                    case "تم الانشاء بواسطة":
+                        return "CreatedBy";
+                    case "تم التحديث بواسطة":
+                        return "UpdatedBy";
+
+                }
+            }
+            else if (page == enPages.CasesPage)
+            {
+                switch (cbFilterBy.Text)
+                {
+                    case "بدون":
+                        txtFilter.Visible = false;
+                        return "None";
+                    case "رقم القضيه":
+                        return "CaseNumber";
+                    case "وصف القضيه":
+                        return "Title";
+                    case "المحكمه":
+                        return "Court";
+                    case "اسم العميل":
+                        return "ClientName";
+                    case "حاله العميل":
+                        return "ClientStatus";
+                    case "عنوان العميل":
+                        return "ClientAddress";
+                    case "رقم العميل":
+                        return "ClientPhone";
+                    case "اسم الخصم":
+                        return "OpponentName";
+                    case "حاله الخصم":
+                        return "OpponentStatus";
+                    case "عنوان الخصم":
+                        return "OpponentAddress";
+                    case "رقم الخصم":
+                        return "OpponentPhone";
+                    case "تم الانشاء بواسطة":
+                        return "CreatedBy";
+                    case "تم التحديث بواسطة":
+                        return "LastUpdatedBy";
+                    case "ملاحظات":
+                        return "Notes";
+                    default:
+                        return "None";
+                }
+
+            }
+            else if (page == enPages.SessionsPage)
+            {
+                switch (cbFilterBy.Text)
+                {
+                    case "بدون":
+                        txtFilter.Visible = false;
+                        return "None";
+                    case "رقم القضيه":
+                        return "CaseNumber";
+                    case "وصف الجلسه":
+                        return "Title";
+                    case "اسم المحكمه":
+                        return "Court";
+                    case "رقم الجلسه":
+                        return "RollNumber";
+                    case "تاريخ الجلسه":
+                        dtpFilter.Visible = true;
+                        txtFilter.Visible = false;
+                        return "Date";
+                    case "اسم العميل":
+                        return "ClientName";
+                    case "اسم المحامي":
+                        return "LawyerName";
+                    case "الطلبات":
+                        return "Requests";
+                    case "القرار":
+                        return "Decision";
+                    case "تم الانشاء بواسطة":
+                        return "CreatedBy";
+                    case "تم التحديث بواسطة":
+                        return "LastUpdatedBy";
+                    case "حاله الجلسه":
+                        cbFilter.Visible = true;
+                        txtFilter.Visible = dtpFilter.Visible = false;
+                        cbFilter.Items.Clear();
+                        cbFilter.Items.Add("الكل");
+                        cbFilter.Items.Add("فعاله");
+                        cbFilter.Items.Add("انتهت");
+                        cbFilter.SelectedIndex = 0;
+                        return "SessionStatus";
+                    case "ملاحظات":
+                        return "Notes";
+                    default:
+                        return "None";
+                }
+
+            }
+            else if (page == enPages.InvoicesPage)
+            {
+                switch (cbFilterBy.Text)
+                {
+                    case "بدون":
+                        txtFilter.Visible = false;
+                        return "None";
+                    case "رقم القضيه":
+                        return "CaseNumber";
+                    case "وصف القضيه":
+                        return "Title";
+                    case "اسم العميل":
+                        return "ClientName";
+                    case "تم الانشاء بواسطة":
+                        return "CreatedBy";
+                    case "تاريخ الاصدار":
+                        dtpFilter.Visible = true;
+                        txtFilter.Visible = false;
+                        return "IssueDate";
+                    case "تم التحديث بواسطة":
+                        return "LastUpdatedBy";
+                    case "ملاحظات":
+                        return "Notes";
+                    default:
+                        return "None";
+
+                }
+
+            }
+            else if (page == enPages.UsersPage)
+            {
+                switch (cbFilterBy.Text)
+                {
+                    case "بدون":
+                        txtFilter.Visible = false;
+                        return "None";
+                    case "اسم المستخدم":
+                        return "Username";
+                    case "حاله المستخدم":
+                        cbFilter.Visible = true;
+                        txtFilter.Visible = dtpFilter.Visible = false;
+                        cbFilter.Items.Clear();
+                        cbFilter.Items.Add("الكل");
+                        cbFilter.Items.Add("نشط");
+                        cbFilter.Items.Add("غير نشط");
+                        cbFilter.SelectedIndex = 0;
+                        return "UserStatus";
+                    case "تاريخ الانضمام":
+                        dtpFilter.Visible = true;
+                        txtFilter.Visible = false;
+                        return "JoinDate";
+                    case "تم الانشاء بواسطة":
+                        return "CreatedBy";
+                    case "تم التحديث بواسطة":
+                        return "LastUpdatedBy";
+                    case "ملاحظات":
+                        return "Notes";
+                    default:
+                        return "None";
+                }
+
+            }
+                return string.Empty;
+        }
+        private void cbFilterBy_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            FilterColumn = GetFilterColumn();
+
+            // To reset the data if changed from one filter to another.
+            // Especially To reset data if changed from JoinDate to another filter.
+            if (page == enPages.ClientsPage)
+            {
+                (_dtClients.DefaultView).RowFilter = string.Empty;
+                lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            }
+            else if (page == enPages.LawyersPage)
+            {
+                (_dtLawyers.DefaultView).RowFilter = string.Empty;
+                lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            }
+            else if (page == enPages.SessionsPage)
+            {
+                (_dtSessions.DefaultView).RowFilter = string.Empty;
+                lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            }
+            else if (page == enPages.InvoicesPage)
+            {
+                (_dtInvoices.DefaultView).RowFilter = string.Empty;
+                lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            }
+            else if (page == enPages.UsersPage)
+            {
+                (_dtUsers.DefaultView).RowFilter = string.Empty;
+                lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            }
+
+            
+        }
+        private void txtFilter_TextChanged(object sender, EventArgs e)
+        {
+            if (page == enPages.ClientsPage)
+            {
+                if (txtFilter.Text.Trim() == string.Empty)
+                {
+                    (_dtClients.DefaultView).RowFilter = string.Empty;
+                    lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+                    return;
+                }
+
+                (_dtClients.DefaultView).RowFilter = $"{FilterColumn} LIKE '%{txtFilter.Text.Trim()}%'";
+                lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            }
+            else if (page == enPages.LawyersPage)
+            {
+                if (txtFilter.Text.Trim() == string.Empty)
+                {
+                    (_dtLawyers.DefaultView).RowFilter = string.Empty;
+                    lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+                    return;
+                }
+                (_dtLawyers.DefaultView).RowFilter = $"{FilterColumn} LIKE '%{txtFilter.Text.Trim()}%'";
+                lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            }
+            else if (page == enPages.CasesPage)
+            {
+                if (txtFilter.Text.Trim() == string.Empty)
+                {
+                    (_dtCases.DefaultView).RowFilter = string.Empty;
+                    lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+                    return;
+                }
+                
+                (_dtCases.DefaultView).RowFilter = $"{FilterColumn} LIKE '%{txtFilter.Text.Trim()}%'";
+                lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            }
+            else if (page == enPages.SessionsPage)
+            {
+                if (txtFilter.Text.Trim() == string.Empty)
+                {
+                    (_dtSessions.DefaultView).RowFilter = string.Empty;
+                    lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+                    return;
+                }
+
+                if (FilterColumn == "RollNumber")
+                {
+
+                    (_dtSessions.DefaultView).RowFilter = $"{FilterColumn} = {int.Parse(txtFilter.Text.Trim())}";
+                    lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+                    return;
+                }
+
+                (_dtSessions.DefaultView).RowFilter = $"{FilterColumn} LIKE '%{txtFilter.Text.Trim()}%'";
+                lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            }
+            else if (page == enPages.InvoicesPage)
+            {
+                if (txtFilter.Text.Trim() == string.Empty)
+                {
+                    (_dtInvoices.DefaultView).RowFilter = string.Empty;
+                    lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+                    return;
+                }
+
+                (_dtInvoices.DefaultView).RowFilter = $"{FilterColumn} LIKE '%{txtFilter.Text.Trim()}%'";
+                lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+
+            }
+            else if (page == enPages.UsersPage)
+            {
+                if (txtFilter.Text.Trim() == string.Empty)
+                {
+                    (_dtUsers.DefaultView).RowFilter = string.Empty;
+                    lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+                    return;
+                }
+                (_dtUsers.DefaultView).RowFilter = $"{FilterColumn} LIKE '%{txtFilter.Text.Trim()}%'";
+                lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            }
+
+
+        }
+        private void dtpFilter_ValueChanged(object sender, EventArgs e)
+        {
+            if (page == enPages.ClientsPage)
+            {
+                (_dtClients.DefaultView).RowFilter = string.Format(GetFilterColumn() + " = '{0}'", dtpFilter.Value.Date.ToString("MM/dd/yyyy"));
+            }
+            else if (page == enPages.LawyersPage)
+            {
+                (_dtLawyers.DefaultView).RowFilter = string.Format(GetFilterColumn() + " = '{0}'", dtpFilter.Value.Date.ToString("MM/dd/yyyy"));
+            }
+            else if (page == enPages.SessionsPage)
+            {
+                (_dtSessions.DefaultView).RowFilter = string.Format(GetFilterColumn() + " = '{0}'", dtpFilter.Value.Date.ToString("MM/dd/yyyy"));
+
+            }
+            else if (page == enPages.InvoicesPage)
+            {
+                (_dtInvoices.DefaultView).RowFilter = string.Format(GetFilterColumn() + " = '{0}'", dtpFilter.Value.Date.ToString("MM/dd/yyyy"));
+            }
+            else if (page == enPages.UsersPage)
+            {
+                (_dtUsers.DefaultView).RowFilter = string.Format(GetFilterColumn() + " = '{0}'", dtpFilter.Value.Date.ToString("MM/dd/yyyy"));
+            }
+
+                lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+        }
+        private void RefreshClientsList()
+        {
+            _dtAllClients = Client.GetAllClients();
+            _dtClients = _dtAllClients.DefaultView.ToTable(false, "ClientId", "FullName", "Phone", "Address", "JoinDate",
+            "CreatedBy", "UpdatedBy", "Notes");
+
+            dgvFormData.DataSource = _dtClients;
+            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+        }
+        private void RefreshLawyersList()
+        {
+            _dtAllLawyers = Lawyer.GetAllLawyers();
+            _dtLawyers = _dtAllLawyers.DefaultView.ToTable(false, "LawyerId", "FullName", "Phone", "Address", "JoinDate",
+             "CreatedBy", "UpdatedBy", "Notes");
+
+            dgvFormData.DataSource = _dtLawyers;
+            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+        }
+        private void RefreshCasesList()
+        {
+            _dtAllCases = Case.GetAllCases();
+            _dtCases = _dtAllCases.DefaultView.ToTable(false, "CaseId", "CaseNumber", "Title", "Court", "ClientName",
+            "ClientStatus", "ClientAddress", "ClientPhone", "OpponentName", "OpponentStatus", "OpponentAddress", "OpponentPhone",
+            "CreatedBy", "LastUpdatedBy", "Notes");
+
+            dgvFormData.DataSource = _dtCases;
+            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+        }
+        private void RefreshSessionsList()
+        {
+            _dtAllSessions = Session.GetAllSessions();
+            _dtSessions = _dtAllSessions.DefaultView.ToTable(false, "SessionId", "CaseNumber", "Title", "RollNumber", "Date",
+            "Court", "ClientName", "LawyerName", "Requests", "Decision", "CreatedBy", "LastUpdatedBy", "SessionStatus", "Notes");
+
+            dgvFormData.DataSource = _dtSessions;
+            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+        }
+        private void RefreshInvoicesList()
+        {
+            _dtAllInvoices = Invoice.GetAllInvoices();
+            _dtInvoices = _dtAllInvoices.DefaultView.ToTable(false, "InvoiceId", "ClientName", "CaseNumber",
+            "Title", "CreatedBy", "IssueDate", "LastUpdatedBy", "TotalAmount", "AmountPaid", "AmountDue", "Notes");
+
+            dgvFormData.DataSource = _dtInvoices;
+            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+        }
+        private void RefreshUsersList()
+        {
+            _dtAllUsers = User.GetAllUsers();
+            _dtUsers = _dtAllUsers.DefaultView.ToTable(false, "UserId", "Username", "UserStatus",
+            "JoinDate", "CreatedBy", "LastUpdatedBy", "Notes");
+
+            dgvFormData.DataSource = _dtUsers;
+            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+        }
+        private void ClientsLawyersColumnsFormatting()
+        {
+            if (page == enPages.ClientsPage)
+            {
+
+                dgvFormData.Columns["ClientId"].HeaderText = "رقم العميل";
+            }
+            else if (page == enPages.LawyersPage)
+            {
+                dgvFormData.Columns["LawyerId"].HeaderText = "رقم المحامي";
+            }
+                dgvFormData.Columns["FullName"].HeaderText = "الاسم الكامل";
+            dgvFormData.Columns["Phone"].HeaderText = "رقم الهاتف";
+            dgvFormData.Columns["Address"].HeaderText = "العنوان";
+            dgvFormData.Columns["JoinDate"].HeaderText = "تاريخ الانضمام";
+            dgvFormData.Columns["JoinDate"].DefaultCellStyle.Format = "dd/MM/yyyy";
+            dgvFormData.Columns["CreatedBy"].HeaderText = "تم الانشاء بواسطة";
+            dgvFormData.Columns["UpdatedBy"].HeaderText = "تم التحديث بواسطة";
+            dgvFormData.Columns["Notes"].HeaderText = "ملاحظات";
+        }
+        private void ClientsLawyersFilters()
+        {
+            cbFilterBy.Items.Clear();
+            cbFilterBy.Items.Add("بدون");
+            cbFilterBy.Items.Add("الاسم الكامل");
+            cbFilterBy.Items.Add("رقم الهاتف");
+            cbFilterBy.Items.Add("العنوان");
+            cbFilterBy.Items.Add("تاريخ الانضمام");
+            cbFilterBy.Items.Add("تم الانشاء بواسطة");
+            cbFilterBy.Items.Add("تم التحديث بواسطة");
+            cbFilterBy.SelectedIndex = 0;
+
+        }
+        private void HandelClientsPage()
+        {
+            page = enPages.ClientsPage;
+            dgvFormData.DataSource = _dtClients;
+            ClientsLawyersColumnsFormatting();
+            ClientsLawyersFilters();
+            dgvFormData.ContextMenuStrip = cmsClients;
+            lblTitle.Text = "العملاء";
+            btnAdd.Visible = true;
+            btnAdd.Text = "اضافه عميل";
+            cbFilter.Visible = false;
+            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            tsmiClients.BackColor = Color.GreenYellow;
+            tsmiLawyers.BackColor = tsmiCases.BackColor = tsmiSessions.BackColor = tsmiInvoices.BackColor = tsmiUsers.BackColor = Color.Black;
+
+
+        }
+        private void HandelLawyersPage()
+        {
+            page = enPages.LawyersPage;
+            dgvFormData.DataSource = _dtLawyers;
+            ClientsLawyersColumnsFormatting();
+            ClientsLawyersFilters();
+            dgvFormData.ContextMenuStrip = cmsLawyers;
+            lblTitle.Text = "المحامين";
+            btnAdd.Visible = true;
+            btnAdd.Text = "اضافه محامي";
+            cbFilter.Visible = false;
+            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            tsmiLawyers.BackColor = Color.GreenYellow;
+            tsmiClients.BackColor = tsmiCases.BackColor = tsmiSessions.BackColor = tsmiInvoices.BackColor = tsmiUsers.BackColor = Color.Black;
+
+
+        }
+        private void CasesColumnsFormatting()
+        {
+            dgvFormData.Columns["CaseId"].HeaderText = "ترتيب القضيه";
+            dgvFormData.Columns["CaseNumber"].HeaderText = "رقم القضيه";
+            dgvFormData.Columns["Title"].HeaderText = "وصف القضيه";
+            dgvFormData.Columns["Court"].HeaderText = "المحكمه";
+            dgvFormData.Columns["ClientName"].HeaderText = "اسم العميل";
+            dgvFormData.Columns["ClientStatus"].HeaderText = "حاله العميل";
+            dgvFormData.Columns["ClientAddress"].HeaderText = "عنوان العميل";
+            dgvFormData.Columns["ClientPhone"].HeaderText = "رقم العميل";
+            dgvFormData.Columns["OpponentName"].HeaderText = "اسم الخصم";
+            dgvFormData.Columns["OpponentStatus"].HeaderText = "حاله الخصم";
+            dgvFormData.Columns["OpponentAddress"].HeaderText = "عنوان الخصم";
+            dgvFormData.Columns["OpponentPhone"].HeaderText = "رقم الخصم";
+            dgvFormData.Columns["CreatedBy"].HeaderText = "تم الانشاء بواسطة";
+            dgvFormData.Columns["LastUpdatedBy"].HeaderText = "تم التحديث بواسطة";
+            dgvFormData.Columns["Notes"].HeaderText = "ملاحظات";
+        }
+        private void CasesFilters()
+        {
+            cbFilterBy.Items.Clear();
+            cbFilterBy.Items.Add("بدون");
+            cbFilterBy.Items.Add("رقم القضيه");
+            cbFilterBy.Items.Add("وصف القضيه");
+            cbFilterBy.Items.Add("المحكمه");
+            cbFilterBy.Items.Add("اسم العميل");
+            cbFilterBy.Items.Add("حاله العميل");
+            cbFilterBy.Items.Add("عنوان العميل");
+            cbFilterBy.Items.Add("رقم العميل");
+            cbFilterBy.Items.Add("اسم الخصم");
+            cbFilterBy.Items.Add("حاله الخصم");
+            cbFilterBy.Items.Add("عنوان الخصم");
+            cbFilterBy.Items.Add("رقم الخصم");
+            cbFilterBy.Items.Add("تم الانشاء بواسطة");
+            cbFilterBy.Items.Add("تم التحديث بواسطة");
+            cbFilterBy.Items.Add("ملاحظات");
+
+            cbFilterBy.SelectedIndex = 0;
+
+        }
+        private void HandelCasesPage()
+        {
+            page = enPages.CasesPage;
+            dgvFormData.DataSource = _dtCases;
+            CasesColumnsFormatting();
+            CasesFilters();
+            dgvFormData.ContextMenuStrip = cmsCases;
+            lblTitle.Text = "القضايا";
+            btnAdd.Visible = false;
+            cbFilter.Visible = false;
+            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            tsmiCases.BackColor = Color.GreenYellow;
+            tsmiLawyers.BackColor = tsmiClients.BackColor = tsmiSessions.BackColor = tsmiInvoices.BackColor = tsmiUsers.BackColor = Color.Black;
+
+
+        }
+        private void SessionsColumnsFormatting()
+        {
+            dgvFormData.Columns["SessionId"].HeaderText = "ترتيب الجلسه";
+            dgvFormData.Columns["CaseNumber"].HeaderText = "رقم القضيه";
+            dgvFormData.Columns["Title"].HeaderText = "وصف الجلسه";
+            dgvFormData.Columns["RollNumber"].HeaderText = "رقم الجلسه";
+            dgvFormData.Columns["Date"].HeaderText = "تاريخ الجلسه";
+            dgvFormData.Columns["Date"].DefaultCellStyle.Format = "dd/MM/yyyy";
+            dgvFormData.Columns["Court"].HeaderText = "اسم المحكمه";
+            dgvFormData.Columns["ClientName"].HeaderText = "اسم العميل";
+            dgvFormData.Columns["LawyerName"].HeaderText = "اسم المحامي";
+            dgvFormData.Columns["Requests"].HeaderText = "الطلبات";
+            dgvFormData.Columns["Decision"].HeaderText = "القرار";
+            dgvFormData.Columns["CreatedBy"].HeaderText = "تم الانشاء بواسطة";
+            dgvFormData.Columns["LastUpdatedBy"].HeaderText = "تم التحديث بواسطة";
+            dgvFormData.Columns["SessionStatus"].HeaderText = "حاله الجلسه";
+            dgvFormData.Columns["Notes"].HeaderText = "ملاحظات";
+
+        }
+        private void SessionsFilters()
+        {
+            cbFilterBy.Items.Clear();
+            cbFilterBy.Items.Add("بدون");
+            cbFilterBy.Items.Add("رقم القضيه");
+            cbFilterBy.Items.Add("وصف الجلسه");
+            cbFilterBy.Items.Add("اسم المحكمه");
+            cbFilterBy.Items.Add("رقم الجلسه");
+            cbFilterBy.Items.Add("تاريخ الجلسه");
+            cbFilterBy.Items.Add("اسم العميل");
+            cbFilterBy.Items.Add("اسم المحامي");
+            cbFilterBy.Items.Add("الطلبات");
+            cbFilterBy.Items.Add("القرار");
+            cbFilterBy.Items.Add("تم الانشاء بواسطة");
+            cbFilterBy.Items.Add("تم التحديث بواسطة");
+            cbFilterBy.Items.Add("حاله الجلسه");
+            cbFilterBy.Items.Add("ملاحظات");
+
+            cbFilterBy.SelectedIndex = 0;
+
+        }
+        private void HandelSessionsPage()
+        {
+            page = enPages.SessionsPage;
+            dgvFormData.DataSource = _dtSessions;
+            SessionsColumnsFormatting();
+            SessionsFilters();
+            dgvFormData.ContextMenuStrip = cmsSessions;
+            lblTitle.Text = "الجلسات";
+            btnAdd.Visible = false;
+            cbFilter.Visible = false;
+            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            tsmiSessions.BackColor = Color.GreenYellow;
+            tsmiLawyers.BackColor = tsmiClients.BackColor = tsmiCases.BackColor = tsmiInvoices.BackColor = tsmiUsers.BackColor = Color.Black;
+        }
+        private void InvoicesColumnsFormatting()
+        {
+            dgvFormData.Columns["InvoiceId"].HeaderText = "ترتيب الفاتوره";
+            dgvFormData.Columns["ClientName"].HeaderText = "اسم العميل";
+            dgvFormData.Columns["CaseNumber"].HeaderText = "رقم القضيه";
+            dgvFormData.Columns["Title"].HeaderText = "وصف القضيه";
+            dgvFormData.Columns["CreatedBy"].HeaderText = "تم الانشاء بواسطة";
+            dgvFormData.Columns["IssueDate"].HeaderText = "تاريخ الاصدار";
+            dgvFormData.Columns["IssueDate"].DefaultCellStyle.Format = "dd/MM/yyyy";
+            dgvFormData.Columns["LastUpdatedBy"].HeaderText = "تم التحديث بواسطة";
+            dgvFormData.Columns["TotalAmount"].HeaderText = "المبلغ الكلي";
+            dgvFormData.Columns["AmountPaid"].HeaderText = "المبلغ المدفوع";
+            dgvFormData.Columns["AmountDue"].HeaderText = "المبلغ المتبقي";
+            dgvFormData.Columns["Notes"].HeaderText = "ملاحظات";
+
+        }
+        private void InvoicesFilters()
+        {
+            cbFilterBy.Items.Clear();
+            cbFilterBy.Items.Add("بدون");
+            cbFilterBy.Items.Add("اسم العميل");
+            cbFilterBy.Items.Add("رقم القضيه");
+            cbFilterBy.Items.Add("وصف القضيه");
+            cbFilterBy.Items.Add("تم الانشاء بواسطة");
+            cbFilterBy.Items.Add("تاريخ الاصدار");
+            cbFilterBy.Items.Add("تم التحديث بواسطة");
+            cbFilterBy.Items.Add("ملاحظات");
+            cbFilterBy.SelectedIndex = 0;
+
+        }
+        private void HandelInvoicesPage()
+        {
+            page = enPages.InvoicesPage;
+            dgvFormData.DataSource = _dtInvoices;
+            InvoicesColumnsFormatting();
+            InvoicesFilters();
+            dgvFormData.ContextMenuStrip = cmsInvoices;
+            lblTitle.Text = "الفواتير";
+            btnAdd.Visible = false;
+            cbFilter.Visible = false;
+            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            tsmiInvoices.BackColor = Color.GreenYellow;
+            tsmiLawyers.BackColor = tsmiClients.BackColor = tsmiCases.BackColor = tsmiSessions.BackColor = tsmiUsers.BackColor = Color.Black;
+
+        }
+        private void UsersColumnsFormatting()
+        {
+            dgvFormData.Columns["UserId"].HeaderText = "رقم المستخدم";
+            dgvFormData.Columns["Username"].HeaderText = "اسم المستخدم";
+            dgvFormData.Columns["UserStatus"].HeaderText = "حاله المستخدم";
+            dgvFormData.Columns["JoinDate"].HeaderText = "تاريخ الانضمام";
+            dgvFormData.Columns["JoinDate"].DefaultCellStyle.Format = "dd/MM/yyyy";
+            dgvFormData.Columns["CreatedBy"].HeaderText = "تم الانشاء بواسطة";
+            dgvFormData.Columns["LastUpdatedBy"].HeaderText = "تم التحديث بواسطة";
+            dgvFormData.Columns["Notes"].HeaderText = "ملاحظات";
+        }
+        public void UsersFilters()
+        {
+            cbFilterBy.Items.Clear();
+            cbFilterBy.Items.Add("بدون");
+            cbFilterBy.Items.Add("اسم المستخدم");
+            cbFilterBy.Items.Add("حاله المستخدم");
+            cbFilterBy.Items.Add("تاريخ الانضمام");
+            cbFilterBy.Items.Add("تم الانشاء بواسطة");
+            cbFilterBy.Items.Add("تم التحديث بواسطة");
+            cbFilterBy.SelectedIndex = 0;
+        }
+        private void HandelUsersPage()
+        {
+            page = enPages.UsersPage;
+            dgvFormData.DataSource = _dtUsers;
+            UsersColumnsFormatting();
+            UsersFilters();
+            dgvFormData.ContextMenuStrip = cmsUsers;
+            lblTitle.Text = "المستخدمين";
+            btnAdd.Visible = true;
+            btnAdd.Text = "اضافه مستخدم";
+            cbFilter.Visible = false;
+            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            tsmiUsers.BackColor = Color.GreenYellow;
+            tsmiLawyers.BackColor = tsmiClients.BackColor = tsmiCases.BackColor = tsmiSessions.BackColor = tsmiInvoices.BackColor = Color.Black;
+        }
         public frmMainScreen()
         {
             InitializeComponent();
@@ -22,15 +698,83 @@ namespace LawFirmManagementSystem.Presentation
             this.Close();
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void frmMainScreen_Load(object sender, EventArgs e)
         {
-
+            HandelClientsPage();
         }
-
         private void tsmiClients_Click(object sender, EventArgs e)
         {
-            Form frm = new frmClients();
-            frm.ShowDialog();
+            HandelClientsPage();
+        }
+        private void tsmiLawyers_Click(object sender, EventArgs e)
+        {
+            HandelLawyersPage();
+        }
+
+        private void tsmiCases_Click(object sender, EventArgs e)
+        {
+            HandelCasesPage();
+        }
+
+        private void tsmiSessions_Click(object sender, EventArgs e)
+        {
+            HandelSessionsPage();
+        }
+        private void tsmiInvoices_Click(object sender, EventArgs e)
+        {
+            HandelInvoicesPage();
+        }
+        private void tsmiUsers_Click(object sender, EventArgs e)
+        {
+            HandelUsersPage();
+        }
+        private void txtFilter_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (page == enPages.SessionsPage && FilterColumn == "RollNumber")
+            {
+                // Check if the key pressed is NOT a digit (0-9)
+                // AND Check if it is NOT a control character (like Backspace)
+                if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                {
+                    // Block the character by setting e.Handled to true
+                    e.Handled = true;
+                }
+            }
+        }
+
+        private void cbFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (page == enPages.UsersPage)
+            {
+                if (cbFilter.SelectedItem.ToString() == "الكل")
+                {
+                    (_dtUsers.DefaultView).RowFilter = string.Empty;
+                }
+                else
+                {
+                    (_dtUsers.DefaultView).RowFilter = $"{FilterColumn} = '{cbFilter.SelectedItem.ToString()}'";
+                }
+                lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+
+            }
+            else if (page == enPages.SessionsPage)
+            {
+                if (cbFilter.SelectedItem.ToString() == "الكل")
+                {
+                    (_dtSessions.DefaultView).RowFilter = string.Empty;
+                }
+                else
+                {
+                    (_dtSessions.DefaultView).RowFilter = $"{FilterColumn} = '{cbFilter.SelectedItem.ToString()}'";
+                }
+                lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+
+            }
+        }
+
+        private void tsmiSignOut_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
