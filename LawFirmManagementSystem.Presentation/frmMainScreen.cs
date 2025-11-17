@@ -1,4 +1,5 @@
-﻿using LawFirmManagementSystem_Business;
+﻿using LawFirmManagementSystem.Business;
+using LawFirmManagementSystem_Business;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -775,6 +776,77 @@ namespace LawFirmManagementSystem.Presentation
         private void tsmiSignOut_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void tsmiShowClientDetails_Click(object sender, EventArgs e)
+        {
+            frmShowClientInfo frm = new frmShowClientInfo((int)dgvFormData.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+        }
+
+        private void tsmiAddNewClient_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateClient frm = new frmAddUpdateClient();
+            frm.ShowDialog();
+
+            RefreshClientsList();
+        }
+
+        private void tsmiUpdateClient_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateClient frm = new frmAddUpdateClient((int)dgvFormData.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+
+            RefreshClientsList();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateClient frm = new frmAddUpdateClient();
+            frm.ShowDialog();
+
+            RefreshClientsList();
+        }
+
+        private void tsmiDeleteClient_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(
+                       $"هل أنت متأكد أنك تريد حذف العميل الذي اسمه: {dgvFormData.CurrentRow.Cells[1].Value} ؟",
+                       "تأكيد الحذف",
+                       MessageBoxButtons.YesNo,
+                       MessageBoxIcon.Question,
+                       MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                if (Client.DeleteClient((int)dgvFormData.CurrentRow.Cells[0].Value))
+                {
+                    MessageBox.Show("تم حذف العميل بنجاح.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Refresh the data.
+                    RefreshClientsList();
+                    return;
+                }
+                else
+                {
+                    MessageBox.Show(
+                        "لم يتم حذف العميل. ربما حدث خطأ.",
+                        "خطأ",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                    );
+                }
+            }
+           
+        }
+
+        private void tsmiShowClientInfo_Click(object sender, EventArgs e)
+        {
+            Case caseInfo = Case.GetCase((int)dgvFormData.CurrentRow.Cells[0].Value);
+
+            if (caseInfo != null)
+            {
+                frmShowClientInfo frm = new frmShowClientInfo(caseInfo.ClientId);
+                frm.ShowDialog();
+            }
         }
     }
 }

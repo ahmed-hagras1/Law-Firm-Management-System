@@ -14,22 +14,26 @@ namespace LawFirmManagementSystem_Business
         public enum enMode { UpdateMode = 0 , AddNewMode = 1 };
         public enMode mode = enMode.AddNewMode;
         public int ClientId { get; set; }
-        public int PersonId { get; set; }   
+        public int PersonId { get; set; }
+        private Person _personInfo;
         public Person PersonInfo
         {
             get
             {
-                return Person.GetPerson(PersonId);
+                return _personInfo;
             }
+            set { _personInfo = value; }
 
         }
         public int TrackingChangesId { get; set; }
+        private TrackingChanges _trackingChangesInfo;
         public TrackingChanges TrackingChangesInfo
         {
             get
             {
-                return TrackingChanges.GetTrackingChanges(TrackingChangesId);
+                return _trackingChangesInfo;
             }
+            set { _trackingChangesInfo = value; }
         }
         public string Notes { get; set; }
         public Client()
@@ -38,6 +42,8 @@ namespace LawFirmManagementSystem_Business
             PersonId = 0;
             TrackingChangesId = 0;
             Notes = string.Empty;
+            _personInfo = new Person();
+            _trackingChangesInfo = new TrackingChanges();
             mode = enMode.AddNewMode;
         }
         private Client(int clientId , int personId , int trackingChangesId, string notes)
@@ -46,6 +52,9 @@ namespace LawFirmManagementSystem_Business
             PersonId=personId;
             TrackingChangesId=trackingChangesId;
             Notes=notes;
+
+            _personInfo = Person.GetPerson(personId);
+            _trackingChangesInfo = TrackingChanges.GetTrackingChanges(personId);
 
             mode = enMode.UpdateMode;
         }
@@ -70,7 +79,7 @@ namespace LawFirmManagementSystem_Business
             ClientId =  ClientsDataAccess.AddClient(PersonInfo.FullName, PersonInfo.Phone, PersonInfo.Address, TrackingChangesInfo.CreatedBy, Notes);
             return (ClientId > 0);
         }
-        public bool SaveClient()
+        public bool Save()
         {
             switch (mode)
             {

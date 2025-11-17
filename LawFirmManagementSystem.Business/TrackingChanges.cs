@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LawFirmManagementSystem_Business;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,22 @@ namespace LawFirmManagementSystem.Business
     {
         public int TrackingChangesId { get; set; }
         public int CreatedBy { get; set; }
+        public User CreatedByUserInfo
+        {
+            get
+            {
+                return User.GetUser(CreatedBy);
+            }
+        }
         public DateTime CreatedDate { get; set; }
         public int LastUpdatedBy { get; set; }
+        public User LastUpdatedByUserInfo
+        {
+            get
+            {
+                return User.GetUser(LastUpdatedBy);
+            }
+        }
         public DateTime LastUpdatedDate { get; set; }
         public TrackingChanges()
         {

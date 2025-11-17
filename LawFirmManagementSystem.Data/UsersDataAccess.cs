@@ -31,7 +31,7 @@ namespace LawFirmManagementSystem.Data
                             userName = (string)reader["UserName"];
                             password = (string)reader["Password"]; // Note: Reading password is poor practice
                             isActive = (bool)reader["IsActive"];
-                            trackingChangesId = (int)reader["TrackingChangesId"];
+                            trackingChangesId = (reader["TrackingChangesId"] != DBNull.Value) ? (int)reader["TrackingChangesId"] : 0;
 
                             // Nullable columns
                             notes = (reader["Notes"] != DBNull.Value) ? (string)reader["Notes"] : string.Empty;

@@ -14,3 +14,7 @@ C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\bin\Debug\Law
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmM.9D0BD94A.Up2Date
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\bin\Debug\LawFirmManagementSystem.Data.dll
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\bin\Debug\LawFirmManagementSystem.Data.pdb
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.ctrlClientInfo.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.ctrlPersonalInfo.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.frmShowClientInfo.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.frmAddUpdateClient.resources

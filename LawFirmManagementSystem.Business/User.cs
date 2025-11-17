@@ -16,9 +16,11 @@ namespace LawFirmManagementSystem_Business
         public string Password { get; set; }
         public bool IsActive { get; set; }
         public int TrackingChangesId { get; set; }
+        private TrackingChanges _trackingChangesInfo;
         public TrackingChanges TrackingChangesInfo
         {
-            get { return TrackingChanges.GetTrackingChanges(TrackingChangesId); }
+            get { return _trackingChangesInfo; }
+            set { _trackingChangesInfo = value; }
         }
         public string Notes { get; set; }
 
@@ -31,6 +33,7 @@ namespace LawFirmManagementSystem_Business
             this.IsActive = false;
             this.TrackingChangesId = 0;
             this.Notes = string.Empty;
+            _trackingChangesInfo = new TrackingChanges();
             this.mode = enMode.AddNewMode;
         }
 
@@ -43,6 +46,7 @@ namespace LawFirmManagementSystem_Business
             this.IsActive = isActive;
             this.TrackingChangesId = trackingChangesId;
             this.Notes = notes;
+            _trackingChangesInfo = TrackingChanges.GetTrackingChanges(trackingChangesId);
             this.mode = enMode.UpdateMode;
         }
         public static User GetUser(int userId)

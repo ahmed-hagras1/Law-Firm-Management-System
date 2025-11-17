@@ -29,11 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainScreen));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.tsmiClients = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiLawyers = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiCases = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSessions = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiInvoices = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiUsers = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiSignOut = new System.Windows.Forms.ToolStripMenuItem();
             this.lblTitle = new System.Windows.Forms.Label();
             this.cbFilterBy = new System.Windows.Forms.ComboBox();
             this.cbFilter = new System.Windows.Forms.ComboBox();
@@ -43,60 +50,52 @@
             this.lblDataCount = new System.Windows.Forms.Label();
             this.dgvFormData = new System.Windows.Forms.DataGridView();
             this.cmsClients = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmsLawyers = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmsCases = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmsSessions = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmsInvoices = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmsUsers = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiShowClientDetails = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiAddNewClient = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiUpdateClient = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDeleteClient = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiAddCase = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAddInvoice = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.tsmiClients = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiLawyers = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiCases = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiSessions = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiInvoices = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiUsers = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiSignOut = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsLawyers = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiShowLawyerInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiAddLawyer = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiUpdateLawyer = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDeleteLawyer = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsCases = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiShowCaseInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiShowClientInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiEditCase = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDeleteCase = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiAddSession = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAddDocument = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsSessions = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiShowSessionInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiShowCaseInfoForSession = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiShowClientInfoForSession = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiEditSession = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDeleteSession = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsInvoices = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiShowInvoiceInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiShowCaseInfoForInvoices = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiShowClientInfoForInvoices = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiUpdateInvoice = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDeleteInvoice = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiAddNewPayment = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsUsers = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiShowUserInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiAddUser = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiUpdateUser = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDeleteUser = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFormData)).BeginInit();
@@ -130,6 +129,103 @@
             this.menuStrip1.Size = new System.Drawing.Size(327, 775);
             this.menuStrip1.TabIndex = 19;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // tsmiClients
+            // 
+            this.tsmiClients.AutoSize = false;
+            this.tsmiClients.BackColor = System.Drawing.Color.Black;
+            this.tsmiClients.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsmiClients.ForeColor = System.Drawing.Color.White;
+            this.tsmiClients.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.People_64;
+            this.tsmiClients.ImageTransparentColor = System.Drawing.Color.White;
+            this.tsmiClients.Name = "tsmiClients";
+            this.tsmiClients.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tsmiClients.Size = new System.Drawing.Size(320, 90);
+            this.tsmiClients.Text = "         العملاء";
+            this.tsmiClients.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tsmiClients.Click += new System.EventHandler(this.tsmiClients_Click);
+            // 
+            // tsmiLawyers
+            // 
+            this.tsmiLawyers.AutoSize = false;
+            this.tsmiLawyers.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.tsmiLawyers.ForeColor = System.Drawing.Color.White;
+            this.tsmiLawyers.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.LawyersIcon;
+            this.tsmiLawyers.Name = "tsmiLawyers";
+            this.tsmiLawyers.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tsmiLawyers.Size = new System.Drawing.Size(320, 90);
+            this.tsmiLawyers.Text = "       المحامين";
+            this.tsmiLawyers.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tsmiLawyers.Click += new System.EventHandler(this.tsmiLawyers_Click);
+            // 
+            // tsmiCases
+            // 
+            this.tsmiCases.AutoSize = false;
+            this.tsmiCases.BackColor = System.Drawing.Color.Black;
+            this.tsmiCases.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsmiCases.ForeColor = System.Drawing.Color.White;
+            this.tsmiCases.Image = ((System.Drawing.Image)(resources.GetObject("tsmiCases.Image")));
+            this.tsmiCases.ImageTransparentColor = System.Drawing.Color.White;
+            this.tsmiCases.Name = "tsmiCases";
+            this.tsmiCases.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tsmiCases.Size = new System.Drawing.Size(320, 90);
+            this.tsmiCases.Text = "        القضايا";
+            this.tsmiCases.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tsmiCases.Click += new System.EventHandler(this.tsmiCases_Click);
+            // 
+            // tsmiSessions
+            // 
+            this.tsmiSessions.AutoSize = false;
+            this.tsmiSessions.BackColor = System.Drawing.Color.Black;
+            this.tsmiSessions.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsmiSessions.ForeColor = System.Drawing.Color.White;
+            this.tsmiSessions.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.session_icon;
+            this.tsmiSessions.ImageTransparentColor = System.Drawing.Color.White;
+            this.tsmiSessions.Name = "tsmiSessions";
+            this.tsmiSessions.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tsmiSessions.Size = new System.Drawing.Size(320, 90);
+            this.tsmiSessions.Text = "       الجلسات";
+            this.tsmiSessions.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tsmiSessions.Click += new System.EventHandler(this.tsmiSessions_Click);
+            // 
+            // tsmiInvoices
+            // 
+            this.tsmiInvoices.AutoSize = false;
+            this.tsmiInvoices.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.tsmiInvoices.ForeColor = System.Drawing.Color.White;
+            this.tsmiInvoices.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.Invoice;
+            this.tsmiInvoices.Name = "tsmiInvoices";
+            this.tsmiInvoices.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tsmiInvoices.Size = new System.Drawing.Size(320, 90);
+            this.tsmiInvoices.Text = "          الفواتير";
+            this.tsmiInvoices.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tsmiInvoices.Click += new System.EventHandler(this.tsmiInvoices_Click);
+            // 
+            // tsmiUsers
+            // 
+            this.tsmiUsers.AutoSize = false;
+            this.tsmiUsers.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.tsmiUsers.ForeColor = System.Drawing.Color.White;
+            this.tsmiUsers.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.Users_2_64;
+            this.tsmiUsers.Name = "tsmiUsers";
+            this.tsmiUsers.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tsmiUsers.Size = new System.Drawing.Size(320, 90);
+            this.tsmiUsers.Text = "  المستخدمين";
+            this.tsmiUsers.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tsmiUsers.Click += new System.EventHandler(this.tsmiUsers_Click);
+            // 
+            // tsmiSignOut
+            // 
+            this.tsmiSignOut.AutoSize = false;
+            this.tsmiSignOut.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.tsmiSignOut.ForeColor = System.Drawing.Color.White;
+            this.tsmiSignOut.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.sign_out_32__2;
+            this.tsmiSignOut.Name = "tsmiSignOut";
+            this.tsmiSignOut.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tsmiSignOut.Size = new System.Drawing.Size(320, 90);
+            this.tsmiSignOut.Text = "تسجيل الخروج";
+            this.tsmiSignOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tsmiSignOut.Click += new System.EventHandler(this.tsmiSignOut_Click);
             // 
             // lblTitle
             // 
@@ -230,36 +326,36 @@
             this.dgvFormData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFormData.BackgroundColor = System.Drawing.Color.White;
             this.dgvFormData.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFormData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFormData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvFormData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFormData.ContextMenuStrip = this.cmsClients;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvFormData.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvFormData.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvFormData.Location = new System.Drawing.Point(2, 154);
             this.dgvFormData.MultiSelect = false;
             this.dgvFormData.Name = "dgvFormData";
             this.dgvFormData.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFormData.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFormData.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvFormData.RowHeadersWidth = 51;
             this.dgvFormData.RowTemplate.Height = 24;
             this.dgvFormData.Size = new System.Drawing.Size(973, 621);
@@ -281,123 +377,6 @@
             this.cmsClients.Name = "cmsClients";
             this.cmsClients.Size = new System.Drawing.Size(288, 232);
             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(284, 6);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(284, 6);
-            // 
-            // cmsLawyers
-            // 
-            this.cmsLawyers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsLawyers.ImageScalingSize = new System.Drawing.Size(30, 30);
-            this.cmsLawyers.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiShowLawyerInfo,
-            this.toolStripSeparator3,
-            this.tsmiAddLawyer,
-            this.tsmiUpdateLawyer,
-            this.tsmiDeleteLawyer});
-            this.cmsLawyers.Name = "cmsClients";
-            this.cmsLawyers.Size = new System.Drawing.Size(302, 154);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(298, 6);
-            // 
-            // cmsCases
-            // 
-            this.cmsCases.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsCases.ImageScalingSize = new System.Drawing.Size(30, 30);
-            this.cmsCases.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiShowCaseInfo,
-            this.tsmiShowClientInfo,
-            this.toolStripSeparator4,
-            this.tsmiEditCase,
-            this.tsmiDeleteCase,
-            this.toolStripSeparator5,
-            this.tsmiAddSession,
-            this.tsmiAddDocument});
-            this.cmsCases.Name = "cmsClients";
-            this.cmsCases.Size = new System.Drawing.Size(291, 232);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(287, 6);
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(287, 6);
-            // 
-            // cmsSessions
-            // 
-            this.cmsSessions.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsSessions.ImageScalingSize = new System.Drawing.Size(30, 30);
-            this.cmsSessions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiShowSessionInfo,
-            this.tsmiShowCaseInfoForSession,
-            this.tsmiShowClientInfoForSession,
-            this.toolStripSeparator6,
-            this.tsmiEditSession,
-            this.tsmiDeleteSession});
-            this.cmsSessions.Name = "cmsClients";
-            this.cmsSessions.Size = new System.Drawing.Size(291, 190);
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(287, 6);
-            // 
-            // cmsInvoices
-            // 
-            this.cmsInvoices.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsInvoices.ImageScalingSize = new System.Drawing.Size(30, 30);
-            this.cmsInvoices.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiShowInvoiceInfo,
-            this.tsmiShowCaseInfoForInvoices,
-            this.tsmiShowClientInfoForInvoices,
-            this.toolStripSeparator7,
-            this.tsmiUpdateInvoice,
-            this.tsmiDeleteInvoice,
-            this.toolStripSeparator8,
-            this.tsmiAddNewPayment});
-            this.cmsInvoices.Name = "cmsClients";
-            this.cmsInvoices.Size = new System.Drawing.Size(292, 232);
-            // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(288, 6);
-            // 
-            // toolStripSeparator8
-            // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(288, 6);
-            // 
-            // cmsUsers
-            // 
-            this.cmsUsers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsUsers.ImageScalingSize = new System.Drawing.Size(30, 30);
-            this.cmsUsers.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiShowUserInfo,
-            this.toolStripSeparator9,
-            this.tsmiAddUser,
-            this.tsmiUpdateUser,
-            this.tsmiDeleteUser});
-            this.cmsUsers.Name = "cmsClients";
-            this.cmsUsers.Size = new System.Drawing.Size(314, 182);
-            // 
-            // toolStripSeparator9
-            // 
-            this.toolStripSeparator9.Name = "toolStripSeparator9";
-            this.toolStripSeparator9.Size = new System.Drawing.Size(310, 6);
-            // 
             // tsmiShowClientDetails
             // 
             this.tsmiShowClientDetails.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.PersonDetails_32;
@@ -405,6 +384,12 @@
             this.tsmiShowClientDetails.Name = "tsmiShowClientDetails";
             this.tsmiShowClientDetails.Size = new System.Drawing.Size(287, 36);
             this.tsmiShowClientDetails.Text = "عرض معلومات العميل";
+            this.tsmiShowClientDetails.Click += new System.EventHandler(this.tsmiShowClientDetails_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(284, 6);
             // 
             // tsmiAddNewClient
             // 
@@ -412,6 +397,7 @@
             this.tsmiAddNewClient.Name = "tsmiAddNewClient";
             this.tsmiAddNewClient.Size = new System.Drawing.Size(287, 36);
             this.tsmiAddNewClient.Text = "اضافه عميل";
+            this.tsmiAddNewClient.Click += new System.EventHandler(this.tsmiAddNewClient_Click);
             // 
             // tsmiUpdateClient
             // 
@@ -419,6 +405,7 @@
             this.tsmiUpdateClient.Name = "tsmiUpdateClient";
             this.tsmiUpdateClient.Size = new System.Drawing.Size(287, 36);
             this.tsmiUpdateClient.Text = "تعديل العميل";
+            this.tsmiUpdateClient.Click += new System.EventHandler(this.tsmiUpdateClient_Click);
             // 
             // tsmiDeleteClient
             // 
@@ -426,6 +413,12 @@
             this.tsmiDeleteClient.Name = "tsmiDeleteClient";
             this.tsmiDeleteClient.Size = new System.Drawing.Size(287, 36);
             this.tsmiDeleteClient.Text = "ازاله العميل";
+            this.tsmiDeleteClient.Click += new System.EventHandler(this.tsmiDeleteClient_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(284, 6);
             // 
             // tsmiAddCase
             // 
@@ -441,128 +434,18 @@
             this.tsmiAddInvoice.Size = new System.Drawing.Size(287, 36);
             this.tsmiAddInvoice.Text = "اضافه فاتوره";
             // 
-            // btnAdd
+            // cmsLawyers
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddNewIcon2;
-            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(12, 83);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(183, 39);
-            this.btnAdd.TabIndex = 24;
-            this.btnAdd.Text = "اضافه";
-            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAdd.UseVisualStyleBackColor = false;
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackgroundImage = global::LawFirmManagementSystem.Presentation.Properties.Resources.close;
-            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnClose.Location = new System.Drawing.Point(12, 12);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(45, 35);
-            this.btnClose.TabIndex = 18;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // tsmiClients
-            // 
-            this.tsmiClients.AutoSize = false;
-            this.tsmiClients.BackColor = System.Drawing.Color.Black;
-            this.tsmiClients.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tsmiClients.ForeColor = System.Drawing.Color.White;
-            this.tsmiClients.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.People_64;
-            this.tsmiClients.ImageTransparentColor = System.Drawing.Color.White;
-            this.tsmiClients.Name = "tsmiClients";
-            this.tsmiClients.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsmiClients.Size = new System.Drawing.Size(320, 90);
-            this.tsmiClients.Text = "         العملاء";
-            this.tsmiClients.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tsmiClients.Click += new System.EventHandler(this.tsmiClients_Click);
-            // 
-            // tsmiLawyers
-            // 
-            this.tsmiLawyers.AutoSize = false;
-            this.tsmiLawyers.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.tsmiLawyers.ForeColor = System.Drawing.Color.White;
-            this.tsmiLawyers.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.LawyersIcon;
-            this.tsmiLawyers.Name = "tsmiLawyers";
-            this.tsmiLawyers.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsmiLawyers.Size = new System.Drawing.Size(320, 90);
-            this.tsmiLawyers.Text = "       المحامين";
-            this.tsmiLawyers.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tsmiLawyers.Click += new System.EventHandler(this.tsmiLawyers_Click);
-            // 
-            // tsmiCases
-            // 
-            this.tsmiCases.AutoSize = false;
-            this.tsmiCases.BackColor = System.Drawing.Color.Black;
-            this.tsmiCases.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tsmiCases.ForeColor = System.Drawing.Color.White;
-            this.tsmiCases.Image = ((System.Drawing.Image)(resources.GetObject("tsmiCases.Image")));
-            this.tsmiCases.ImageTransparentColor = System.Drawing.Color.White;
-            this.tsmiCases.Name = "tsmiCases";
-            this.tsmiCases.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsmiCases.Size = new System.Drawing.Size(320, 90);
-            this.tsmiCases.Text = "        القضايا";
-            this.tsmiCases.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tsmiCases.Click += new System.EventHandler(this.tsmiCases_Click);
-            // 
-            // tsmiSessions
-            // 
-            this.tsmiSessions.AutoSize = false;
-            this.tsmiSessions.BackColor = System.Drawing.Color.Black;
-            this.tsmiSessions.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tsmiSessions.ForeColor = System.Drawing.Color.White;
-            this.tsmiSessions.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.session_icon;
-            this.tsmiSessions.ImageTransparentColor = System.Drawing.Color.White;
-            this.tsmiSessions.Name = "tsmiSessions";
-            this.tsmiSessions.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsmiSessions.Size = new System.Drawing.Size(320, 90);
-            this.tsmiSessions.Text = "       الجلسات";
-            this.tsmiSessions.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tsmiSessions.Click += new System.EventHandler(this.tsmiSessions_Click);
-            // 
-            // tsmiInvoices
-            // 
-            this.tsmiInvoices.AutoSize = false;
-            this.tsmiInvoices.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.tsmiInvoices.ForeColor = System.Drawing.Color.White;
-            this.tsmiInvoices.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.Invoice;
-            this.tsmiInvoices.Name = "tsmiInvoices";
-            this.tsmiInvoices.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsmiInvoices.Size = new System.Drawing.Size(320, 90);
-            this.tsmiInvoices.Text = "          الفواتير";
-            this.tsmiInvoices.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tsmiInvoices.Click += new System.EventHandler(this.tsmiInvoices_Click);
-            // 
-            // tsmiUsers
-            // 
-            this.tsmiUsers.AutoSize = false;
-            this.tsmiUsers.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.tsmiUsers.ForeColor = System.Drawing.Color.White;
-            this.tsmiUsers.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.Users_2_64;
-            this.tsmiUsers.Name = "tsmiUsers";
-            this.tsmiUsers.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsmiUsers.Size = new System.Drawing.Size(320, 90);
-            this.tsmiUsers.Text = "  المستخدمين";
-            this.tsmiUsers.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tsmiUsers.Click += new System.EventHandler(this.tsmiUsers_Click);
-            // 
-            // tsmiSignOut
-            // 
-            this.tsmiSignOut.AutoSize = false;
-            this.tsmiSignOut.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.tsmiSignOut.ForeColor = System.Drawing.Color.White;
-            this.tsmiSignOut.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.sign_out_32__2;
-            this.tsmiSignOut.Name = "tsmiSignOut";
-            this.tsmiSignOut.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.tsmiSignOut.Size = new System.Drawing.Size(320, 90);
-            this.tsmiSignOut.Text = "تسجيل الخروج";
-            this.tsmiSignOut.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tsmiSignOut.Click += new System.EventHandler(this.tsmiSignOut_Click);
+            this.cmsLawyers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsLawyers.ImageScalingSize = new System.Drawing.Size(30, 30);
+            this.cmsLawyers.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiShowLawyerInfo,
+            this.toolStripSeparator3,
+            this.tsmiAddLawyer,
+            this.tsmiUpdateLawyer,
+            this.tsmiDeleteLawyer});
+            this.cmsLawyers.Name = "cmsClients";
+            this.cmsLawyers.Size = new System.Drawing.Size(302, 154);
             // 
             // tsmiShowLawyerInfo
             // 
@@ -571,6 +454,11 @@
             this.tsmiShowLawyerInfo.Name = "tsmiShowLawyerInfo";
             this.tsmiShowLawyerInfo.Size = new System.Drawing.Size(301, 36);
             this.tsmiShowLawyerInfo.Text = "عرض معلومات المحامي";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(298, 6);
             // 
             // tsmiAddLawyer
             // 
@@ -593,6 +481,22 @@
             this.tsmiDeleteLawyer.Size = new System.Drawing.Size(301, 36);
             this.tsmiDeleteLawyer.Text = "ازاله المحامي";
             // 
+            // cmsCases
+            // 
+            this.cmsCases.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsCases.ImageScalingSize = new System.Drawing.Size(30, 30);
+            this.cmsCases.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiShowCaseInfo,
+            this.tsmiShowClientInfo,
+            this.toolStripSeparator4,
+            this.tsmiEditCase,
+            this.tsmiDeleteCase,
+            this.toolStripSeparator5,
+            this.tsmiAddSession,
+            this.tsmiAddDocument});
+            this.cmsCases.Name = "cmsClients";
+            this.cmsCases.Size = new System.Drawing.Size(291, 260);
+            // 
             // tsmiShowCaseInfo
             // 
             this.tsmiShowCaseInfo.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.ShowIcon;
@@ -607,6 +511,12 @@
             this.tsmiShowClientInfo.Name = "tsmiShowClientInfo";
             this.tsmiShowClientInfo.Size = new System.Drawing.Size(290, 36);
             this.tsmiShowClientInfo.Text = "عرض معلومات العميل";
+            this.tsmiShowClientInfo.Click += new System.EventHandler(this.tsmiShowClientInfo_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(287, 6);
             // 
             // tsmiEditCase
             // 
@@ -622,6 +532,11 @@
             this.tsmiDeleteCase.Size = new System.Drawing.Size(290, 36);
             this.tsmiDeleteCase.Text = "ازاله القضيه";
             // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(287, 6);
+            // 
             // tsmiAddSession
             // 
             this.tsmiAddSession.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddNewIcon2;
@@ -635,6 +550,19 @@
             this.tsmiAddDocument.Name = "tsmiAddDocument";
             this.tsmiAddDocument.Size = new System.Drawing.Size(290, 36);
             this.tsmiAddDocument.Text = "اضافه ملف";
+            // 
+            // cmsSessions
+            // 
+            this.cmsSessions.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsSessions.ImageScalingSize = new System.Drawing.Size(30, 30);
+            this.cmsSessions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiShowSessionInfo,
+            this.tsmiShowCaseInfoForSession,
+            this.toolStripSeparator6,
+            this.tsmiEditSession,
+            this.tsmiDeleteSession});
+            this.cmsSessions.Name = "cmsClients";
+            this.cmsSessions.Size = new System.Drawing.Size(291, 154);
             // 
             // tsmiShowSessionInfo
             // 
@@ -651,12 +579,10 @@
             this.tsmiShowCaseInfoForSession.Size = new System.Drawing.Size(290, 36);
             this.tsmiShowCaseInfoForSession.Text = "عرض معلومات القضيه";
             // 
-            // tsmiShowClientInfoForSession
+            // toolStripSeparator6
             // 
-            this.tsmiShowClientInfoForSession.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.PersonDetails_32;
-            this.tsmiShowClientInfoForSession.Name = "tsmiShowClientInfoForSession";
-            this.tsmiShowClientInfoForSession.Size = new System.Drawing.Size(290, 36);
-            this.tsmiShowClientInfoForSession.Text = "عرض معلومات العميل";
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(287, 6);
             // 
             // tsmiEditSession
             // 
@@ -671,6 +597,22 @@
             this.tsmiDeleteSession.Name = "tsmiDeleteSession";
             this.tsmiDeleteSession.Size = new System.Drawing.Size(290, 36);
             this.tsmiDeleteSession.Text = "ازاله الجلسه";
+            // 
+            // cmsInvoices
+            // 
+            this.cmsInvoices.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsInvoices.ImageScalingSize = new System.Drawing.Size(30, 30);
+            this.cmsInvoices.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiShowInvoiceInfo,
+            this.tsmiShowCaseInfoForInvoices,
+            this.tsmiShowClientInfoForInvoices,
+            this.toolStripSeparator7,
+            this.tsmiUpdateInvoice,
+            this.tsmiDeleteInvoice,
+            this.toolStripSeparator8,
+            this.tsmiAddNewPayment});
+            this.cmsInvoices.Name = "cmsClients";
+            this.cmsInvoices.Size = new System.Drawing.Size(292, 232);
             // 
             // tsmiShowInvoiceInfo
             // 
@@ -694,6 +636,11 @@
             this.tsmiShowClientInfoForInvoices.Size = new System.Drawing.Size(291, 36);
             this.tsmiShowClientInfoForInvoices.Text = "عرض معلومات العميل";
             // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(288, 6);
+            // 
             // tsmiUpdateInvoice
             // 
             this.tsmiUpdateInvoice.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.edit_32;
@@ -708,12 +655,30 @@
             this.tsmiDeleteInvoice.Size = new System.Drawing.Size(291, 36);
             this.tsmiDeleteInvoice.Text = "ازاله الفاتوره";
             // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(288, 6);
+            // 
             // tsmiAddNewPayment
             // 
             this.tsmiAddNewPayment.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddNewPayment;
             this.tsmiAddNewPayment.Name = "tsmiAddNewPayment";
             this.tsmiAddNewPayment.Size = new System.Drawing.Size(291, 36);
             this.tsmiAddNewPayment.Text = "اضافه عمليه دفع";
+            // 
+            // cmsUsers
+            // 
+            this.cmsUsers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsUsers.ImageScalingSize = new System.Drawing.Size(30, 30);
+            this.cmsUsers.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiShowUserInfo,
+            this.toolStripSeparator9,
+            this.tsmiAddUser,
+            this.tsmiUpdateUser,
+            this.tsmiDeleteUser});
+            this.cmsUsers.Name = "cmsClients";
+            this.cmsUsers.Size = new System.Drawing.Size(314, 154);
             // 
             // tsmiShowUserInfo
             // 
@@ -722,6 +687,11 @@
             this.tsmiShowUserInfo.Name = "tsmiShowUserInfo";
             this.tsmiShowUserInfo.Size = new System.Drawing.Size(313, 36);
             this.tsmiShowUserInfo.Text = "عرض معلومات المستخدم";
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(310, 6);
             // 
             // tsmiAddUser
             // 
@@ -743,6 +713,33 @@
             this.tsmiDeleteUser.Name = "tsmiDeleteUser";
             this.tsmiDeleteUser.Size = new System.Drawing.Size(313, 36);
             this.tsmiDeleteUser.Text = "ازاله المستخدم";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddNewIcon2;
+            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdd.Location = new System.Drawing.Point(12, 83);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(183, 39);
+            this.btnAdd.TabIndex = 24;
+            this.btnAdd.Text = "اضافه";
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.BackgroundImage = global::LawFirmManagementSystem.Presentation.Properties.Resources.close;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnClose.Location = new System.Drawing.Point(12, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(45, 35);
+            this.btnClose.TabIndex = 18;
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // frmMainScreen
             // 
@@ -826,7 +823,6 @@
         private System.Windows.Forms.ContextMenuStrip cmsSessions;
         private System.Windows.Forms.ToolStripMenuItem tsmiShowSessionInfo;
         private System.Windows.Forms.ToolStripMenuItem tsmiShowCaseInfoForSession;
-        private System.Windows.Forms.ToolStripMenuItem tsmiShowClientInfoForSession;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripMenuItem tsmiEditSession;
         private System.Windows.Forms.ToolStripMenuItem tsmiDeleteSession;

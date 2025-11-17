@@ -16,21 +16,25 @@ namespace LawFirmManagementSystem_Business
 
         public int LawyerId { get; set; }
         public int PersonId { get; set; }
+        private Person _personInfo;
         public Person PersonInfo
         {
             get
             {
-                return Person.GetPerson(PersonId);
+                return _personInfo;
             }
+            set { _personInfo = value; }
         }
         public int TrackingChangesId { get; set; }
+        private TrackingChanges _trackingChangesInfo;
 
         public TrackingChanges TrackingChangesInfo
         {
             get
             {
-                return TrackingChanges.GetTrackingChanges(TrackingChangesId);
+                return _trackingChangesInfo;
             }
+            set { _trackingChangesInfo = value; }
         }
 
         public string Notes { get; set; }
@@ -41,6 +45,8 @@ namespace LawFirmManagementSystem_Business
             PersonId = 0;
             TrackingChangesId = 0;
             Notes = string.Empty;
+            _personInfo = new Person();
+            _trackingChangesInfo = new TrackingChanges();
             mode = enMode.AddNewMode;
         }
 
@@ -50,6 +56,8 @@ namespace LawFirmManagementSystem_Business
             PersonId = personId;
             TrackingChangesId = trackingChangesId;
             Notes = notes;
+            _personInfo = Person.GetPerson(personId);
+            _trackingChangesInfo = TrackingChanges.GetTrackingChanges(trackingChangesId);
             mode = enMode.UpdateMode;
         }
         public static Lawyer GetLawyer(int lawyerId)

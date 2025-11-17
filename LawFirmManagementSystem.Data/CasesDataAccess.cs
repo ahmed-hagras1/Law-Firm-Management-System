@@ -75,6 +75,29 @@ namespace LawFirmManagementSystem.Data
 
             return cases;
         }
+        public static DataTable GetAllCasesForSpecificClient(int clientId)
+        {
+            DataTable cases = new DataTable();
+            string query = "SELECT * FROM [dbo].[Cases_View] Where ClientId = @clientId"; // Assumes this view exists
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@clientId", clientId);
+                    connection.Open();
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        adapter.Fill(cases);
+                    }
+                }
+            }
+            catch (SqlException) { return new DataTable(); }
+            catch (Exception) { return new DataTable(); }
+
+            return cases;
+        }
         public static int AddCase(string caseNumber, string title, string court,
             string clientName, string clientStatus, string clientAddress, string clientPhone,
             string opponentName, string opponentStatus, string opponentAddress, string opponentPhone,

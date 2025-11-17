@@ -13,15 +13,19 @@ namespace LawFirmManagementSystem_Business
         // --- Invoice Properties ---
         public int InvoiceId { get; set; }
         public int CaseId { get; set; }
+        private Case _caseInfo;
         public Case CaseInfo
         {
-            get { return Case.GetCase(CaseId); }
+            get { return _caseInfo; }
+            set { _caseInfo = value; }
         }
         public decimal Amount { get; set; }
         public int TrackingChangesId { get; set; }
+        private TrackingChanges _trackingChangesInfo;
         public TrackingChanges TrackingChangesInfo
         {
-            get { return TrackingChanges.GetTrackingChanges(TrackingChangesId); }
+            get { return _trackingChangesInfo; }
+            set { _trackingChangesInfo = value; }
         }
         public string Notes { get; set; }
 
@@ -33,6 +37,8 @@ namespace LawFirmManagementSystem_Business
             this.Amount = 0;
             this.TrackingChangesId = 0;
             this.Notes = string.Empty;
+            _caseInfo = new Case();
+            _trackingChangesInfo = new TrackingChanges();
             this.mode = enMode.AddNewMode;
         }
 
@@ -44,6 +50,9 @@ namespace LawFirmManagementSystem_Business
             this.Amount = amount;
             this.TrackingChangesId = trackingChangesId;
             this.Notes = notes;
+            _caseInfo = Case.GetCase(caseId);
+            _trackingChangesInfo = TrackingChanges.GetTrackingChanges(trackingChangesId);
+
             this.mode = enMode.UpdateMode;
         }
         public static Invoice GetInvoice(int invoiceId)

@@ -13,24 +13,30 @@ namespace LawFirmManagementSystem_Business
         // --- Session Properties ---
         public int SessionId { get; set; }
         public int CaseId { get; set; }
+        private Case _caseInfo;
         public Case CaseInfo
         {
-            get { return Case.GetCase(CaseId); }
+            get { return _caseInfo; }
+            set { _caseInfo = value; }
         }
         public DateTime Date { get; set; }
         public int RollNumber { get; set; }
         public string Court { get; set; }
         public int LawyerId { get; set; }
+        private Lawyer _lawyerInfo;
         public Lawyer LawyerInfo
         {
-            get { return Lawyer.GetLawyer(LawyerId); }
+            get { return _lawyerInfo; }
+            set { _lawyerInfo = value; }
         }
         public string Requests { get; set; }
         public string Decision { get; set; }
         public int TrackingChangesId { get; set; }
+        private TrackingChanges _trackingChangesInfo;
         public TrackingChanges TrackingChangesInfo
         {
-            get { return TrackingChanges.GetTrackingChanges(TrackingChangesId); }
+            get { return _trackingChangesInfo; }
+            set { _trackingChangesInfo = value; }
         }
         public string Notes { get; set; }
 
@@ -47,6 +53,10 @@ namespace LawFirmManagementSystem_Business
             this.Decision = string.Empty;
             this.TrackingChangesId = 0;
             this.Notes = string.Empty;
+            _caseInfo = new Case();
+            _lawyerInfo = new Lawyer();
+            _trackingChangesInfo = new TrackingChanges();
+
             this.mode = enMode.AddNewMode;
         }
 
@@ -65,6 +75,10 @@ namespace LawFirmManagementSystem_Business
             this.Decision = decision;
             this.TrackingChangesId = trackingChangesId;
             this.Notes = notes;
+            _caseInfo = Case.GetCase(caseId);
+            _lawyerInfo = Lawyer.GetLawyer(lawyerId);
+            _trackingChangesInfo = TrackingChanges.GetTrackingChanges(trackingChangesId);
+
             this.mode = enMode.UpdateMode;
         }
         public static Session GetSession(int sessionId)

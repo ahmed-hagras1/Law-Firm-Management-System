@@ -24,20 +24,25 @@ namespace LawFirmManagementSystem_Business
         public string OpponentAddress { get; set; }
         public string OpponentPhone { get; set; }
         public int ClientId { get; set; }
+        private Client _clientInfo;
         public Client ClientInfo
         {
             get
             {
-                return Client.GetClient(ClientId);
+                return _clientInfo;
             }
+            set { _clientInfo = value; }
         }
         public int TrackingChangesId { get; set; }
+        private TrackingChanges _trackingChangesInfo;
+
         public TrackingChanges TrackingChangesInfo
         {
             get
             {
-                return TrackingChanges.GetTrackingChanges(TrackingChangesId);
+                return _trackingChangesInfo;
             }
+            set { _trackingChangesInfo = value; }
         }
         public string Notes { get; set; }
 
@@ -59,6 +64,8 @@ namespace LawFirmManagementSystem_Business
             this.ClientId = 0;
             this.TrackingChangesId = 0;
             this.Notes = string.Empty;
+            _clientInfo = new Client();
+            _trackingChangesInfo = new TrackingChanges();
             this.mode = enMode.AddNewMode;
         }
 
@@ -83,6 +90,8 @@ namespace LawFirmManagementSystem_Business
             this.ClientId = clientId;
             this.TrackingChangesId = trackingChangesId;
             this.Notes = notes;
+            _clientInfo = Client.GetClient(clientId);
+            _trackingChangesInfo = TrackingChanges.GetTrackingChanges(trackingChangesId);
             this.mode = enMode.UpdateMode;
         }
         public static Case GetCase(int caseId)
@@ -110,6 +119,7 @@ namespace LawFirmManagementSystem_Business
         {
             return CasesDataAccess.GetAllCases();
         }
+        public static DataTable GetAllCasesForSpecificClient(int clientId) => CasesDataAccess.GetAllCasesForSpecificClient(clientId);
         public static bool DeleteCase(int caseId) => CasesDataAccess.DeleteCase(caseId);
 
         private bool _UpdateCase()
