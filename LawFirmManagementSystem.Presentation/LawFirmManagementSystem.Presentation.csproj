@@ -82,6 +82,24 @@
     <Compile Include="Clients\frmShowClientInfo.Designer.cs">
       <DependentUpon>frmShowClientInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lawyers\Controls\ctrlLawyerInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Lawyers\Controls\ctrlLawyerInfo.Designer.cs">
+      <DependentUpon>ctrlLawyerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lawyers\frmAddUpdateLawyer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lawyers\frmAddUpdateLawyer.Designer.cs">
+      <DependentUpon>frmAddUpdateLawyer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lawyers\frmShowLawyerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lawyers\frmShowLawyerInfo.Designer.cs">
+      <DependentUpon>frmShowLawyerInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Clients\Controls\ctrlClientInfo.resx">
@@ -101,6 +119,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Clients\frmShowClientInfo.resx">
       <DependentUpon>frmShowClientInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lawyers\Controls\ctrlLawyerInfo.resx">
+      <DependentUpon>ctrlLawyerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lawyers\frmAddUpdateLawyer.resx">
+      <DependentUpon>frmAddUpdateLawyer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lawyers\frmShowLawyerInfo.resx">
+      <DependentUpon>frmShowLawyerInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

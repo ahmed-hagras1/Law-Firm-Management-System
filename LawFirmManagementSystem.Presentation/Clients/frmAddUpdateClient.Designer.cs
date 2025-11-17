@@ -165,6 +165,7 @@
             this.btnClose.TabIndex = 77;
             this.btnClose.Text = "الغاء";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnSave
             // 

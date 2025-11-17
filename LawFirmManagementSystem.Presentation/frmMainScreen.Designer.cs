@@ -445,7 +445,7 @@
             this.tsmiUpdateLawyer,
             this.tsmiDeleteLawyer});
             this.cmsLawyers.Name = "cmsClients";
-            this.cmsLawyers.Size = new System.Drawing.Size(302, 154);
+            this.cmsLawyers.Size = new System.Drawing.Size(302, 182);
             // 
             // tsmiShowLawyerInfo
             // 
@@ -454,6 +454,7 @@
             this.tsmiShowLawyerInfo.Name = "tsmiShowLawyerInfo";
             this.tsmiShowLawyerInfo.Size = new System.Drawing.Size(301, 36);
             this.tsmiShowLawyerInfo.Text = "عرض معلومات المحامي";
+            this.tsmiShowLawyerInfo.Click += new System.EventHandler(this.tsmiShowLawyerInfo_Click);
             // 
             // toolStripSeparator3
             // 
@@ -466,6 +467,7 @@
             this.tsmiAddLawyer.Name = "tsmiAddLawyer";
             this.tsmiAddLawyer.Size = new System.Drawing.Size(301, 36);
             this.tsmiAddLawyer.Text = "اضافه محامي";
+            this.tsmiAddLawyer.Click += new System.EventHandler(this.tsmiAddLawyer_Click);
             // 
             // tsmiUpdateLawyer
             // 
@@ -473,6 +475,7 @@
             this.tsmiUpdateLawyer.Name = "tsmiUpdateLawyer";
             this.tsmiUpdateLawyer.Size = new System.Drawing.Size(301, 36);
             this.tsmiUpdateLawyer.Text = "تعديل المحامي";
+            this.tsmiUpdateLawyer.Click += new System.EventHandler(this.tsmiUpdateLawyer_Click);
             // 
             // tsmiDeleteLawyer
             // 
@@ -480,6 +483,7 @@
             this.tsmiDeleteLawyer.Name = "tsmiDeleteLawyer";
             this.tsmiDeleteLawyer.Size = new System.Drawing.Size(301, 36);
             this.tsmiDeleteLawyer.Text = "ازاله المحامي";
+            this.tsmiDeleteLawyer.Click += new System.EventHandler(this.tsmiDeleteLawyer_Click);
             // 
             // cmsCases
             // 
@@ -495,7 +499,7 @@
             this.tsmiAddSession,
             this.tsmiAddDocument});
             this.cmsCases.Name = "cmsClients";
-            this.cmsCases.Size = new System.Drawing.Size(291, 260);
+            this.cmsCases.Size = new System.Drawing.Size(291, 232);
             // 
             // tsmiShowCaseInfo
             // 

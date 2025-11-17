@@ -1,5 +1,4 @@
-﻿using LawFirmManagementSystem.Business;
-using LawFirmManagementSystem_Business;
+﻿using LawFirmManagementSystem_Business;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,57 +9,55 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LawFirmManagementSystem.Presentation
+namespace LawFirmManagementSystem.Presentation.Lawyers
 {
-    public partial class frmAddUpdateClient: Form
+    public partial class frmAddUpdateLawyer: Form
     {
-        enum enMode { UpdateMode = 0, AddNewMode = 1 };
+        private enum enMode { UpdateMode, AddNewMode};
         private enMode _mode = enMode.AddNewMode;
-
-
-        private int _clientId = -1;
-        public int ClientId
+        private  int _lawyerId; 
+        public int LawyerId
         {
-            get { return _clientId; }
+            get { return _lawyerId; }
         }
-        private Client _clientInfo = new Client();
-        public Client ClientInfo
+        private Lawyer _lawyerInfo = new Lawyer();
+        public Lawyer LawyerInfo
         {
-            get { return _clientInfo; }
+            get { return _lawyerInfo; }
         }
-
-        public frmAddUpdateClient(int clientId)
-        {
-            InitializeComponent();
-
-            _mode = enMode.UpdateMode;
-            _clientId = clientId;
-            _clientInfo = Client.GetClient(clientId);
-        }
-        public frmAddUpdateClient()
+        public frmAddUpdateLawyer()
         {
             InitializeComponent();
 
             _mode = enMode.AddNewMode;
+        }
+        public frmAddUpdateLawyer(int lawyerId)
+        {
+            InitializeComponent();
+
+            _lawyerId = lawyerId;
+            _lawyerInfo = Lawyer.GetLawyer(lawyerId);
+            _mode = enMode.UpdateMode;
 
         }
-        public void _LoadData()
+        private void LoadData()
         {
-            txtName.Text = _clientInfo.PersonInfo.FullName;
-            txtPhone.Text = _clientInfo.PersonInfo.Phone;
-            txtAddress.Text = _clientInfo.PersonInfo.Address;
-            txtNotes.Text = _clientInfo.Notes;
+            txtName.Text = LawyerInfo.PersonInfo.FullName;
+            txtPhone.Text = LawyerInfo.PersonInfo.Phone;
+            txtAddress.Text = LawyerInfo.PersonInfo.Address;
+            txtNotes.Text = LawyerInfo.Notes;
         }
-        private void frmAddUpdateClient_Load(object sender, EventArgs e)
+
+        private void frmAddUpdateLawyer_Load(object sender, EventArgs e)
         {
             if (_mode == enMode.UpdateMode)
             {
-                _LoadData();
-                lblTitle.Text = "تعديل عميل";
+                LoadData();
+                lblTitle.Text = "تعديل المحامي";
             }
             else if (_mode == enMode.AddNewMode)
             {
-                lblTitle.Text = "اضافه عميل";
+                lblTitle.Text = "اضافه محامي";
             }
         }
         private delegate bool ValidateDataDelegate(ref string errorMessage, string text);
@@ -126,44 +123,47 @@ namespace LawFirmManagementSystem.Presentation
             {
                 return;
             }
+
+
             if (MessageBox.Show(
-                        $"هل أنت متأكد أنك تريد حفظ بيانات العميل: {txtName.Text.Trim()} ؟",
-                        "تأكيد الحفظ",
+                        $"هل أنت متأكد أنك تريد حفظ بيانات المحامي: {txtName.Text.Trim()} ؟",
+                        "تأكيد الحفظ", 
                         MessageBoxButtons.YesNo,
                         MessageBoxIcon.Question,
                         MessageBoxDefaultButton.Button1) == DialogResult.Yes)
             {
-                ClientInfo.PersonInfo.FullName = txtName.Text.Trim();
-                ClientInfo.PersonInfo.Phone = txtPhone.Text.Trim();
-                ClientInfo.PersonInfo.Address = txtAddress.Text.Trim();
-                ClientInfo.Notes = txtNotes.Text.Trim();
+
+                LawyerInfo.PersonInfo.FullName = txtName.Text.Trim();
+                LawyerInfo.PersonInfo.Phone = txtPhone.Text.Trim();
+                LawyerInfo.PersonInfo.Address = txtAddress.Text.Trim();
+                LawyerInfo.Notes = txtNotes.Text.Trim();
 
                 if (_mode == enMode.AddNewMode)
                 {
-                    ClientInfo.TrackingChangesInfo.CreatedBy = 1;
-                    if (ClientInfo.Save())
+                    LawyerInfo.TrackingChangesInfo.CreatedBy = 1;
+                    if (LawyerInfo.SaveLawyer())
                     {
-                        MessageBox.Show("تم اضافه العميل بنجاح.", "اضافه عميل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("تم اضافه المحامي بنجاح.", "اضافه محامي", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         _mode = enMode.UpdateMode;
-                        _clientId = ClientInfo.ClientId;
-                        lblTitle.Text = "تعديل عميل";
+                        _lawyerId = LawyerInfo.LawyerId;
+                        lblTitle.Text = "تعديل المحامي";
                     }
                     else
                     {
-                        MessageBox.Show("حدث خطأ اثناء اضافه العميل.", "اضافه عميل", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("حدث خطأ اثناء اضافه المحامي.", "اضافه محامي", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else if (_mode == enMode.UpdateMode)
                 {
-                    ClientInfo.TrackingChangesInfo.LastUpdatedBy = 1;
+                    LawyerInfo.TrackingChangesInfo.LastUpdatedBy = 1;
 
-                    if (ClientInfo.Save())
+                    if (LawyerInfo.SaveLawyer())
                     {
-                        MessageBox.Show("تم تعديل بيانات العميل بنجاح.", "تعديل عميل", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("تم تعديل بيانات المحامي بنجاح.", "تعديل محامي", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("حدث خطأ اثناء تعديل بيانات العميل.", "تعديل عميل", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("حدث خطأ اثناء تعديل بيانات المحامي.", "تعديل محامي", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                 }

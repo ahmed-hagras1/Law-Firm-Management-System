@@ -102,6 +102,10 @@ namespace LawFirmManagementSystem_Business
         {
             return SessionsDataAccess.GetAllSessions();
         }
+        public static DataTable GetAllActiveSessionsForSpecificLawyer(int lawyerId)
+        {
+            return SessionsDataAccess.GetAllActiveSessionsForSpecificLawyer(lawyerId);
+        }
         public static bool DeleteSession(int sessionId) => SessionsDataAccess.DeleteSession(sessionId);
 
         private bool _UpdateSession()

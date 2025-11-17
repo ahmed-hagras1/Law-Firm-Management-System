@@ -47,12 +47,15 @@ namespace LawFirmManagementSystem.Presentation
 
         private void frmShowClientInfo_Load(object sender, EventArgs e)
         {
-            _dtAllCasesForSpecificClient = Case.GetAllCasesForSpecificClient(_clientId);
-            _dtCases = _dtAllCasesForSpecificClient.DefaultView.ToTable(false, "CaseId", "CaseNumber", "Title", "ClientName",
-            "ClientStatus", "OpponentName", "OpponentStatus");
-            dgvClientCases.DataSource = _dtCases;
+            RefreshCasesList();
 
-            CasesColumnsFormatting();
+            if (_dtCases.Rows.Count > 0)
+            {
+
+                dgvClientCases.DataSource = _dtCases;
+                CasesColumnsFormatting();
+            }
+
             ctrlClientInfo1.LoadClientInfo(ClientId);
             
             

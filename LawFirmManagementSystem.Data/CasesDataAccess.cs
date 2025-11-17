@@ -86,7 +86,7 @@ namespace LawFirmManagementSystem.Data
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@clientId", clientId);
-                    connection.Open();
+                    // connection.Open();
                     using (SqlDataAdapter adapter = new SqlDataAdapter(command))
                     {
                         adapter.Fill(cases);

@@ -68,6 +68,29 @@ namespace LawFirmManagementSystem.Data
 
             return sessions;
         }
+        public static DataTable GetAllActiveSessionsForSpecificLawyer(int lawyerId)
+        {
+            DataTable sessions = new DataTable();
+            string query = "SELECT * FROM [dbo].[Sessions_View] Where LawyerId = @lawyerId And SessionStatus = 'فعاله';"; // Assumes this view exists
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@lawyerId", lawyerId);
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        // The .Fill() method opens/closes the connection automatically
+                        adapter.Fill(sessions);
+                    }
+                }
+            }
+            catch (SqlException) { return new DataTable(); }
+            catch (Exception) { return new DataTable(); }
+
+            return sessions;
+        }
         public static int AddSession(int caseId, DateTime date, int rollNumber, string court,
                                    int lawyerId, string requests, string decision,
                                    string notes, int createdBy)

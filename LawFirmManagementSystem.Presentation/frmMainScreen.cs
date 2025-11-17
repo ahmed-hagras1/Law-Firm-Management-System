@@ -1,4 +1,5 @@
 ﻿using LawFirmManagementSystem.Business;
+using LawFirmManagementSystem.Presentation.Lawyers;
 using LawFirmManagementSystem_Business;
 using System;
 using System.Collections.Generic;
@@ -802,10 +803,21 @@ namespace LawFirmManagementSystem.Presentation
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            frmAddUpdateClient frm = new frmAddUpdateClient();
-            frm.ShowDialog();
+            if (page == enPages.ClientsPage)
+            {
+                frmAddUpdateClient frm = new frmAddUpdateClient();
+                frm.ShowDialog();
 
-            RefreshClientsList();
+                RefreshClientsList();
+            }
+            else if (page == enPages.LawyersPage)
+            {
+                frmAddUpdateLawyer frm = new frmAddUpdateLawyer();
+                frm.ShowDialog();
+
+                RefreshLawyersList();
+            }
+
         }
 
         private void tsmiDeleteClient_Click(object sender, EventArgs e)
@@ -846,6 +858,57 @@ namespace LawFirmManagementSystem.Presentation
             {
                 frmShowClientInfo frm = new frmShowClientInfo(caseInfo.ClientId);
                 frm.ShowDialog();
+            }
+        }
+
+        private void tsmiShowLawyerInfo_Click(object sender, EventArgs e)
+        {
+            frmShowLawyerInfo frm = new frmShowLawyerInfo((int)dgvFormData.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+        }
+
+        private void tsmiAddLawyer_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateLawyer frm = new frmAddUpdateLawyer();
+            frm.ShowDialog();
+
+            RefreshLawyersList();
+        }
+
+        private void tsmiUpdateLawyer_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateLawyer frm = new frmAddUpdateLawyer((int)dgvFormData.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+            
+            RefreshLawyersList();
+        }
+
+        private void tsmiDeleteLawyer_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show(
+                       $"هل أنت متأكد أنك تريد حذف المحامي الذي اسمه: {dgvFormData.CurrentRow.Cells[1].Value} ؟",
+                       "تأكيد الحذف",
+                       MessageBoxButtons.YesNo,
+                       MessageBoxIcon.Question,
+                       MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                if (Lawyer.DeleteLawyer((int)dgvFormData.CurrentRow.Cells[0].Value))
+                {
+                    MessageBox.Show("تم حذف المحامي بنجاح.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Refresh the data.
+                    RefreshLawyersList();
+                    return;
+                }
+                else
+                {
+                    MessageBox.Show(
+                        "لم يتم حذف المحامي. ربما حدث خطأ.",
+                        "خطأ",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                    );
+                }
             }
         }
     }
