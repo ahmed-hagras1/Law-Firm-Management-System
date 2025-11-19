@@ -43,7 +43,9 @@
             this.tsmiAddSession = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAddDocument = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
+            this.tsmiAddCase = new System.Windows.Forms.ToolStripMenuItem();
             this.ctrlClientInfo1 = new LawFirmManagementSystem.Presentation.ctrlClientInfo();
+            this.tsmiAddInvoice = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientCases)).BeginInit();
             this.cmsCases.SuspendLayout();
             this.SuspendLayout();
@@ -110,13 +112,15 @@
             this.cmsCases.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmiShowCaseInfo,
             this.toolStripSeparator4,
+            this.tsmiAddCase,
             this.tsmiEditCase,
             this.tsmiDeleteCase,
             this.toolStripSeparator5,
             this.tsmiAddSession,
-            this.tsmiAddDocument});
+            this.tsmiAddDocument,
+            this.tsmiAddInvoice});
             this.cmsCases.Name = "cmsClients";
-            this.cmsCases.Size = new System.Drawing.Size(291, 224);
+            this.cmsCases.Size = new System.Drawing.Size(291, 296);
             // 
             // tsmiShowCaseInfo
             // 
@@ -125,6 +129,7 @@
             this.tsmiShowCaseInfo.Name = "tsmiShowCaseInfo";
             this.tsmiShowCaseInfo.Size = new System.Drawing.Size(290, 36);
             this.tsmiShowCaseInfo.Text = "عرض معلومات القضيه";
+            this.tsmiShowCaseInfo.Click += new System.EventHandler(this.tsmiShowCaseInfo_Click);
             // 
             // toolStripSeparator4
             // 
@@ -137,6 +142,7 @@
             this.tsmiEditCase.Name = "tsmiEditCase";
             this.tsmiEditCase.Size = new System.Drawing.Size(290, 36);
             this.tsmiEditCase.Text = "تعديل القضيه";
+            this.tsmiEditCase.Click += new System.EventHandler(this.tsmiEditCase_Click);
             // 
             // tsmiDeleteCase
             // 
@@ -144,6 +150,7 @@
             this.tsmiDeleteCase.Name = "tsmiDeleteCase";
             this.tsmiDeleteCase.Size = new System.Drawing.Size(290, 36);
             this.tsmiDeleteCase.Text = "ازاله القضيه";
+            this.tsmiDeleteCase.Click += new System.EventHandler(this.tsmiDeleteCase_Click);
             // 
             // toolStripSeparator5
             // 
@@ -176,12 +183,27 @@
             this.label2.Text = "القضايا الخاصه بالعميل";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // tsmiAddCase
+            // 
+            this.tsmiAddCase.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddCaseIcon;
+            this.tsmiAddCase.Name = "tsmiAddCase";
+            this.tsmiAddCase.Size = new System.Drawing.Size(290, 36);
+            this.tsmiAddCase.Text = "اضافه قضيه";
+            this.tsmiAddCase.Click += new System.EventHandler(this.tsmiAddCase_Click);
+            // 
             // ctrlClientInfo1
             // 
             this.ctrlClientInfo1.Location = new System.Drawing.Point(31, 62);
             this.ctrlClientInfo1.Name = "ctrlClientInfo1";
             this.ctrlClientInfo1.Size = new System.Drawing.Size(787, 500);
             this.ctrlClientInfo1.TabIndex = 29;
+            // 
+            // tsmiAddInvoice
+            // 
+            this.tsmiAddInvoice.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddInvoiceIcon;
+            this.tsmiAddInvoice.Name = "tsmiAddInvoice";
+            this.tsmiAddInvoice.Size = new System.Drawing.Size(290, 36);
+            this.tsmiAddInvoice.Text = "اضافه فاتوره";
             // 
             // frmShowClientInfo
             // 
@@ -215,5 +237,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem tsmiAddSession;
         private System.Windows.Forms.ToolStripMenuItem tsmiAddDocument;
+        private System.Windows.Forms.ToolStripMenuItem tsmiAddCase;
+        private System.Windows.Forms.ToolStripMenuItem tsmiAddInvoice;
     }
 }

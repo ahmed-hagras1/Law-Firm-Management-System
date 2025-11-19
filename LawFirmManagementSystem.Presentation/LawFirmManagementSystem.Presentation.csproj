@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cases\Controls\ctrlCaseInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cases\Controls\ctrlCaseInfo.Designer.cs">
+      <DependentUpon>ctrlCaseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cases\frmAddUpdateCase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cases\frmAddUpdateCase.Designer.cs">
+      <DependentUpon>frmAddUpdateCase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cases\frmShowCaseInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cases\frmShowCaseInfo.Designer.cs">
+      <DependentUpon>frmShowCaseInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cases\frmShowCaseInvoicesOrDocuments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cases\frmShowCaseInvoicesOrDocuments.Designer.cs">
+      <DependentUpon>frmShowCaseInvoicesOrDocuments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clients\Controls\ctrlClientInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,6 +126,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cases\Controls\ctrlCaseInfo.resx">
+      <DependentUpon>ctrlCaseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cases\frmAddUpdateCase.resx">
+      <DependentUpon>frmAddUpdateCase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cases\frmShowCaseInfo.resx">
+      <DependentUpon>frmShowCaseInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cases\frmShowCaseInvoicesOrDocuments.resx">
+      <DependentUpon>frmShowCaseInvoicesOrDocuments.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clients\Controls\ctrlClientInfo.resx">
       <DependentUpon>ctrlClientInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -253,6 +289,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Close 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CourtIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TitleIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StatusIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InvoicesIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DocumentsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InvoicesIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddDocument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenDocumentIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

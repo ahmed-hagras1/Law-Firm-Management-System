@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainScreen));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tsmiClients = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiLawyers = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,7 +57,6 @@
             this.tsmiDeleteClient = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiAddCase = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiAddInvoice = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsLawyers = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiShowLawyerInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
@@ -96,6 +95,7 @@
             this.tsmiDeleteUser = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.tsmiAddInvoiceForCase = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFormData)).BeginInit();
@@ -326,36 +326,36 @@
             this.dgvFormData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFormData.BackgroundColor = System.Drawing.Color.White;
             this.dgvFormData.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFormData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFormData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvFormData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFormData.ContextMenuStrip = this.cmsClients;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvFormData.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvFormData.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvFormData.Location = new System.Drawing.Point(2, 154);
             this.dgvFormData.MultiSelect = false;
             this.dgvFormData.Name = "dgvFormData";
             this.dgvFormData.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFormData.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFormData.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvFormData.RowHeadersWidth = 51;
             this.dgvFormData.RowTemplate.Height = 24;
             this.dgvFormData.Size = new System.Drawing.Size(973, 621);
@@ -372,10 +372,9 @@
             this.tsmiUpdateClient,
             this.tsmiDeleteClient,
             this.toolStripSeparator2,
-            this.tsmiAddCase,
-            this.tsmiAddInvoice});
+            this.tsmiAddCase});
             this.cmsClients.Name = "cmsClients";
-            this.cmsClients.Size = new System.Drawing.Size(288, 232);
+            this.cmsClients.Size = new System.Drawing.Size(288, 224);
             // 
             // tsmiShowClientDetails
             // 
@@ -426,13 +425,7 @@
             this.tsmiAddCase.Name = "tsmiAddCase";
             this.tsmiAddCase.Size = new System.Drawing.Size(287, 36);
             this.tsmiAddCase.Text = "اضافه قضيه";
-            // 
-            // tsmiAddInvoice
-            // 
-            this.tsmiAddInvoice.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddInvoiceIcon;
-            this.tsmiAddInvoice.Name = "tsmiAddInvoice";
-            this.tsmiAddInvoice.Size = new System.Drawing.Size(287, 36);
-            this.tsmiAddInvoice.Text = "اضافه فاتوره";
+            this.tsmiAddCase.Click += new System.EventHandler(this.tsmiAddCase_Click);
             // 
             // cmsLawyers
             // 
@@ -445,7 +438,7 @@
             this.tsmiUpdateLawyer,
             this.tsmiDeleteLawyer});
             this.cmsLawyers.Name = "cmsClients";
-            this.cmsLawyers.Size = new System.Drawing.Size(302, 182);
+            this.cmsLawyers.Size = new System.Drawing.Size(302, 154);
             // 
             // tsmiShowLawyerInfo
             // 
@@ -497,9 +490,10 @@
             this.tsmiDeleteCase,
             this.toolStripSeparator5,
             this.tsmiAddSession,
-            this.tsmiAddDocument});
+            this.tsmiAddDocument,
+            this.tsmiAddInvoiceForCase});
             this.cmsCases.Name = "cmsClients";
-            this.cmsCases.Size = new System.Drawing.Size(291, 232);
+            this.cmsCases.Size = new System.Drawing.Size(291, 268);
             // 
             // tsmiShowCaseInfo
             // 
@@ -508,6 +502,7 @@
             this.tsmiShowCaseInfo.Name = "tsmiShowCaseInfo";
             this.tsmiShowCaseInfo.Size = new System.Drawing.Size(290, 36);
             this.tsmiShowCaseInfo.Text = "عرض معلومات القضيه";
+            this.tsmiShowCaseInfo.Click += new System.EventHandler(this.tsmiShowCaseInfo_Click);
             // 
             // tsmiShowClientInfo
             // 
@@ -528,6 +523,7 @@
             this.tsmiEditCase.Name = "tsmiEditCase";
             this.tsmiEditCase.Size = new System.Drawing.Size(290, 36);
             this.tsmiEditCase.Text = "تعديل القضيه";
+            this.tsmiEditCase.Click += new System.EventHandler(this.tsmiEditCase_Click);
             // 
             // tsmiDeleteCase
             // 
@@ -535,6 +531,7 @@
             this.tsmiDeleteCase.Name = "tsmiDeleteCase";
             this.tsmiDeleteCase.Size = new System.Drawing.Size(290, 36);
             this.tsmiDeleteCase.Text = "ازاله القضيه";
+            this.tsmiDeleteCase.Click += new System.EventHandler(this.tsmiDeleteCase_Click);
             // 
             // toolStripSeparator5
             // 
@@ -745,6 +742,13 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // tsmiAddInvoiceForCase
+            // 
+            this.tsmiAddInvoiceForCase.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddInvoiceIcon;
+            this.tsmiAddInvoiceForCase.Name = "tsmiAddInvoiceForCase";
+            this.tsmiAddInvoiceForCase.Size = new System.Drawing.Size(290, 36);
+            this.tsmiAddInvoiceForCase.Text = "اضافه فاتوره";
+            // 
             // frmMainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -831,7 +835,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiEditSession;
         private System.Windows.Forms.ToolStripMenuItem tsmiDeleteSession;
         private System.Windows.Forms.ToolStripMenuItem tsmiAddDocument;
-        private System.Windows.Forms.ToolStripMenuItem tsmiAddInvoice;
         private System.Windows.Forms.ContextMenuStrip cmsInvoices;
         private System.Windows.Forms.ToolStripMenuItem tsmiShowInvoiceInfo;
         private System.Windows.Forms.ToolStripMenuItem tsmiShowCaseInfoForInvoices;
@@ -847,5 +850,6 @@
         private System.Windows.Forms.ToolStripMenuItem tsmiAddUser;
         private System.Windows.Forms.ToolStripMenuItem tsmiUpdateUser;
         private System.Windows.Forms.ToolStripMenuItem tsmiDeleteUser;
+        private System.Windows.Forms.ToolStripMenuItem tsmiAddInvoiceForCase;
     }
 }

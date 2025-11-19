@@ -45,6 +45,7 @@
     <Compile Include="CasesDataAccess.cs" />
     <Compile Include="ClientsDataAccess.cs" />
     <Compile Include="DataAccessSettings.cs" />
+    <Compile Include="DocumentsDataAccess.cs" />
     <Compile Include="InvoicesDataAccess.cs" />
     <Compile Include="LawyersDataAccess.cs" />
     <Compile Include="PeopleDataAccess.cs" />

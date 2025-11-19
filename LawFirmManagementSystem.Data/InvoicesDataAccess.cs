@@ -63,6 +63,29 @@ namespace LawFirmManagementSystem.Data
 
             return invoices;
         }
+        public static DataTable GetAllInvoicesForSpecificCase(int caseId)
+        {
+            DataTable invoices = new DataTable();
+            string query = "SELECT * FROM [dbo].[Invoices_View] Where CaseId = @caseId"; // Assumes this view exists
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@caseId", caseId);
+                    using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                    {
+                        // The .Fill() method opens/closes the connection automatically
+                        adapter.Fill(invoices);
+                    }
+                }
+            }
+            catch (SqlException) { return new DataTable(); }
+            catch (Exception) { return new DataTable(); }
+
+            return invoices;
+        }
         public static int AddInvoice(int caseId, decimal amount, string notes, int createdBy)
         {
             string storedProcedureName = "sp_AddInvoice";

@@ -74,6 +74,7 @@ namespace LawFirmManagementSystem_Business
         {
             return InvoicesDataAccess.GetAllInvoices();
         }
+        public static DataTable GetAllInvoicesForSpecificCase(int caseId) => InvoicesDataAccess.GetAllInvoicesForSpecificCase(caseId);
         public static bool DeleteInvoice(int invoiceId) => InvoicesDataAccess.DeleteInvoice(invoiceId);
 
         private bool _UpdateInvoice()

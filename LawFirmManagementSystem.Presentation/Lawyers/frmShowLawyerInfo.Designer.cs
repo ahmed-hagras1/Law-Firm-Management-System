@@ -34,13 +34,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.dgvActiveLawyerSessions = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.cmsSessions = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiShowSessionInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiShowCaseInfoForSession = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiEditSession = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDeleteSession = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             this.ctrlLawyerInfo1 = new LawFirmManagementSystem.Presentation.Lawyers.ctrlLawyerInfo();
             ((System.ComponentModel.ISupportInitialize)(this.dgvActiveLawyerSessions)).BeginInit();
             this.cmsSessions.SuspendLayout();
@@ -101,18 +101,6 @@
             this.dgvActiveLawyerSessions.Size = new System.Drawing.Size(800, 198);
             this.dgvActiveLawyerSessions.TabIndex = 30;
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(776, 50);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "معلومات المحامي";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // cmsSessions
             // 
             this.cmsSessions.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -124,7 +112,7 @@
             this.tsmiEditSession,
             this.tsmiDeleteSession});
             this.cmsSessions.Name = "cmsClients";
-            this.cmsSessions.Size = new System.Drawing.Size(291, 154);
+            this.cmsSessions.Size = new System.Drawing.Size(291, 182);
             // 
             // tsmiShowSessionInfo
             // 
@@ -133,6 +121,7 @@
             this.tsmiShowSessionInfo.Name = "tsmiShowSessionInfo";
             this.tsmiShowSessionInfo.Size = new System.Drawing.Size(290, 36);
             this.tsmiShowSessionInfo.Text = "عرض معلومات الجلسه";
+            this.tsmiShowSessionInfo.Click += new System.EventHandler(this.tsmiShowSessionInfo_Click);
             // 
             // tsmiShowCaseInfoForSession
             // 
@@ -140,6 +129,7 @@
             this.tsmiShowCaseInfoForSession.Name = "tsmiShowCaseInfoForSession";
             this.tsmiShowCaseInfoForSession.Size = new System.Drawing.Size(290, 36);
             this.tsmiShowCaseInfoForSession.Text = "عرض معلومات القضيه";
+            this.tsmiShowCaseInfoForSession.Click += new System.EventHandler(this.tsmiShowCaseInfoForSession_Click);
             // 
             // toolStripSeparator6
             // 
@@ -159,6 +149,18 @@
             this.tsmiDeleteSession.Name = "tsmiDeleteSession";
             this.tsmiDeleteSession.Size = new System.Drawing.Size(290, 36);
             this.tsmiDeleteSession.Text = "ازاله الجلسه";
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(776, 50);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "معلومات المحامي";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ctrlLawyerInfo1
             // 

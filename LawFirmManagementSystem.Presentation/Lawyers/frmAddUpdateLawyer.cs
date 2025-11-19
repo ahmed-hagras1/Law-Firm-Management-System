@@ -174,5 +174,16 @@ namespace LawFirmManagementSystem.Presentation.Lawyers
         {
             this.Close();
         }
+
+        private void txtPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Check if the key pressed is NOT a digit (0-9)
+            // AND Check if it is NOT a control character (like Backspace)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                // Block the character by setting e.Handled to true
+                e.Handled = true;
+            }
+        }
     }
 }

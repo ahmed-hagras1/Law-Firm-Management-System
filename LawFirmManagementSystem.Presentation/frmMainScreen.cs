@@ -1,4 +1,5 @@
 ﻿using LawFirmManagementSystem.Business;
+using LawFirmManagementSystem.Presentation.Cases;
 using LawFirmManagementSystem.Presentation.Lawyers;
 using LawFirmManagementSystem_Business;
 using System;
@@ -21,35 +22,28 @@ namespace LawFirmManagementSystem.Presentation
         private string FilterColumn = string.Empty;
 
         // Clients list.
-        private static DataTable _dtAllClients = Client.GetAllClients();
-        private DataTable _dtClients = _dtAllClients.DefaultView.ToTable(false, "ClientId", "FullName", "Phone", "Address", "JoinDate",
-            "CreatedBy", "UpdatedBy", "Notes");
+        private static DataTable _dtAllClients;
+        private DataTable _dtClients;
 
         // Lawyer List.
-        private static DataTable _dtAllLawyers = Lawyer.GetAllLawyers();
-        private DataTable _dtLawyers = _dtAllLawyers.DefaultView.ToTable(false, "LawyerId", "FullName", "Phone", "Address", "JoinDate",
-            "CreatedBy", "UpdatedBy", "Notes");
+        private static DataTable _dtAllLawyers;
+        private DataTable _dtLawyers;
 
         // Cases List.
-        private static DataTable _dtAllCases = Case.GetAllCases();
-        private DataTable _dtCases = _dtAllCases.DefaultView.ToTable(false, "CaseId", "CaseNumber", "Title", "Court", "ClientName",
-            "ClientStatus", "ClientAddress", "ClientPhone", "OpponentName", "OpponentStatus", "OpponentAddress", "OpponentPhone",
-            "CreatedBy", "LastUpdatedBy", "Notes");
+        private static DataTable _dtAllCases;
+        private DataTable _dtCases;
 
         // Sessions List.
-        private static DataTable _dtAllSessions = Session.GetAllSessions();
-        private DataTable _dtSessions = _dtAllSessions.DefaultView.ToTable(false, "SessionId", "CaseNumber", "Title", "RollNumber", "Date",
-            "Court", "ClientName", "LawyerName", "Requests", "Decision", "CreatedBy", "LastUpdatedBy", "SessionStatus", "Notes");
+        private static DataTable _dtAllSessions;
+        private DataTable _dtSessions;
 
         // Invoices List.
-        private static DataTable _dtAllInvoices = Invoice.GetAllInvoices();
-        private DataTable _dtInvoices = _dtAllInvoices.DefaultView.ToTable(false, "InvoiceId", "ClientName", "CaseNumber",
-            "Title", "CreatedBy", "IssueDate", "LastUpdatedBy", "TotalAmount", "AmountPaid", "AmountDue", "Notes");
+        private static DataTable _dtAllInvoices;
+        private DataTable _dtInvoices;
 
         // Users List.
-        private static DataTable _dtAllUsers = User.GetAllUsers();
-        private DataTable _dtUsers = _dtAllUsers.DefaultView.ToTable(false, "UserId", "Username", "UserStatus",
-            "JoinDate", "CreatedBy", "LastUpdatedBy", "Notes");
+        private static DataTable _dtAllUsers;
+        private DataTable _dtUsers;
         private string GetFilterColumn()
         {
             txtFilter.Text = string.Empty;
@@ -379,70 +373,55 @@ namespace LawFirmManagementSystem.Presentation
         private void RefreshClientsList()
         {
             _dtAllClients = Client.GetAllClients();
-            _dtClients = _dtAllClients.DefaultView.ToTable(false, "ClientId", "FullName", "Phone", "Address", "JoinDate",
-            "CreatedBy", "UpdatedBy", "Notes");
+            _dtClients = _dtAllClients.DefaultView.ToTable(false, "FullName", "Phone", "Address", "JoinDate",
+             "CreatedBy", "UpdatedBy", "Notes");
 
-            dgvFormData.DataSource = _dtClients;
-            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            HandelClientsPage();
         }
         private void RefreshLawyersList()
         {
             _dtAllLawyers = Lawyer.GetAllLawyers();
-            _dtLawyers = _dtAllLawyers.DefaultView.ToTable(false, "LawyerId", "FullName", "Phone", "Address", "JoinDate",
+            _dtLawyers = _dtAllLawyers.DefaultView.ToTable(false, "FullName", "Phone", "Address", "JoinDate",
              "CreatedBy", "UpdatedBy", "Notes");
 
-            dgvFormData.DataSource = _dtLawyers;
-            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            HandelLawyersPage();
         }
         private void RefreshCasesList()
         {
             _dtAllCases = Case.GetAllCases();
-            _dtCases = _dtAllCases.DefaultView.ToTable(false, "CaseId", "CaseNumber", "Title", "Court", "ClientName",
+            _dtCases = _dtAllCases.DefaultView.ToTable(false, "CaseNumber", "Title", "Court", "ClientName",
             "ClientStatus", "ClientAddress", "ClientPhone", "OpponentName", "OpponentStatus", "OpponentAddress", "OpponentPhone",
             "CreatedBy", "LastUpdatedBy", "Notes");
 
-            dgvFormData.DataSource = _dtCases;
-            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            HandelCasesPage();
         }
         private void RefreshSessionsList()
         {
             _dtAllSessions = Session.GetAllSessions();
-            _dtSessions = _dtAllSessions.DefaultView.ToTable(false, "SessionId", "CaseNumber", "Title", "RollNumber", "Date",
+            _dtSessions = _dtAllSessions.DefaultView.ToTable(false, "CaseNumber", "Title", "RollNumber", "Date",
             "Court", "ClientName", "LawyerName", "Requests", "Decision", "CreatedBy", "LastUpdatedBy", "SessionStatus", "Notes");
 
-            dgvFormData.DataSource = _dtSessions;
-            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            HandelSessionsPage();
         }
         private void RefreshInvoicesList()
         {
             _dtAllInvoices = Invoice.GetAllInvoices();
-            _dtInvoices = _dtAllInvoices.DefaultView.ToTable(false, "InvoiceId", "ClientName", "CaseNumber",
+            _dtInvoices = _dtAllInvoices.DefaultView.ToTable(false, "ClientName", "CaseNumber",
             "Title", "CreatedBy", "IssueDate", "LastUpdatedBy", "TotalAmount", "AmountPaid", "AmountDue", "Notes");
 
-            dgvFormData.DataSource = _dtInvoices;
-            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            HandelInvoicesPage();
         }
         private void RefreshUsersList()
         {
             _dtAllUsers = User.GetAllUsers();
-            _dtUsers = _dtAllUsers.DefaultView.ToTable(false, "UserId", "Username", "UserStatus",
+            _dtUsers = _dtAllUsers.DefaultView.ToTable(false, "Username", "UserStatus",
             "JoinDate", "CreatedBy", "LastUpdatedBy", "Notes");
 
-            dgvFormData.DataSource = _dtUsers;
-            lblDataCount.Text = $"{dgvFormData.Rows.Count.ToString()}:";
+            HandelUsersPage();
         }
         private void ClientsLawyersColumnsFormatting()
         {
-            if (page == enPages.ClientsPage)
-            {
-
-                dgvFormData.Columns["ClientId"].HeaderText = "رقم العميل";
-            }
-            else if (page == enPages.LawyersPage)
-            {
-                dgvFormData.Columns["LawyerId"].HeaderText = "رقم المحامي";
-            }
-                dgvFormData.Columns["FullName"].HeaderText = "الاسم الكامل";
+            dgvFormData.Columns["FullName"].HeaderText = "الاسم الكامل";
             dgvFormData.Columns["Phone"].HeaderText = "رقم الهاتف";
             dgvFormData.Columns["Address"].HeaderText = "العنوان";
             dgvFormData.Columns["JoinDate"].HeaderText = "تاريخ الانضمام";
@@ -467,10 +446,24 @@ namespace LawFirmManagementSystem.Presentation
         private void HandelClientsPage()
         {
             page = enPages.ClientsPage;
-            dgvFormData.DataSource = _dtClients;
-            ClientsLawyersColumnsFormatting();
-            ClientsLawyersFilters();
-            dgvFormData.ContextMenuStrip = cmsClients;
+
+            _dtAllClients = Client.GetAllClients();
+            _dtClients = _dtAllClients.DefaultView.ToTable(false, "FullName", "Phone", "Address", "JoinDate",
+             "CreatedBy", "UpdatedBy", "Notes");
+
+            if (_dtClients.Rows.Count > 0)
+            {
+                dgvFormData.DataSource = _dtClients;
+                ClientsLawyersColumnsFormatting();
+                ClientsLawyersFilters();
+            }
+            else
+            {
+                // Reset if no data,
+                dgvFormData.DataSource = null;
+                cbFilterBy.Items.Clear();
+            }
+                dgvFormData.ContextMenuStrip = cmsClients;
             lblTitle.Text = "العملاء";
             btnAdd.Visible = true;
             btnAdd.Text = "اضافه عميل";
@@ -484,10 +477,23 @@ namespace LawFirmManagementSystem.Presentation
         private void HandelLawyersPage()
         {
             page = enPages.LawyersPage;
-            dgvFormData.DataSource = _dtLawyers;
-            ClientsLawyersColumnsFormatting();
-            ClientsLawyersFilters();
-            dgvFormData.ContextMenuStrip = cmsLawyers;
+            _dtAllLawyers = Lawyer.GetAllLawyers();
+            _dtLawyers = _dtAllLawyers.DefaultView.ToTable(false, "FullName", "Phone", "Address", "JoinDate",
+             "CreatedBy", "UpdatedBy", "Notes");
+
+            if (_dtLawyers.Rows.Count > 0 )
+            {
+                dgvFormData.DataSource = _dtLawyers;
+                ClientsLawyersColumnsFormatting();
+                ClientsLawyersFilters();
+            }
+            else
+            {
+                // Reset if no data.
+                dgvFormData.DataSource = null;
+                cbFilterBy.Items.Clear();
+            }
+                dgvFormData.ContextMenuStrip = cmsLawyers;
             lblTitle.Text = "المحامين";
             btnAdd.Visible = true;
             btnAdd.Text = "اضافه محامي";
@@ -500,7 +506,6 @@ namespace LawFirmManagementSystem.Presentation
         }
         private void CasesColumnsFormatting()
         {
-            dgvFormData.Columns["CaseId"].HeaderText = "ترتيب القضيه";
             dgvFormData.Columns["CaseNumber"].HeaderText = "رقم القضيه";
             dgvFormData.Columns["Title"].HeaderText = "وصف القضيه";
             dgvFormData.Columns["Court"].HeaderText = "المحكمه";
@@ -541,10 +546,25 @@ namespace LawFirmManagementSystem.Presentation
         private void HandelCasesPage()
         {
             page = enPages.CasesPage;
-            dgvFormData.DataSource = _dtCases;
-            CasesColumnsFormatting();
-            CasesFilters();
-            dgvFormData.ContextMenuStrip = cmsCases;
+            _dtAllCases = Case.GetAllCases();
+            _dtCases = _dtAllCases.DefaultView.ToTable(false, "CaseNumber", "Title", "Court", "ClientName",
+            "ClientStatus", "ClientAddress", "ClientPhone", "OpponentName", "OpponentStatus", "OpponentAddress", "OpponentPhone",
+            "CreatedBy", "LastUpdatedBy", "Notes");
+
+            if (_dtCases.Rows.Count > 0 )
+            {
+                dgvFormData.DataSource = _dtCases;
+                CasesColumnsFormatting();
+                CasesFilters();
+            }
+            else
+            {
+                // Reset if no data.
+                dgvFormData.DataSource = null;
+                cbFilterBy.Items.Clear();
+            }
+
+                dgvFormData.ContextMenuStrip = cmsCases;
             lblTitle.Text = "القضايا";
             btnAdd.Visible = false;
             cbFilter.Visible = false;
@@ -556,7 +576,6 @@ namespace LawFirmManagementSystem.Presentation
         }
         private void SessionsColumnsFormatting()
         {
-            dgvFormData.Columns["SessionId"].HeaderText = "ترتيب الجلسه";
             dgvFormData.Columns["CaseNumber"].HeaderText = "رقم القضيه";
             dgvFormData.Columns["Title"].HeaderText = "وصف الجلسه";
             dgvFormData.Columns["RollNumber"].HeaderText = "رقم الجلسه";
@@ -597,10 +616,24 @@ namespace LawFirmManagementSystem.Presentation
         private void HandelSessionsPage()
         {
             page = enPages.SessionsPage;
-            dgvFormData.DataSource = _dtSessions;
-            SessionsColumnsFormatting();
-            SessionsFilters();
-            dgvFormData.ContextMenuStrip = cmsSessions;
+            _dtAllSessions = Session.GetAllSessions();
+            _dtSessions = _dtAllSessions.DefaultView.ToTable(false, "CaseNumber", "Title", "RollNumber", "Date",
+            "Court", "ClientName", "LawyerName", "Requests", "Decision", "CreatedBy", "LastUpdatedBy", "SessionStatus", "Notes");
+
+            if (_dtSessions.Rows.Count > 0 )
+            {
+                dgvFormData.DataSource = _dtSessions;
+                SessionsColumnsFormatting();
+                SessionsFilters();
+            }
+            else
+            {
+                // Reset if no data.
+                dgvFormData.DataSource = null;
+                cbFilterBy.Items.Clear();
+            }
+
+                dgvFormData.ContextMenuStrip = cmsSessions;
             lblTitle.Text = "الجلسات";
             btnAdd.Visible = false;
             cbFilter.Visible = false;
@@ -610,7 +643,6 @@ namespace LawFirmManagementSystem.Presentation
         }
         private void InvoicesColumnsFormatting()
         {
-            dgvFormData.Columns["InvoiceId"].HeaderText = "ترتيب الفاتوره";
             dgvFormData.Columns["ClientName"].HeaderText = "اسم العميل";
             dgvFormData.Columns["CaseNumber"].HeaderText = "رقم القضيه";
             dgvFormData.Columns["Title"].HeaderText = "وصف القضيه";
@@ -641,9 +673,23 @@ namespace LawFirmManagementSystem.Presentation
         private void HandelInvoicesPage()
         {
             page = enPages.InvoicesPage;
-            dgvFormData.DataSource = _dtInvoices;
-            InvoicesColumnsFormatting();
-            InvoicesFilters();
+            _dtAllInvoices = Invoice.GetAllInvoices();
+            _dtInvoices = _dtAllInvoices.DefaultView.ToTable(false, "ClientName", "CaseNumber",
+            "Title", "CreatedBy", "IssueDate", "LastUpdatedBy", "TotalAmount", "AmountPaid", "AmountDue", "Notes");
+
+            if (_dtInvoices.Rows.Count > 0 )
+            {
+                dgvFormData.DataSource = _dtInvoices;
+                InvoicesColumnsFormatting();
+                InvoicesFilters();
+            }
+            else
+            {
+                // Reset if no data.
+                dgvFormData.DataSource = null;
+                cbFilterBy.Items.Clear();
+            }
+
             dgvFormData.ContextMenuStrip = cmsInvoices;
             lblTitle.Text = "الفواتير";
             btnAdd.Visible = false;
@@ -655,7 +701,6 @@ namespace LawFirmManagementSystem.Presentation
         }
         private void UsersColumnsFormatting()
         {
-            dgvFormData.Columns["UserId"].HeaderText = "رقم المستخدم";
             dgvFormData.Columns["Username"].HeaderText = "اسم المستخدم";
             dgvFormData.Columns["UserStatus"].HeaderText = "حاله المستخدم";
             dgvFormData.Columns["JoinDate"].HeaderText = "تاريخ الانضمام";
@@ -678,10 +723,24 @@ namespace LawFirmManagementSystem.Presentation
         private void HandelUsersPage()
         {
             page = enPages.UsersPage;
-            dgvFormData.DataSource = _dtUsers;
-            UsersColumnsFormatting();
-            UsersFilters();
-            dgvFormData.ContextMenuStrip = cmsUsers;
+            _dtAllUsers = User.GetAllUsers();
+            _dtUsers = _dtAllUsers.DefaultView.ToTable(false, "Username", "UserStatus",
+            "JoinDate", "CreatedBy", "LastUpdatedBy", "Notes");
+
+            if (_dtUsers.Rows.Count > 0 )
+            {
+                dgvFormData.DataSource = _dtUsers;
+                UsersColumnsFormatting();
+                UsersFilters();
+            }
+            else
+            {
+                // Reset if no data.
+                dgvFormData.DataSource = null;
+                cbFilterBy.Items.Clear();
+            }
+
+                dgvFormData.ContextMenuStrip = cmsUsers;
             lblTitle.Text = "المستخدمين";
             btnAdd.Visible = true;
             btnAdd.Text = "اضافه مستخدم";
@@ -781,8 +840,16 @@ namespace LawFirmManagementSystem.Presentation
 
         private void tsmiShowClientDetails_Click(object sender, EventArgs e)
         {
-            frmShowClientInfo frm = new frmShowClientInfo((int)dgvFormData.CurrentRow.Cells[0].Value);
-            frm.ShowDialog();
+            if (dgvFormData.Rows.Count > 0 )
+            {
+                // Get clientId.
+                int clientId = _dtAllClients.Rows[dgvFormData.CurrentRow.Index]["ClientId"] != DBNull.Value ?
+                    (int)_dtAllClients.Rows[dgvFormData.CurrentRow.Index]["ClientId"] : 0;
+
+                frmShowClientInfo frm = new frmShowClientInfo(clientId);
+                frm.ShowDialog();
+            }
+
         }
 
         private void tsmiAddNewClient_Click(object sender, EventArgs e)
@@ -790,15 +857,23 @@ namespace LawFirmManagementSystem.Presentation
             frmAddUpdateClient frm = new frmAddUpdateClient();
             frm.ShowDialog();
 
-            RefreshClientsList();
+            HandelClientsPage();
         }
 
         private void tsmiUpdateClient_Click(object sender, EventArgs e)
         {
-            frmAddUpdateClient frm = new frmAddUpdateClient((int)dgvFormData.CurrentRow.Cells[0].Value);
-            frm.ShowDialog();
+            if (dgvFormData.Rows.Count > 0 )
+            {
+                // Get clientId.
+                int clientId = _dtAllClients.Rows[dgvFormData.CurrentRow.Index]["ClientId"] != DBNull.Value ?
+                    (int)_dtAllClients.Rows[dgvFormData.CurrentRow.Index]["ClientId"] : 0;
 
-            RefreshClientsList();
+                frmAddUpdateClient frm = new frmAddUpdateClient(clientId);
+                frm.ShowDialog();
+
+                HandelClientsPage();
+            }
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -808,63 +883,85 @@ namespace LawFirmManagementSystem.Presentation
                 frmAddUpdateClient frm = new frmAddUpdateClient();
                 frm.ShowDialog();
 
-                RefreshClientsList();
+                HandelClientsPage();
             }
             else if (page == enPages.LawyersPage)
             {
                 frmAddUpdateLawyer frm = new frmAddUpdateLawyer();
                 frm.ShowDialog();
 
-                RefreshLawyersList();
+                HandelLawyersPage();
             }
 
         }
 
         private void tsmiDeleteClient_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show(
-                       $"هل أنت متأكد أنك تريد حذف العميل الذي اسمه: {dgvFormData.CurrentRow.Cells[1].Value} ؟",
+            if (dgvFormData.Rows.Count > 0)
+            {
+                if (MessageBox.Show(
+                       $"هل أنت متأكد أنك تريد حذف العميل الذي اسمه: {dgvFormData.CurrentRow.Cells[0].Value} ؟",
                        "تأكيد الحذف",
                        MessageBoxButtons.YesNo,
                        MessageBoxIcon.Question,
                        MessageBoxDefaultButton.Button2) == DialogResult.Yes)
-            {
-                if (Client.DeleteClient((int)dgvFormData.CurrentRow.Cells[0].Value))
                 {
-                    MessageBox.Show("تم حذف العميل بنجاح.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Get clientId.
+                    int clientId = _dtAllClients.Rows[dgvFormData.CurrentRow.Index]["ClientId"] != DBNull.Value ?
+                        (int)_dtAllClients.Rows[dgvFormData.CurrentRow.Index]["ClientId"] : 0;
 
-                    // Refresh the data.
-                    RefreshClientsList();
-                    return;
-                }
-                else
-                {
-                    MessageBox.Show(
-                        "لم يتم حذف العميل. ربما حدث خطأ.",
-                        "خطأ",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error
-                    );
+                    if (Client.DeleteClient(clientId))
+                    {
+                        MessageBox.Show("تم حذف العميل بنجاح.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        // Refresh the data.
+                        HandelClientsPage();
+                        return;
+                    }
+                    else
+                    {
+                        MessageBox.Show(
+                            "لم يتم حذف العميل. ربما حدث خطأ.",
+                            "خطأ",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                        );
+                    }
                 }
             }
            
         }
-
+        // Show client info from cases page.
         private void tsmiShowClientInfo_Click(object sender, EventArgs e)
         {
-            Case caseInfo = Case.GetCase((int)dgvFormData.CurrentRow.Cells[0].Value);
-
-            if (caseInfo != null)
+            if (dgvFormData.Rows.Count > 0)
             {
-                frmShowClientInfo frm = new frmShowClientInfo(caseInfo.ClientId);
-                frm.ShowDialog();
+
+                // Get caseId.
+                int caseId = _dtAllCases.Rows[dgvFormData.CurrentRow.Index]["CaseId"] != DBNull.Value ?
+                    (int)_dtAllCases.Rows[dgvFormData.CurrentRow.Index]["CaseId"] : 0;
+                
+                Case caseInfo = Case.GetCase(caseId);
+
+                if (caseInfo != null)
+                {
+                    frmShowClientInfo frm = new frmShowClientInfo(caseInfo.ClientId);
+                    frm.ShowDialog();
+                }
             }
         }
 
         private void tsmiShowLawyerInfo_Click(object sender, EventArgs e)
         {
-            frmShowLawyerInfo frm = new frmShowLawyerInfo((int)dgvFormData.CurrentRow.Cells[0].Value);
-            frm.ShowDialog();
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get lawyerId.
+                int lawyerId = _dtAllLawyers.Rows[dgvFormData.CurrentRow.Index]["LawyerId"] != DBNull.Value ?
+                    (int)_dtAllLawyers.Rows[dgvFormData.CurrentRow.Index]["LawyerId"] : 0;
+
+                frmShowLawyerInfo frm = new frmShowLawyerInfo(lawyerId);
+                frm.ShowDialog();
+            }
         }
 
         private void tsmiAddLawyer_Click(object sender, EventArgs e)
@@ -872,44 +969,140 @@ namespace LawFirmManagementSystem.Presentation
             frmAddUpdateLawyer frm = new frmAddUpdateLawyer();
             frm.ShowDialog();
 
-            RefreshLawyersList();
+            HandelLawyersPage();
         }
 
         private void tsmiUpdateLawyer_Click(object sender, EventArgs e)
         {
-            frmAddUpdateLawyer frm = new frmAddUpdateLawyer((int)dgvFormData.CurrentRow.Cells[0].Value);
-            frm.ShowDialog();
-            
-            RefreshLawyersList();
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get lawyerId.
+                int lawyerId = _dtAllLawyers.Rows[dgvFormData.CurrentRow.Index]["LawyerId"] != DBNull.Value ?
+                    (int)_dtAllLawyers.Rows[dgvFormData.CurrentRow.Index]["LawyerId"] : 0;
+
+                frmAddUpdateLawyer frm = new frmAddUpdateLawyer(lawyerId);
+                frm.ShowDialog();
+
+                HandelLawyersPage();
+            }
         }
 
         private void tsmiDeleteLawyer_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show(
-                       $"هل أنت متأكد أنك تريد حذف المحامي الذي اسمه: {dgvFormData.CurrentRow.Cells[1].Value} ؟",
-                       "تأكيد الحذف",
-                       MessageBoxButtons.YesNo,
-                       MessageBoxIcon.Question,
-                       MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            if (dgvFormData.Rows.Count > 0)
             {
-                if (Lawyer.DeleteLawyer((int)dgvFormData.CurrentRow.Cells[0].Value))
+                if (MessageBox.Show(
+                           $"هل أنت متأكد أنك تريد حذف المحامي الذي اسمه: {dgvFormData.CurrentRow.Cells[0].Value} ؟",
+                           "تأكيد الحذف",
+                           MessageBoxButtons.YesNo,
+                           MessageBoxIcon.Question,
+                           MessageBoxDefaultButton.Button2) == DialogResult.Yes)
                 {
-                    MessageBox.Show("تم حذف المحامي بنجاح.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // Refresh the data.
-                    RefreshLawyersList();
-                    return;
-                }
-                else
-                {
-                    MessageBox.Show(
-                        "لم يتم حذف المحامي. ربما حدث خطأ.",
-                        "خطأ",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error
-                    );
+                    // Get lawyerId.
+                    int lawyerId = _dtAllLawyers.Rows[dgvFormData.CurrentRow.Index]["LawyerId"] != DBNull.Value ?
+                        (int)_dtAllLawyers.Rows[dgvFormData.CurrentRow.Index]["LawyerId"] : 0;
+
+                    if (Lawyer.DeleteLawyer(lawyerId))
+                    {
+                        MessageBox.Show("تم حذف المحامي بنجاح.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        // Refresh the data.
+                        HandelLawyersPage();
+                        return;
+                    }
+                    else
+                    {
+                        MessageBox.Show(
+                            "لم يتم حذف المحامي. ربما حدث خطأ.",
+                            "خطأ",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                        );
+                    }
                 }
             }
+        }
+
+        private void tsmiShowCaseInfo_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get caseId.
+                int caseId = _dtAllCases.Rows[dgvFormData.CurrentRow.Index]["CaseId"] != DBNull.Value ?
+                    (int)_dtAllCases.Rows[dgvFormData.CurrentRow.Index]["CaseId"] : 0;
+
+                frmShowCaseInfo frm = new frmShowCaseInfo(caseId);
+                frm.ShowDialog();
+            }
+        }
+
+        private void tsmiEditCase_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get caseId.
+                int caseId = _dtAllCases.Rows[dgvFormData.CurrentRow.Index]["CaseId"] != DBNull.Value ?
+                    (int)_dtAllCases.Rows[dgvFormData.CurrentRow.Index]["CaseId"] : 0;
+
+                frmAddUpdateCase frm = new frmAddUpdateCase(caseId, frmAddUpdateCase.enMode.UpdateExisting);
+                frm.ShowDialog();
+            }
+        }
+
+        private void tsmiAddCase_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get clientId.
+                int clientId = _dtAllClients.Rows[dgvFormData.CurrentRow.Index]["ClientId"] != DBNull.Value ?
+                    (int)_dtAllClients.Rows[dgvFormData.CurrentRow.Index]["ClientId"] : 0;
+
+                frmAddUpdateCase frm = new frmAddUpdateCase(clientId, frmAddUpdateCase.enMode.AddNew);
+                frm.ShowDialog();
+            }
+        }
+
+        private void tsmiDeleteCase_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // 1. Get the Case ID and Title for the confirmation message
+                // Assuming 'CaseId' is hidden in the grid and 'Title' is visible in column 1 (or adjust index as needed)
+                // Using column names is safer than indexes.
+                // Get caseId.
+                int caseId = _dtAllCases.Rows[dgvFormData.CurrentRow.Index]["CaseId"] != DBNull.Value ?
+                    (int)_dtAllCases.Rows[dgvFormData.CurrentRow.Index]["CaseId"] : 0;
+                string caseTitle = dgvFormData.CurrentRow.Cells[1].Value.ToString();
+
+                // 2. Show Confirmation Message
+                if (MessageBox.Show(
+                            $"هل أنت متأكد أنك تريد حذف القضية بعنوان: {caseTitle} ؟",
+                            "تأكيد الحذف",
+                            MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Question,
+                            MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                {
+                    // 3. Call the Business Layer to delete
+                    if (Case.DeleteCase(caseId))
+                    {
+                        MessageBox.Show("تم حذف القضية بنجاح.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        // 4. Refresh the data grid
+                        HandelCasesPage();
+                    }
+                    else
+                    {
+                        MessageBox.Show(
+                            "لم يتم حذف القضية. ربما حدث خطأ أو أن القضية مرتبطة ببيانات أخرى (مثل الجلسات أو المستندات).",
+                            "خطأ",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                        );
+                    }
+                }
+            }
+
         }
     }
 }

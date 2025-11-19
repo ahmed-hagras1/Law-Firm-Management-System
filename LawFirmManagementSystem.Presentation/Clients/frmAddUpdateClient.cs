@@ -44,7 +44,7 @@ namespace LawFirmManagementSystem.Presentation
             _mode = enMode.AddNewMode;
 
         }
-        public void _LoadData()
+        private void _LoadData()
         {
             txtName.Text = _clientInfo.PersonInfo.FullName;
             txtPhone.Text = _clientInfo.PersonInfo.Phone;
@@ -173,6 +173,17 @@ namespace LawFirmManagementSystem.Presentation
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtPhone_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Check if the key pressed is NOT a digit (0-9)
+            // AND Check if it is NOT a control character (like Backspace)
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                // Block the character by setting e.Handled to true
+                e.Handled = true;
+            }
         }
     }
 }

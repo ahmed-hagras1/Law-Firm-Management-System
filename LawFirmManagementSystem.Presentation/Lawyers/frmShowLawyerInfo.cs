@@ -1,4 +1,5 @@
-﻿using LawFirmManagementSystem_Business;
+﻿using LawFirmManagementSystem.Presentation.Cases;
+using LawFirmManagementSystem_Business;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,6 +63,25 @@ namespace LawFirmManagementSystem.Presentation.Lawyers
             }
 
             ctrlLawyerInfo1.LoadLawyerInfo(_lawyerId);
+        }
+
+        private void tsmiShowSessionInfo_Click(object sender, EventArgs e)
+        {
+            int number = dgvActiveLawyerSessions.CurrentRow.Index;
+            int sessionId = (int)_dtAllActiveSessionsForSpecificLawyer.Rows[number]["SessionId"];
+        }
+
+        private void tsmiShowCaseInfoForSession_Click(object sender, EventArgs e)
+        {
+            if (dgvActiveLawyerSessions.Rows.Count > 0)
+            {
+                // Get caseId.
+                int caseId = _dtAllActiveSessionsForSpecificLawyer.Rows[dgvActiveLawyerSessions.CurrentRow.Index]["CaseId"] != DBNull.Value ?
+                    (int)_dtAllActiveSessionsForSpecificLawyer.Rows[dgvActiveLawyerSessions.CurrentRow.Index]["CaseId"] : 0;
+
+                frmShowCaseInfo frm = new frmShowCaseInfo(caseId);
+                frm.ShowDialog();
+            }
         }
     }
 }
