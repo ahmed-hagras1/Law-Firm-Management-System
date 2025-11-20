@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainScreen));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tsmiClients = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiLawyers = new System.Windows.Forms.ToolStripMenuItem();
@@ -72,6 +72,7 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiAddSession = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAddDocument = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiAddInvoiceForCase = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsSessions = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiShowSessionInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiShowCaseInfoForSession = new System.Windows.Forms.ToolStripMenuItem();
@@ -95,7 +96,6 @@
             this.tsmiDeleteUser = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
-            this.tsmiAddInvoiceForCase = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFormData)).BeginInit();
@@ -246,7 +246,7 @@
             this.cbFilterBy.FormattingEnabled = true;
             this.cbFilterBy.Location = new System.Drawing.Point(440, 88);
             this.cbFilterBy.Name = "cbFilterBy";
-            this.cbFilterBy.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.cbFilterBy.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.cbFilterBy.Size = new System.Drawing.Size(320, 33);
             this.cbFilterBy.TabIndex = 21;
             this.cbFilterBy.SelectedIndexChanged += new System.EventHandler(this.cbFilterBy_SelectedIndexChanged);
@@ -271,6 +271,7 @@
             this.txtFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFilter.Location = new System.Drawing.Point(96, 24);
             this.txtFilter.Name = "txtFilter";
+            this.txtFilter.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtFilter.Size = new System.Drawing.Size(320, 30);
             this.txtFilter.TabIndex = 22;
             this.txtFilter.Visible = false;
@@ -299,6 +300,7 @@
             this.dtpFilter.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFilter.Location = new System.Drawing.Point(86, 21);
             this.dtpFilter.Name = "dtpFilter";
+            this.dtpFilter.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dtpFilter.ShowUpDown = true;
             this.dtpFilter.Size = new System.Drawing.Size(320, 30);
             this.dtpFilter.TabIndex = 27;
@@ -326,36 +328,36 @@
             this.dgvFormData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFormData.BackgroundColor = System.Drawing.Color.White;
             this.dgvFormData.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFormData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFormData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvFormData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFormData.ContextMenuStrip = this.cmsClients;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvFormData.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvFormData.DefaultCellStyle = dataGridViewCellStyle5;
             this.dgvFormData.Location = new System.Drawing.Point(2, 154);
             this.dgvFormData.MultiSelect = false;
             this.dgvFormData.Name = "dgvFormData";
             this.dgvFormData.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFormData.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFormData.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvFormData.RowHeadersWidth = 51;
             this.dgvFormData.RowTemplate.Height = 24;
             this.dgvFormData.Size = new System.Drawing.Size(973, 621);
@@ -374,7 +376,7 @@
             this.toolStripSeparator2,
             this.tsmiAddCase});
             this.cmsClients.Name = "cmsClients";
-            this.cmsClients.Size = new System.Drawing.Size(288, 224);
+            this.cmsClients.Size = new System.Drawing.Size(288, 196);
             // 
             // tsmiShowClientDetails
             // 
@@ -544,6 +546,7 @@
             this.tsmiAddSession.Name = "tsmiAddSession";
             this.tsmiAddSession.Size = new System.Drawing.Size(290, 36);
             this.tsmiAddSession.Text = "اضافه جلسه";
+            this.tsmiAddSession.Click += new System.EventHandler(this.tsmiAddSession_Click);
             // 
             // tsmiAddDocument
             // 
@@ -551,6 +554,13 @@
             this.tsmiAddDocument.Name = "tsmiAddDocument";
             this.tsmiAddDocument.Size = new System.Drawing.Size(290, 36);
             this.tsmiAddDocument.Text = "اضافه ملف";
+            // 
+            // tsmiAddInvoiceForCase
+            // 
+            this.tsmiAddInvoiceForCase.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddInvoiceIcon;
+            this.tsmiAddInvoiceForCase.Name = "tsmiAddInvoiceForCase";
+            this.tsmiAddInvoiceForCase.Size = new System.Drawing.Size(290, 36);
+            this.tsmiAddInvoiceForCase.Text = "اضافه فاتوره";
             // 
             // cmsSessions
             // 
@@ -572,6 +582,7 @@
             this.tsmiShowSessionInfo.Name = "tsmiShowSessionInfo";
             this.tsmiShowSessionInfo.Size = new System.Drawing.Size(290, 36);
             this.tsmiShowSessionInfo.Text = "عرض معلومات الجلسه";
+            this.tsmiShowSessionInfo.Click += new System.EventHandler(this.tsmiShowSessionInfo_Click);
             // 
             // tsmiShowCaseInfoForSession
             // 
@@ -579,6 +590,7 @@
             this.tsmiShowCaseInfoForSession.Name = "tsmiShowCaseInfoForSession";
             this.tsmiShowCaseInfoForSession.Size = new System.Drawing.Size(290, 36);
             this.tsmiShowCaseInfoForSession.Text = "عرض معلومات القضيه";
+            this.tsmiShowCaseInfoForSession.Click += new System.EventHandler(this.tsmiShowCaseInfoForSession_Click);
             // 
             // toolStripSeparator6
             // 
@@ -591,6 +603,7 @@
             this.tsmiEditSession.Name = "tsmiEditSession";
             this.tsmiEditSession.Size = new System.Drawing.Size(290, 36);
             this.tsmiEditSession.Text = "تعديل الجلسه";
+            this.tsmiEditSession.Click += new System.EventHandler(this.tsmiEditSession_Click);
             // 
             // tsmiDeleteSession
             // 
@@ -598,6 +611,7 @@
             this.tsmiDeleteSession.Name = "tsmiDeleteSession";
             this.tsmiDeleteSession.Size = new System.Drawing.Size(290, 36);
             this.tsmiDeleteSession.Text = "ازاله الجلسه";
+            this.tsmiDeleteSession.Click += new System.EventHandler(this.tsmiDeleteSession_Click);
             // 
             // cmsInvoices
             // 
@@ -613,7 +627,7 @@
             this.toolStripSeparator8,
             this.tsmiAddNewPayment});
             this.cmsInvoices.Name = "cmsClients";
-            this.cmsInvoices.Size = new System.Drawing.Size(292, 232);
+            this.cmsInvoices.Size = new System.Drawing.Size(292, 260);
             // 
             // tsmiShowInvoiceInfo
             // 
@@ -648,6 +662,7 @@
             this.tsmiUpdateInvoice.Name = "tsmiUpdateInvoice";
             this.tsmiUpdateInvoice.Size = new System.Drawing.Size(291, 36);
             this.tsmiUpdateInvoice.Text = "تعديل الفاتوره";
+            this.tsmiUpdateInvoice.Click += new System.EventHandler(this.tsmiUpdateInvoice_Click);
             // 
             // tsmiDeleteInvoice
             // 
@@ -741,13 +756,6 @@
             this.btnClose.TabIndex = 18;
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // tsmiAddInvoiceForCase
-            // 
-            this.tsmiAddInvoiceForCase.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddInvoiceIcon;
-            this.tsmiAddInvoiceForCase.Name = "tsmiAddInvoiceForCase";
-            this.tsmiAddInvoiceForCase.Size = new System.Drawing.Size(290, 36);
-            this.tsmiAddInvoiceForCase.Text = "اضافه فاتوره";
             // 
             // frmMainScreen
             // 

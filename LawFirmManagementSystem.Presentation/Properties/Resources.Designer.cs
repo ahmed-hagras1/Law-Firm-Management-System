@@ -213,6 +213,16 @@ namespace LawFirmManagementSystem.Presentation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap decisionIcon {
+            get {
+                object obj = ResourceManager.GetObject("decisionIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Delete_32_2 {
             get {
                 object obj = ResourceManager.GetObject("Delete 32 2", resourceCulture);
@@ -323,6 +333,16 @@ namespace LawFirmManagementSystem.Presentation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lawyerIcon {
+            get {
+                object obj = ResourceManager.GetObject("lawyerIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LawyersIcon {
             get {
                 object obj = ResourceManager.GetObject("LawyersIcon", resourceCulture);
@@ -406,6 +426,16 @@ namespace LawFirmManagementSystem.Presentation.Properties {
         internal static System.Drawing.Bitmap Phone_32 {
             get {
                 object obj = ResourceManager.GetObject("Phone 32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RequestsIcon {
+            get {
+                object obj = ResourceManager.GetObject("RequestsIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

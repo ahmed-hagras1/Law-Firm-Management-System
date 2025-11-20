@@ -37,15 +37,15 @@
             this.cmsCases = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiShowCaseInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsmiAddCase = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiEditCase = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDeleteCase = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiAddSession = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAddDocument = new System.Windows.Forms.ToolStripMenuItem();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tsmiAddCase = new System.Windows.Forms.ToolStripMenuItem();
-            this.ctrlClientInfo1 = new LawFirmManagementSystem.Presentation.ctrlClientInfo();
             this.tsmiAddInvoice = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ctrlClientInfo1 = new LawFirmManagementSystem.Presentation.ctrlClientInfo();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientCases)).BeginInit();
             this.cmsCases.SuspendLayout();
             this.SuspendLayout();
@@ -136,6 +136,14 @@
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(287, 6);
             // 
+            // tsmiAddCase
+            // 
+            this.tsmiAddCase.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddCaseIcon;
+            this.tsmiAddCase.Name = "tsmiAddCase";
+            this.tsmiAddCase.Size = new System.Drawing.Size(290, 36);
+            this.tsmiAddCase.Text = "اضافه قضيه";
+            this.tsmiAddCase.Click += new System.EventHandler(this.tsmiAddCase_Click);
+            // 
             // tsmiEditCase
             // 
             this.tsmiEditCase.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.edit_32;
@@ -163,6 +171,7 @@
             this.tsmiAddSession.Name = "tsmiAddSession";
             this.tsmiAddSession.Size = new System.Drawing.Size(290, 36);
             this.tsmiAddSession.Text = "اضافه جلسه";
+            this.tsmiAddSession.Click += new System.EventHandler(this.tsmiAddSession_Click);
             // 
             // tsmiAddDocument
             // 
@@ -170,6 +179,13 @@
             this.tsmiAddDocument.Name = "tsmiAddDocument";
             this.tsmiAddDocument.Size = new System.Drawing.Size(290, 36);
             this.tsmiAddDocument.Text = "اضافه ملف";
+            // 
+            // tsmiAddInvoice
+            // 
+            this.tsmiAddInvoice.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddInvoiceIcon;
+            this.tsmiAddInvoice.Name = "tsmiAddInvoice";
+            this.tsmiAddInvoice.Size = new System.Drawing.Size(290, 36);
+            this.tsmiAddInvoice.Text = "اضافه فاتوره";
             // 
             // label2
             // 
@@ -183,27 +199,12 @@
             this.label2.Text = "القضايا الخاصه بالعميل";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tsmiAddCase
-            // 
-            this.tsmiAddCase.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddCaseIcon;
-            this.tsmiAddCase.Name = "tsmiAddCase";
-            this.tsmiAddCase.Size = new System.Drawing.Size(290, 36);
-            this.tsmiAddCase.Text = "اضافه قضيه";
-            this.tsmiAddCase.Click += new System.EventHandler(this.tsmiAddCase_Click);
-            // 
             // ctrlClientInfo1
             // 
             this.ctrlClientInfo1.Location = new System.Drawing.Point(31, 62);
             this.ctrlClientInfo1.Name = "ctrlClientInfo1";
             this.ctrlClientInfo1.Size = new System.Drawing.Size(787, 500);
             this.ctrlClientInfo1.TabIndex = 29;
-            // 
-            // tsmiAddInvoice
-            // 
-            this.tsmiAddInvoice.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddInvoiceIcon;
-            this.tsmiAddInvoice.Name = "tsmiAddInvoice";
-            this.tsmiAddInvoice.Size = new System.Drawing.Size(290, 36);
-            this.tsmiAddInvoice.Text = "اضافه فاتوره";
             // 
             // frmShowClientInfo
             // 

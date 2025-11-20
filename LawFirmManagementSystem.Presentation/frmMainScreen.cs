@@ -1,6 +1,7 @@
 ﻿using LawFirmManagementSystem.Business;
 using LawFirmManagementSystem.Presentation.Cases;
 using LawFirmManagementSystem.Presentation.Lawyers;
+using LawFirmManagementSystem.Presentation.Sessions;
 using LawFirmManagementSystem_Business;
 using System;
 using System.Collections.Generic;
@@ -1047,6 +1048,8 @@ namespace LawFirmManagementSystem.Presentation
 
                 frmAddUpdateCase frm = new frmAddUpdateCase(caseId, frmAddUpdateCase.enMode.UpdateExisting);
                 frm.ShowDialog();
+
+                HandelCasesPage();
             }
         }
 
@@ -1102,6 +1105,105 @@ namespace LawFirmManagementSystem.Presentation
                     }
                 }
             }
+
+        }
+
+        private void tsmiShowSessionInfo_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get sessionId.
+                int sessionId = _dtAllSessions.Rows[dgvFormData.CurrentRow.Index]["SessionId"] != DBNull.Value ?
+                    (int)_dtAllSessions.Rows[dgvFormData.CurrentRow.Index]["SessionId"] : 0;
+
+                frmShowSessionInfo frm = new frmShowSessionInfo(sessionId);
+                frm.ShowDialog();
+            }
+        }
+
+        private void tsmiShowCaseInfoForSession_Click(object sender, EventArgs e)
+        {
+            
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get caseId.
+                int caseId = _dtAllSessions.Rows[dgvFormData.CurrentRow.Index]["CaseId"] != DBNull.Value ?
+                    (int)_dtAllSessions.Rows[dgvFormData.CurrentRow.Index]["CaseId"] : 0;
+
+                frmShowCaseInfo frm = new frmShowCaseInfo(caseId);
+                frm.ShowDialog();
+            }
+
+        }
+
+        private void tsmiAddSession_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get caseId.
+                int caseId = _dtAllCases.Rows[dgvFormData.CurrentRow.Index]["CaseId"] != DBNull.Value ?
+                    (int)_dtAllCases.Rows[dgvFormData.CurrentRow.Index]["CaseId"] : 0;
+
+                frmAddUpdateSession frm = new frmAddUpdateSession(caseId, frmAddUpdateSession.enMode.AddNew);
+                frm.ShowDialog();
+            }
+        }
+
+        private void tsmiEditSession_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get sessionId.
+                int sessionId = _dtAllSessions.Rows[dgvFormData.CurrentRow.Index]["SessionId"] != DBNull.Value ?
+                    (int)_dtAllSessions.Rows[dgvFormData.CurrentRow.Index]["SessionId"] : 0;
+
+                frmAddUpdateSession frm = new frmAddUpdateSession(sessionId, frmAddUpdateSession.enMode.UpdateExisting);
+                frm.ShowDialog();
+
+                HandelSessionsPage();
+            }
+        }
+
+        private void tsmiDeleteSession_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get sessionId.
+                int sessionId = _dtAllSessions.Rows[dgvFormData.CurrentRow.Index]["SessionId"] != DBNull.Value ?
+                    (int)_dtAllSessions.Rows[dgvFormData.CurrentRow.Index]["SessionId"] : 0;
+
+
+                // 2. Show Confirmation Message
+                if (MessageBox.Show(
+                            $"هل أنت متأكد أنك تريد حذف الجلسه؟",
+                            "تأكيد الحذف",
+                            MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Question,
+                            MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                {
+                    // 3. Call the Business Layer to delete
+                    if (Session.DeleteSession(sessionId))
+                    {
+                        MessageBox.Show("تم حذف الجلسه بنجاح.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        // 4. Refresh the data grid
+                        HandelSessionsPage();
+                    }
+                    else
+                    {
+                        MessageBox.Show(
+                            "لم يتم حذف الجلسه.",
+                            "خطأ",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                        );
+                    }
+                }
+            }
+        }
+
+        private void tsmiUpdateInvoice_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -133,6 +133,9 @@
   <data name="Address 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Address 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="RequestsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RequestsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Person 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Person 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -141,6 +144,9 @@
   </data>
   <data name="Calendar 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Calendar 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Save 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Save 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MainIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MainIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,6 +178,9 @@
   <data name="LawyersIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LawyersIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="OpenDocumentIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OpenDocumentIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="AddDocument" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AddDocument.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -183,6 +192,12 @@
   </data>
   <data name="CourtIcon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CourtIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="decisionIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\decisionIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ShowinvoiceInfo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ShowinvoiceInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,8 +214,8 @@
   <data name="People 400" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\People 400.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Save 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Save 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AddNewIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddNewIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Add New User 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Add New User 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,14 +226,11 @@
   <data name="Delete 32 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Delete 32 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="InvoicesIcon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\InvoicesIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="LawFirmLayout2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LawFirmLayout2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="InvoicesIcon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\InvoicesIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="People 64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\People 64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,16 +256,13 @@
   <data name="edit 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\edit 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Edit User 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Edit User 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Users 2 64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Users 2 64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AddNewIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AddNewIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Edit User 32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit User 32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="OpenDocumentIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OpenDocumentIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lawyerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lawyerIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

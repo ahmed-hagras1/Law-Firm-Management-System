@@ -142,6 +142,7 @@
             this.tsmiEditSession.Name = "tsmiEditSession";
             this.tsmiEditSession.Size = new System.Drawing.Size(290, 36);
             this.tsmiEditSession.Text = "تعديل الجلسه";
+            this.tsmiEditSession.Click += new System.EventHandler(this.tsmiEditSession_Click);
             // 
             // tsmiDeleteSession
             // 
@@ -149,6 +150,7 @@
             this.tsmiDeleteSession.Name = "tsmiDeleteSession";
             this.tsmiDeleteSession.Size = new System.Drawing.Size(290, 36);
             this.tsmiDeleteSession.Text = "ازاله الجلسه";
+            this.tsmiDeleteSession.Click += new System.EventHandler(this.tsmiDeleteSession_Click);
             // 
             // label1
             // 

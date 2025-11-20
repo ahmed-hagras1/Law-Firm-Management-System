@@ -1,4 +1,5 @@
 ﻿using LawFirmManagementSystem.Presentation.Cases;
+using LawFirmManagementSystem.Presentation.Sessions;
 using LawFirmManagementSystem_Business;
 using System;
 using System.Collections.Generic;
@@ -138,6 +139,20 @@ namespace LawFirmManagementSystem.Presentation
                         );
                     }
                 }
+            }
+        }
+
+        private void tsmiAddSession_Click(object sender, EventArgs e)
+        {
+            if (dgvClientCases.Rows.Count > 0)
+            {
+                // Get caseId.
+                int caseId = _dtAllCasesForSpecificClient.Rows[dgvClientCases.CurrentRow.Index]["CaseId"] != DBNull.Value ?
+                    (int)_dtAllCasesForSpecificClient.Rows[dgvClientCases.CurrentRow.Index]["CaseId"] : 0;
+
+                frmAddUpdateSession frm = new frmAddUpdateSession(caseId, frmAddUpdateSession.enMode.AddNew);
+                frm.ShowDialog();
+
             }
         }
     }

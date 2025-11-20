@@ -25,3 +25,6 @@ C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\Law
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Cases.frmShowCaseInfo.resources
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Cases.frmShowCaseInvoicesOrDocuments.resources
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Cases.frmAddUpdateCase.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Sessions.Controls.ctrlSessionInfo.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Sessions.frmShowSessionInfo.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Sessions.frmAddUpdateSession.resources

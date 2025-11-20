@@ -126,6 +126,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sessions\Controls\ctrlSessionInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sessions\Controls\ctrlSessionInfo.Designer.cs">
+      <DependentUpon>ctrlSessionInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sessions\frmAddUpdateSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sessions\frmAddUpdateSession.Designer.cs">
+      <DependentUpon>frmAddUpdateSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sessions\frmShowSessionInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sessions\frmShowSessionInfo.Designer.cs">
+      <DependentUpon>frmShowSessionInfo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cases\Controls\ctrlCaseInfo.resx">
       <DependentUpon>ctrlCaseInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +193,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sessions\Controls\ctrlSessionInfo.resx">
+      <DependentUpon>ctrlSessionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sessions\frmAddUpdateSession.resx">
+      <DependentUpon>frmAddUpdateSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sessions\frmShowSessionInfo.resx">
+      <DependentUpon>frmShowSessionInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -313,6 +340,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\OpenDocumentIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RequestsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\decisionIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lawyerIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
