@@ -37,11 +37,12 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1023, 50);
+            this.label1.Size = new System.Drawing.Size(1047, 50);
             this.label1.TabIndex = 2;
             this.label1.Text = "معلومات القضيه";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -91,7 +92,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmShowCaseInfo";
-            this.Text = "frmShowCaseInfo";
+            this.Text = "عرض معلومات القضيه";
             this.Load += new System.EventHandler(this.frmShowCaseInfo_Load);
             this.ResumeLayout(false);
 

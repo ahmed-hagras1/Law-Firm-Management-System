@@ -44,6 +44,7 @@
             this.dtpSessionDate = new System.Windows.Forms.DateTimePicker();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label11 = new System.Windows.Forms.Label();
+            this.cbLawyer = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,18 +54,18 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.cbLawyer = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
             // 
             this.lblTitle.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(12, 9);
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(1047, 50);
+            this.lblTitle.Size = new System.Drawing.Size(1071, 50);
             this.lblTitle.TabIndex = 4;
             this.lblTitle.Text = "العنوان";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -96,7 +97,7 @@
             this.txtSessionNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSessionNumber.Location = new System.Drawing.Point(18, 214);
             this.txtSessionNumber.Name = "txtSessionNumber";
-            this.txtSessionNumber.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtSessionNumber.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtSessionNumber.Size = new System.Drawing.Size(864, 27);
             this.txtSessionNumber.TabIndex = 87;
             this.txtSessionNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSessionNumber_KeyPress);
@@ -216,6 +217,18 @@
             this.label11.TabIndex = 98;
             this.label11.Text = "المحامي:";
             // 
+            // cbLawyer
+            // 
+            this.cbLawyer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbLawyer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbLawyer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbLawyer.FormattingEnabled = true;
+            this.cbLawyer.Location = new System.Drawing.Point(473, 263);
+            this.cbLawyer.Name = "cbLawyer";
+            this.cbLawyer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cbLawyer.Size = new System.Drawing.Size(409, 33);
+            this.cbLawyer.TabIndex = 100;
+            // 
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -319,18 +332,6 @@
             this.label16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label16.Size = new System.Drawing.Size(35, 33);
             this.label16.TabIndex = 80;
-            // 
-            // cbLawyer
-            // 
-            this.cbLawyer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbLawyer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbLawyer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbLawyer.FormattingEnabled = true;
-            this.cbLawyer.Location = new System.Drawing.Point(473, 263);
-            this.cbLawyer.Name = "cbLawyer";
-            this.cbLawyer.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cbLawyer.Size = new System.Drawing.Size(409, 33);
-            this.cbLawyer.TabIndex = 100;
             // 
             // frmAddUpdateSession
             // 

@@ -155,5 +155,10 @@ namespace LawFirmManagementSystem.Presentation
 
             }
         }
+
+        private void tsmiAddInvoice_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -75,10 +75,12 @@ namespace LawFirmManagementSystem.Presentation.Cases
             if (_mode == enMode.AddNew)
             {
                 lblTitle.Text = "اضافه قضيه";
+                this.Text = "اضافه قضيه";
             }
             else if (_mode == enMode.UpdateExisting)
             {
                 lblTitle.Text = "تعديل القضيه";
+                this.Text = "تعديل القضيه";
                 _loadData();
 
             }

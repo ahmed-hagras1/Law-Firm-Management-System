@@ -117,11 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label12.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAApNJREFUSEvt009Ik3Ecx3EPLejauUAhFOxcyU52UikRJO0SRQZGp6CCLh0iL/0B
+        wAAADsABataJCQAAApNJREFUSEvt009Ik3Ecx3EPLejauUAhFOxcyU52UikRJO0SRQZGp6CCLh0iL/0B
         S0cOFaFAm39KzNLSQElCyD1zWwY+21xaNnV7aM8z9jwP2dzziT3lcN/f9uwPZB36wPv6ffH84CkqMlgp
         r9SV8aq/jFeRLvMgMqStHBvS6um9nFa2KBaX8somxXKDAfOAtnl0QCuhd7OulFfPUIjGYKSKQe0svZtx
         4DiTEhFuPgqEwxSiUYjW+XZF9Lq4Fo7jTNRhJovBfkUSYFsXGYhGIVrPzDK8Ljs8rrkh6qRMloJVCTTR
@@ -138,7 +141,7 @@
   <data name="label15.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAApNJREFUSEvt009Ik3Ecx3EPLejauUAhFOxcyU52UikRJO0SRQZGp6CCLh0iL/0B
+        wAAADsABataJCQAAApNJREFUSEvt009Ik3Ecx3EPLejauUAhFOxcyU52UikRJO0SRQZGp6CCLh0iL/0B
         S0cOFaFAm39KzNLSQElCyD1zWwY+21xaNnV7aM8z9jwP2dzziT3lcN/f9uwPZB36wPv6ffH84CkqMlgp
         r9SV8aq/jFeRLvMgMqStHBvS6um9nFa2KBaX8somxXKDAfOAtnl0QCuhd7OulFfPUIjGYKSKQe0svZtx
         4DiTEhFuPgqEwxSiUYjW+XZF9Lq4Fo7jTNRhJovBfkUSYFsXGYhGIVrPzDK8Ljs8rrkh6qRMloJVCTTR
@@ -152,7 +155,4 @@
         ltdld3tdc030fmI/AQRWBYmsBdUwAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
 </root>

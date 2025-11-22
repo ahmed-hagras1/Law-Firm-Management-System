@@ -1,6 +1,8 @@
 ﻿using LawFirmManagementSystem.Business;
 using LawFirmManagementSystem.Presentation.Cases;
+using LawFirmManagementSystem.Presentation.Invoices;
 using LawFirmManagementSystem.Presentation.Lawyers;
+using LawFirmManagementSystem.Presentation.Payments;
 using LawFirmManagementSystem.Presentation.Sessions;
 using LawFirmManagementSystem_Business;
 using System;
@@ -676,7 +678,7 @@ namespace LawFirmManagementSystem.Presentation
             page = enPages.InvoicesPage;
             _dtAllInvoices = Invoice.GetAllInvoices();
             _dtInvoices = _dtAllInvoices.DefaultView.ToTable(false, "ClientName", "CaseNumber",
-            "Title", "CreatedBy", "IssueDate", "LastUpdatedBy", "TotalAmount", "AmountPaid", "AmountDue", "Notes");
+            "Title", "CreatedBy", "IssueDate", "LastUpdatedBy", "Notes", "TotalAmount", "AmountPaid", "AmountDue");
 
             if (_dtInvoices.Rows.Count > 0 )
             {
@@ -1204,7 +1206,132 @@ namespace LawFirmManagementSystem.Presentation
 
         private void tsmiUpdateInvoice_Click(object sender, EventArgs e)
         {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get invoiceId.
+                int invoiceId = _dtAllInvoices.Rows[dgvFormData.CurrentRow.Index]["InvoiceId"] != DBNull.Value ?
+                    (int)_dtAllInvoices.Rows[dgvFormData.CurrentRow.Index]["InvoiceId"] : 0;
 
+                frmAddUpdateInvoice frm = new frmAddUpdateInvoice(invoiceId, (decimal)dgvFormData.CurrentRow.Cells[8].Value);
+                frm.ShowDialog();
+                HandelInvoicesPage();
+            }
+        }
+
+        private void tsmiShowInvoiceInfo_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get invoiceId.
+                int invoiceId = _dtAllInvoices.Rows[dgvFormData.CurrentRow.Index]["InvoiceId"] != DBNull.Value ?
+                    (int)_dtAllInvoices.Rows[dgvFormData.CurrentRow.Index]["InvoiceId"] : 0;
+
+                frmShowInvoiceInfo frm = new frmShowInvoiceInfo(invoiceId, (decimal)dgvFormData.CurrentRow.Cells[8].Value, (decimal)dgvFormData.CurrentRow.Cells[9].Value);
+                frm.ShowDialog();
+
+                HandelInvoicesPage();
+            }
+        }
+
+        private void tsmiAddInvoiceForCase_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get caseId.
+                int caseId = _dtAllCases.Rows[dgvFormData.CurrentRow.Index]["CaseId"] != DBNull.Value ?
+                    (int)_dtAllCases.Rows[dgvFormData.CurrentRow.Index]["CaseId"] : 0;
+
+                frmAddUpdateInvoice frm = new frmAddUpdateInvoice(caseId);
+                frm.ShowDialog();
+
+                HandelInvoicesPage();
+            }
+        }
+
+        private void tsmiDeleteInvoice_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get invoiceId.
+                int invoiceId = _dtAllInvoices.Rows[dgvFormData.CurrentRow.Index]["InvoiceId"] != DBNull.Value ?
+                    (int)_dtAllInvoices.Rows[dgvFormData.CurrentRow.Index]["InvoiceId"] : 0;
+
+
+                // 2. Show Confirmation Message
+                if (MessageBox.Show(
+                            $"هل أنت متأكد أنك تريد حذف الفاتوره؟",
+                            "تأكيد الحذف",
+                            MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Question,
+                            MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                {
+                    // 3. Call the Business Layer to delete
+                    if (Invoice.DeleteInvoice(invoiceId))
+                    {
+                        MessageBox.Show("تم حذف الفاتوره بنجاح.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        // 4. Refresh the data grid
+                        HandelInvoicesPage();
+                    }
+                    else
+                    {
+                        MessageBox.Show(
+                            "لم يتم حذف الفاتوره.",
+                            "خطأ",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                        );
+                    }
+                }
+            }
+        }
+
+        private void tsmiShowCaseInfoForInvoices_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get caseId.
+                int caseId = _dtAllInvoices.Rows[dgvFormData.CurrentRow.Index]["CaseId"] != DBNull.Value ?
+                    (int)_dtAllInvoices.Rows[dgvFormData.CurrentRow.Index]["CaseId"] : 0;
+
+                frmShowCaseInfo frm = new frmShowCaseInfo(caseId);
+                frm.ShowDialog();
+
+                HandelInvoicesPage();
+            }
+        }
+
+        private void tsmiShowClientInfoForInvoices_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get caseId.
+                int caseId = _dtAllInvoices.Rows[dgvFormData.CurrentRow.Index]["CaseId"] != DBNull.Value ?
+                    (int)_dtAllInvoices.Rows[dgvFormData.CurrentRow.Index]["CaseId"] : 0;
+
+                Case caseInfo = Case.GetCase(caseId);
+
+
+                frmShowClientInfo frm = new frmShowClientInfo(caseInfo.ClientId);
+                frm.ShowDialog();
+
+                HandelInvoicesPage();
+            }
+        }
+
+        private void tsmiAddNewPayment_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get invoiceId.
+                int invoiceId = _dtAllInvoices.Rows[dgvFormData.CurrentRow.Index]["InvoiceId"] != DBNull.Value ?
+                    (int)_dtAllInvoices.Rows[dgvFormData.CurrentRow.Index]["InvoiceId"] : 0;
+
+                frmAddUpdatePayment frm = new frmAddUpdatePayment(invoiceId, (decimal)dgvFormData.CurrentRow.Cells[9].Value, frmAddUpdatePayment.enMode.AddNew);
+                frm.ShowDialog();
+
+                HandelInvoicesPage();
+            }
         }
     }
 }

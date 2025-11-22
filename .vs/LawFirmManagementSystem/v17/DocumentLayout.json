@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\C#\\LawFirmManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\sessions\\frmshowsessioninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\sessions\\frmshowsessioninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\sessions\\frmaddupdatesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\sessions\\frmaddupdatesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\sessions\\frmaddupdatesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\payments\\frmshowpaymentinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\payments\\frmshowpaymentinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\lawyers\\frmshowlawyerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -23,19 +35,39 @@
       "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\lawyers\\frmshowlawyerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\clients\\frmshowclientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\clients\\frmshowclientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\invoices\\frmshowinvoicepayments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\invoices\\frmshowinvoicepayments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\invoices\\frmshowinvoicepayments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\invoices\\frmshowinvoicepayments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\invoices\\frmshowinvoiceinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\invoices\\frmshowinvoiceinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\invoices\\frmaddupdateinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\invoices\\frmaddupdateinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\clients\\frmshowclientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\clients\\frmshowclientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\clients\\frmshowclientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\clients\\frmshowclientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\clients\\frmaddupdateclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\clients\\frmaddupdateclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\cases\\frmshowcaseinvoicesordocuments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\cases\\frmshowcaseinvoicesordocuments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\cases\\frmshowcaseinvoicesordocuments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\cases\\frmshowcaseinvoicesordocuments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\cases\\frmshowcaseinvoicesordocuments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -43,24 +75,96 @@
       "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\cases\\frmshowcaseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\frmmainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\cases\\frmaddupdatecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\cases\\frmaddupdatecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\sessions\\frmaddupdatesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\sessions\\frmaddupdatesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\payments\\controls\\ctrlpaymentinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\payments\\controls\\ctrlpaymentinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\payments\\frmaddupdatepayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\payments\\frmaddupdatepayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\payments\\frmaddupdatepayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\payments\\frmaddupdatepayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\invoices\\frmaddupdateinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\invoices\\frmaddupdateinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4721A64D-806B-4C50-B135-BF2A50D89BD6}|LawFirmManagementSystem.Business\\LawFirmManagementSystem.Business.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.business\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4721A64D-806B-4C50-B135-BF2A50D89BD6}|LawFirmManagementSystem.Business\\LawFirmManagementSystem.Business.csproj|solutionrelative:lawfirmmanagementsystem.business\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4721A64D-806B-4C50-B135-BF2A50D89BD6}|LawFirmManagementSystem.Business\\LawFirmManagementSystem.Business.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.business\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4721A64D-806B-4C50-B135-BF2A50D89BD6}|LawFirmManagementSystem.Business\\LawFirmManagementSystem.Business.csproj|solutionrelative:lawfirmmanagementsystem.business\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\invoices\\frmshowinvoiceinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\invoices\\frmshowinvoiceinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\lawyers\\frmaddupdatelawyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\lawyers\\frmaddupdatelawyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\cases\\frmaddupdatecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\cases\\frmaddupdatecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\payments\\frmshowpaymentinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\payments\\frmshowpaymentinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\payments\\controls\\ctrlpaymentinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\payments\\controls\\ctrlpaymentinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\cases\\controls\\ctrlcaseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\cases\\controls\\ctrlcaseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\cases\\controls\\ctrlcaseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\cases\\controls\\ctrlcaseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\invoices\\controls\\ctrlinvoiceinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\invoices\\controls\\ctrlinvoiceinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\lawyers\\frmaddupdatelawyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\lawyers\\frmaddupdatelawyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\sessions\\frmaddupdatesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\sessions\\frmaddupdatesession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\clients\\frmaddupdateclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\clients\\frmaddupdateclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\cases\\frmshowcaseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\cases\\frmshowcaseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA6C9D0-796A-4376-9A96-CB6DC04847E3}|LawFirmManagementSystem.Data\\LawFirmManagementSystem.Data.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.data\\paymentsdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA6C9D0-796A-4376-9A96-CB6DC04847E3}|LawFirmManagementSystem.Data\\LawFirmManagementSystem.Data.csproj|solutionrelative:lawfirmmanagementsystem.data\\paymentsdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\invoices\\controls\\ctrlinvoiceinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\invoices\\controls\\ctrlinvoiceinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\clients\\controls\\ctrlclientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\clients\\controls\\ctrlclientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8DA6C9D0-796A-4376-9A96-CB6DC04847E3}|LawFirmManagementSystem.Data\\LawFirmManagementSystem.Data.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.data\\invoicesdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8DA6C9D0-796A-4376-9A96-CB6DC04847E3}|LawFirmManagementSystem.Data\\LawFirmManagementSystem.Data.csproj|solutionrelative:lawfirmmanagementsystem.data\\invoicesdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\sessions\\controls\\ctrlsessioninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -75,32 +179,12 @@
       "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\sessions\\frmshowsessioninfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\lawyers\\frmaddupdatelawyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\lawyers\\frmaddupdatelawyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\lawyers\\frmaddupdatelawyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\lawyers\\frmaddupdatelawyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\lawyers\\frmshowlawyerinfo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\lawyers\\frmshowlawyerinfo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\clients\\controls\\ctrlclientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\clients\\controls\\ctrlclientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\cases\\controls\\ctrlcaseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\cases\\controls\\ctrlcaseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\clients\\controls\\ctrlclientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\clients\\controls\\ctrlclientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\cases\\controls\\ctrlcaseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\cases\\controls\\ctrlcaseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\clients\\frmshowclientinfo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -119,15 +203,11 @@
       "RelativeMoniker": "D:0:0:{8DA6C9D0-796A-4376-9A96-CB6DC04847E3}|LawFirmManagementSystem.Data\\LawFirmManagementSystem.Data.csproj|solutionrelative:lawfirmmanagementsystem.data\\clientsdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\cases\\frmshowcaseinvoicesordocuments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\cases\\frmshowcaseinvoicesordocuments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\cases\\frmaddupdatecase.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\cases\\frmaddupdatecase.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\cases\\frmshowcaseinvoicesordocuments.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|c:\\c#\\lawfirmmanagementsystem\\lawfirmmanagementsystem.presentation\\cases\\frmshowcaseinvoicesordocuments.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\cases\\frmshowcaseinvoicesordocuments.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -135,24 +215,12 @@
       "RelativeMoniker": "D:0:0:{4721A64D-806B-4C50-B135-BF2A50D89BD6}|LawFirmManagementSystem.Business\\LawFirmManagementSystem.Business.csproj|solutionrelative:lawfirmmanagementsystem.business\\trackingchanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\cases\\frmshowcaseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|solutionrelative:lawfirmmanagementsystem.presentation\\cases\\frmshowcaseinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4721A64D-806B-4C50-B135-BF2A50D89BD6}|LawFirmManagementSystem.Business\\LawFirmManagementSystem.Business.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.business\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4721A64D-806B-4C50-B135-BF2A50D89BD6}|LawFirmManagementSystem.Business\\LawFirmManagementSystem.Business.csproj|solutionrelative:lawfirmmanagementsystem.business\\document.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4721A64D-806B-4C50-B135-BF2A50D89BD6}|LawFirmManagementSystem.Business\\LawFirmManagementSystem.Business.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.business\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4721A64D-806B-4C50-B135-BF2A50D89BD6}|LawFirmManagementSystem.Business\\LawFirmManagementSystem.Business.csproj|solutionrelative:lawfirmmanagementsystem.business\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8DA6C9D0-796A-4376-9A96-CB6DC04847E3}|LawFirmManagementSystem.Data\\LawFirmManagementSystem.Data.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.data\\documentsdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8DA6C9D0-796A-4376-9A96-CB6DC04847E3}|LawFirmManagementSystem.Data\\LawFirmManagementSystem.Data.csproj|solutionrelative:lawfirmmanagementsystem.data\\documentsdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8DA6C9D0-796A-4376-9A96-CB6DC04847E3}|LawFirmManagementSystem.Data\\LawFirmManagementSystem.Data.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.data\\invoicesdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8DA6C9D0-796A-4376-9A96-CB6DC04847E3}|LawFirmManagementSystem.Data\\LawFirmManagementSystem.Data.csproj|solutionrelative:lawfirmmanagementsystem.data\\invoicesdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2994CAF1-0C4E-4739-A1E6-729FCB1D1D78}|LawFirmManagementSystem.Presentation\\LawFirmManagementSystem.Presentation.csproj|C:\\C#\\LawFirmManagementSystem\\lawfirmmanagementsystem.presentation\\lawyers\\controls\\ctrllawyerinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -234,13 +302,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
               "Title": "frmMainScreen.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\frmMainScreen.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\frmMainScreen.cs",
               "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\frmMainScreen.cs",
               "RelativeToolTip": "LawFirmManagementSystem.Presentation\\frmMainScreen.cs",
-              "ViewState": "AgIAAKsEAAAAAAAAAAAcwLYEAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB8FAAAAAAAAAAAkwM8EAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-02T20:05:56.489Z",
               "IsPinned": true,
@@ -261,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "frmAddUpdateClient.cs [Design]",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\frmAddUpdateClient.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Clients\\frmAddUpdateClient.cs",
@@ -274,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 55,
               "Title": "ctrlLawyerInfo.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Lawyers\\Controls\\ctrlLawyerInfo.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Lawyers\\Controls\\ctrlLawyerInfo.cs",
@@ -287,13 +355,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "frmShowLawyerInfo.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Lawyers\\frmShowLawyerInfo.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Lawyers\\frmShowLawyerInfo.cs",
               "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Lawyers\\frmShowLawyerInfo.cs",
               "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Lawyers\\frmShowLawyerInfo.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAiwHEAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAwHEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T10:27:04.781Z",
               "IsPinned": true,
@@ -301,13 +369,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "frmShowClientInfo.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\frmShowClientInfo.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Clients\\frmShowClientInfo.cs",
               "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\frmShowClientInfo.cs",
               "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Clients\\frmShowClientInfo.cs",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAcwJoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAAwKAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T18:40:28.284Z",
               "IsPinned": true,
@@ -315,13 +383,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 35,
               "Title": "frmAddUpdateClient.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\frmAddUpdateClient.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Clients\\frmAddUpdateClient.cs",
               "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\frmAddUpdateClient.cs",
               "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Clients\\frmAddUpdateClient.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAUwLkAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAwEAAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-16T09:16:14.838Z",
               "IsPinned": true,
@@ -329,33 +397,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 33,
               "Title": "frmAddUpdateLawyer.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Lawyers\\frmAddUpdateLawyer.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Lawyers\\frmAddUpdateLawyer.cs",
               "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Lawyers\\frmAddUpdateLawyer.cs",
               "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Lawyers\\frmAddUpdateLawyer.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAqwHgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAwwEcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T11:46:57.105Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "ctrlCaseInfo.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\Controls\\ctrlCaseInfo.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Cases\\Controls\\ctrlCaseInfo.cs",
               "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\Controls\\ctrlCaseInfo.cs",
               "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Cases\\Controls\\ctrlCaseInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAkwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T15:02:02.765Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "ctrlCaseInfo.cs [Design]",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\Controls\\ctrlCaseInfo.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Cases\\Controls\\ctrlCaseInfo.cs",
@@ -363,11 +433,12 @@
               "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Cases\\Controls\\ctrlCaseInfo.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T15:58:08.866Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "frmShowCaseInfo.cs [Design]",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInfo.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInfo.cs",
@@ -380,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "frmAddUpdateCase.cs [Design]",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmAddUpdateCase.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Cases\\frmAddUpdateCase.cs",
@@ -393,13 +464,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 27,
               "Title": "frmAddUpdateCase.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmAddUpdateCase.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Cases\\frmAddUpdateCase.cs",
               "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmAddUpdateCase.cs",
               "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Cases\\frmAddUpdateCase.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAmwIEAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAADwv1gAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-18T11:31:08.9Z",
               "IsPinned": true,
@@ -407,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 41,
               "Title": "ctrlSessionInfo.cs [Design]",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Sessions\\Controls\\ctrlSessionInfo.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Sessions\\Controls\\ctrlSessionInfo.cs",
@@ -419,7 +490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "frmAddUpdateSession.cs [Design]",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Sessions\\frmAddUpdateSession.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Sessions\\frmAddUpdateSession.cs",
@@ -432,15 +503,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 34,
               "Title": "frmAddUpdateSession.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Sessions\\frmAddUpdateSession.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Sessions\\frmAddUpdateSession.cs",
               "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Sessions\\frmAddUpdateSession.cs",
               "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Sessions\\frmAddUpdateSession.cs",
-              "ViewState": "AgIAAMoAAAAAAAAAAAAswF4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-19T21:15:18.278Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ctrlInvoiceInfo.cs",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Invoices\\Controls\\ctrlInvoiceInfo.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Invoices\\Controls\\ctrlInvoiceInfo.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Invoices\\Controls\\ctrlInvoiceInfo.cs",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Invoices\\Controls\\ctrlInvoiceInfo.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwCEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T14:49:08.056Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "frmAddUpdateInvoice.cs",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Invoices\\frmAddUpdateInvoice.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Invoices\\frmAddUpdateInvoice.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Invoices\\frmAddUpdateInvoice.cs",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Invoices\\frmAddUpdateInvoice.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAADwv1EAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T19:08:06.751Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "frmAddUpdatePayment.cs",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Payments\\frmAddUpdatePayment.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Payments\\frmAddUpdatePayment.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Payments\\frmAddUpdatePayment.cs",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Payments\\frmAddUpdatePayment.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAuwE4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T13:21:26.243Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -458,7 +571,305 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 8,
+              "Title": "frmShowInvoicePayments.cs",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Invoices\\frmShowInvoicePayments.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Invoices\\frmShowInvoicePayments.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Invoices\\frmShowInvoicePayments.cs",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Invoices\\frmShowInvoicePayments.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAAAIcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T15:05:19.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmShowLawyerInfo.cs [Design]",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Lawyers\\frmShowLawyerInfo.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Lawyers\\frmShowLawyerInfo.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Lawyers\\frmShowLawyerInfo.cs [Design]",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Lawyers\\frmShowLawyerInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T10:13:19.982Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmShowPaymentInfo.cs [Design]",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Payments\\frmShowPaymentInfo.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Payments\\frmShowPaymentInfo.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Payments\\frmShowPaymentInfo.cs [Design]",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Payments\\frmShowPaymentInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T09:35:15.687Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmShowSessionInfo.cs [Design]",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Sessions\\frmShowSessionInfo.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Sessions\\frmShowSessionInfo.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Sessions\\frmShowSessionInfo.cs [Design]",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Sessions\\frmShowSessionInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T10:37:52.876Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\frmLogin.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\frmLogin.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\frmLogin.cs [Design]",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\frmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T17:55:03.545Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmShowInvoicePayments.cs [Design]",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Invoices\\frmShowInvoicePayments.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Invoices\\frmShowInvoicePayments.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Invoices\\frmShowInvoicePayments.cs [Design]",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Invoices\\frmShowInvoicePayments.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T15:03:30.594Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmShowInvoiceInfo.cs [Design]",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Invoices\\frmShowInvoiceInfo.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Invoices\\frmShowInvoiceInfo.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Invoices\\frmShowInvoiceInfo.cs [Design]",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Invoices\\frmShowInvoiceInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T15:54:57.774Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frmAddUpdateInvoice.cs [Design]",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Invoices\\frmAddUpdateInvoice.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Invoices\\frmAddUpdateInvoice.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Invoices\\frmAddUpdateInvoice.cs [Design]",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Invoices\\frmAddUpdateInvoice.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T19:03:08.055Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "frmShowClientInfo.cs [Design]",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\frmShowClientInfo.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Clients\\frmShowClientInfo.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\frmShowClientInfo.cs [Design]",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Clients\\frmShowClientInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T18:17:36.226Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "frmShowCaseInvoicesOrDocuments.cs",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.cs",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAAANoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T23:27:47.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "frmShowCaseInvoicesOrDocuments.cs [Design]",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.cs [Design]",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T23:17:27.809Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ctrlPaymentInfo.cs [Design]",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Payments\\Controls\\ctrlPaymentInfo.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Payments\\Controls\\ctrlPaymentInfo.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Payments\\Controls\\ctrlPaymentInfo.cs [Design]",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Payments\\Controls\\ctrlPaymentInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T09:41:45.304Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "frmAddUpdatePayment.cs [Design]",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Payments\\frmAddUpdatePayment.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Payments\\frmAddUpdatePayment.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Payments\\frmAddUpdatePayment.cs [Design]",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Payments\\frmAddUpdatePayment.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T13:18:09.277Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Invoice.cs",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Business\\Invoice.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Business\\Invoice.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Business\\Invoice.cs",
+              "RelativeToolTip": "LawFirmManagementSystem.Business\\Invoice.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAmwCoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T16:07:38.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "frmShowInvoiceInfo.cs",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Invoices\\frmShowInvoiceInfo.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Invoices\\frmShowInvoiceInfo.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Invoices\\frmShowInvoiceInfo.cs",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Invoices\\frmShowInvoiceInfo.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACUAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T15:56:54.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Business\\Payment.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Business\\Payment.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Business\\Payment.cs",
+              "RelativeToolTip": "LawFirmManagementSystem.Business\\Payment.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAiwDMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T14:15:25.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "frmAddUpdateLawyer.cs [Design]",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Lawyers\\frmAddUpdateLawyer.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Lawyers\\frmAddUpdateLawyer.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Lawyers\\frmAddUpdateLawyer.cs [Design]",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Lawyers\\frmAddUpdateLawyer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:47:18.839Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "frmShowPaymentInfo.cs",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Payments\\frmShowPaymentInfo.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Payments\\frmShowPaymentInfo.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Payments\\frmShowPaymentInfo.cs",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Payments\\frmShowPaymentInfo.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T13:03:18.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ctrlPaymentInfo.cs",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Payments\\Controls\\ctrlPaymentInfo.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Payments\\Controls\\ctrlPaymentInfo.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Payments\\Controls\\ctrlPaymentInfo.cs",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Payments\\Controls\\ctrlPaymentInfo.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAcwCQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-22T12:37:46.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ctrlInvoiceInfo.cs [Design]",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Invoices\\Controls\\ctrlInvoiceInfo.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Invoices\\Controls\\ctrlInvoiceInfo.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Invoices\\Controls\\ctrlInvoiceInfo.cs [Design]",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Invoices\\Controls\\ctrlInvoiceInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T14:38:37.305Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "frmShowCaseInfo.cs",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInfo.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInfo.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInfo.cs",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInfo.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAuwC4AAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T17:34:32.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "PaymentsDataAccess.cs",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Data\\PaymentsDataAccess.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Data\\PaymentsDataAccess.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Data\\PaymentsDataAccess.cs",
+              "RelativeToolTip": "LawFirmManagementSystem.Data\\PaymentsDataAccess.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAswKwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T12:36:15.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ctrlClientInfo.cs [Design]",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\Controls\\ctrlClientInfo.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Clients\\Controls\\ctrlClientInfo.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\Controls\\ctrlClientInfo.cs [Design]",
+              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Clients\\Controls\\ctrlClientInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T16:03:07.144Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "InvoicesDataAccess.cs",
+              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Data\\InvoicesDataAccess.cs",
+              "RelativeDocumentMoniker": "LawFirmManagementSystem.Data\\InvoicesDataAccess.cs",
+              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Data\\InvoicesDataAccess.cs",
+              "RelativeToolTip": "LawFirmManagementSystem.Data\\InvoicesDataAccess.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwBkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T15:03:03.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
               "Title": "frmShowSessionInfo.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Sessions\\frmShowSessionInfo.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Sessions\\frmShowSessionInfo.cs",
@@ -471,66 +882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmShowCaseInvoicesOrDocuments.cs [Design]",
-              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.cs",
-              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.cs",
-              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.cs [Design]",
-              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T23:17:27.809Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmShowClientInfo.cs [Design]",
-              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\frmShowClientInfo.cs",
-              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Clients\\frmShowClientInfo.cs",
-              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\frmShowClientInfo.cs [Design]",
-              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Clients\\frmShowClientInfo.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T18:17:36.226Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmShowLawyerInfo.cs [Design]",
-              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Lawyers\\frmShowLawyerInfo.cs",
-              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Lawyers\\frmShowLawyerInfo.cs",
-              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Lawyers\\frmShowLawyerInfo.cs [Design]",
-              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Lawyers\\frmShowLawyerInfo.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T10:13:19.982Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmShowSessionInfo.cs [Design]",
-              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Sessions\\frmShowSessionInfo.cs",
-              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Sessions\\frmShowSessionInfo.cs",
-              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Sessions\\frmShowSessionInfo.cs [Design]",
-              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Sessions\\frmShowSessionInfo.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T10:37:52.876Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "frmAddUpdateLawyer.cs [Design]",
-              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Lawyers\\frmAddUpdateLawyer.cs",
-              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Lawyers\\frmAddUpdateLawyer.cs",
-              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Lawyers\\frmAddUpdateLawyer.cs [Design]",
-              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Lawyers\\frmAddUpdateLawyer.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T09:47:18.839Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 42,
               "Title": "ctrlSessionInfo.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Sessions\\Controls\\ctrlSessionInfo.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Sessions\\Controls\\ctrlSessionInfo.cs",
@@ -542,7 +894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 44,
               "Title": "frmShowLawyerInfo.Designer.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Lawyers\\frmShowLawyerInfo.Designer.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Lawyers\\frmShowLawyerInfo.Designer.cs",
@@ -555,7 +907,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 45,
               "Title": "ctrlClientInfo.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\Controls\\ctrlClientInfo.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Clients\\Controls\\ctrlClientInfo.cs",
@@ -568,7 +920,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 47,
               "Title": "Case.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Business\\Case.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Business\\Case.cs",
@@ -580,32 +932,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ctrlClientInfo.cs [Design]",
-              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\Controls\\ctrlClientInfo.cs",
-              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Clients\\Controls\\ctrlClientInfo.cs",
-              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\Controls\\ctrlClientInfo.cs [Design]",
-              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Clients\\Controls\\ctrlClientInfo.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T16:03:07.144Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "frmShowCaseInvoicesOrDocuments.cs",
-              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.cs",
-              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.cs",
-              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.cs",
-              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAADwv1oAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T23:27:47.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 49,
               "Title": "ClientsDataAccess.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Data\\ClientsDataAccess.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Data\\ClientsDataAccess.cs",
@@ -617,7 +944,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 48,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Business\\Client.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Business\\Client.cs",
@@ -629,7 +956,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 46,
               "Title": "frmShowClientInfo.Designer.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\frmShowClientInfo.Designer.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Clients\\frmShowClientInfo.Designer.cs",
@@ -642,7 +969,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 50,
               "Title": "frmAddUpdateCase.Designer.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmAddUpdateCase.Designer.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Cases\\frmAddUpdateCase.Designer.cs",
@@ -655,7 +982,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 51,
               "Title": "frmShowCaseInvoicesOrDocuments.Designer.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.Designer.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInvoicesOrDocuments.Designer.cs",
@@ -668,19 +995,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Invoice.cs",
-              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Business\\Invoice.cs",
-              "RelativeDocumentMoniker": "LawFirmManagementSystem.Business\\Invoice.cs",
-              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Business\\Invoice.cs",
-              "RelativeToolTip": "LawFirmManagementSystem.Business\\Invoice.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T16:07:38.654Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 54,
               "Title": "DocumentsDataAccess.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Data\\DocumentsDataAccess.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Data\\DocumentsDataAccess.cs",
@@ -692,20 +1007,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "frmShowCaseInfo.cs",
-              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInfo.cs",
-              "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInfo.cs",
-              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInfo.cs",
-              "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Cases\\frmShowCaseInfo.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAgwDAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T17:34:32.325Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 52,
               "Title": "TrackingChanges.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Business\\TrackingChanges.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Business\\TrackingChanges.cs",
@@ -717,7 +1019,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 53,
               "Title": "Document.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Business\\Document.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Business\\Document.cs",
@@ -729,19 +1031,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "InvoicesDataAccess.cs",
-              "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Data\\InvoicesDataAccess.cs",
-              "RelativeDocumentMoniker": "LawFirmManagementSystem.Data\\InvoicesDataAccess.cs",
-              "ToolTip": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Data\\InvoicesDataAccess.cs",
-              "RelativeToolTip": "LawFirmManagementSystem.Data\\InvoicesDataAccess.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAcwBkAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T15:03:03.222Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 56,
               "Title": "CasesDataAccess.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Data\\CasesDataAccess.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Data\\CasesDataAccess.cs",
@@ -753,7 +1043,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 57,
               "Title": "ctrlCaseInfo.Designer.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Cases\\Controls\\ctrlCaseInfo.Designer.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Cases\\Controls\\ctrlCaseInfo.Designer.cs",
@@ -761,11 +1051,12 @@
               "RelativeToolTip": "LawFirmManagementSystem.Presentation\\Cases\\Controls\\ctrlCaseInfo.Designer.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAswBwAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T15:59:08.954Z"
+              "WhenOpened": "2025-11-17T15:59:08.954Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 61,
               "Title": "ctrlPersonalInfo.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\Controls\\ctrlPersonalInfo.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Clients\\Controls\\ctrlPersonalInfo.cs",
@@ -777,7 +1068,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 58,
               "Title": "Lawyer.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Business\\Lawyer.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Business\\Lawyer.cs",
@@ -789,7 +1080,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 60,
               "Title": "SessionsDataAccess.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Data\\SessionsDataAccess.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Data\\SessionsDataAccess.cs",
@@ -801,7 +1092,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 59,
               "Title": "Session.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Business\\Session.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Business\\Session.cs",
@@ -813,7 +1104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 62,
               "Title": "ctrlLawyerInfo.cs [Design]",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Lawyers\\Controls\\ctrlLawyerInfo.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Lawyers\\Controls\\ctrlLawyerInfo.cs",
@@ -824,7 +1115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 63,
               "Title": "ctrlPersonalInfo.cs [Design]",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\Clients\\Controls\\ctrlPersonalInfo.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\Clients\\Controls\\ctrlPersonalInfo.cs",
@@ -835,7 +1126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 64,
               "Title": "frmMainScreen.Designer.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\frmMainScreen.Designer.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\frmMainScreen.Designer.cs",
@@ -843,12 +1134,11 @@
               "RelativeToolTip": "LawFirmManagementSystem.Presentation\\frmMainScreen.Designer.cs",
               "ViewState": "AgIAAHsBAAAAAAAAAAArwI4BAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T23:09:35.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-14T23:09:35.105Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 65,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Business\\User.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Business\\User.cs",
@@ -860,7 +1150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 66,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Business\\Person.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Business\\Person.cs",
@@ -872,7 +1162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 67,
               "Title": "UsersDataAccess.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Data\\UsersDataAccess.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Data\\UsersDataAccess.cs",
@@ -884,7 +1174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 68,
               "Title": "TrackingChangesDataAccess.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Data\\TrackingChangesDataAccess.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Data\\TrackingChangesDataAccess.cs",
@@ -896,7 +1186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 69,
               "Title": "App.config",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Presentation\\App.config",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Presentation\\App.config",
@@ -909,7 +1199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 70,
               "Title": "DataAccessSettings.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Data\\DataAccessSettings.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Data\\DataAccessSettings.cs",
@@ -921,7 +1211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 71,
               "Title": "LawyersDataAccess.cs",
               "DocumentMoniker": "C:\\C#\\LawFirmManagementSystem\\LawFirmManagementSystem.Data\\LawyersDataAccess.cs",
               "RelativeDocumentMoniker": "LawFirmManagementSystem.Data\\LawyersDataAccess.cs",

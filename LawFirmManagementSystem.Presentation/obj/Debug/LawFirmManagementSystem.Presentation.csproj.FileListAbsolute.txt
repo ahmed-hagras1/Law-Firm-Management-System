@@ -28,3 +28,10 @@ C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\Law
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Sessions.Controls.ctrlSessionInfo.resources
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Sessions.frmShowSessionInfo.resources
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Sessions.frmAddUpdateSession.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Invoices.Controls.ctrlInvoiceInfo.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Invoices.frmShowInvoiceInfo.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Invoices.frmShowInvoicePayments.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Invoices.frmAddUpdateInvoice.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Payments.ctrlPaymentInfo.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.frmShowPaymentInfo.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Payments.frmAddUpdatePayment.resources

@@ -1,4 +1,6 @@
-﻿using LawFirmManagementSystem_Business;
+﻿using LawFirmManagementSystem.Presentation.Invoices;
+using LawFirmManagementSystem.Presentation.Payments;
+using LawFirmManagementSystem_Business;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +15,7 @@ namespace LawFirmManagementSystem.Presentation.Cases
 {
     public partial class frmShowCaseInvoicesOrDocuments: Form
     {
-        public enum enMode { ShowInvoices = 0, ShowDocuments = 1 };
+        public enum enMode { ShowInvoices = 0, ShowDocuments = 1};
         private enMode _mode;
         public  enMode Mode
         {
@@ -73,6 +75,7 @@ namespace LawFirmManagementSystem.Presentation.Cases
                 _caseId = caseId;
                 _mode = enMode.ShowInvoices;
                 lblTitle.Text = "الفواتير الخاصة بالقضية";
+                this.Text = "الفواتير الخاصة بالقضية";
                 dgvCaseInvoicesOrDocuments.ContextMenuStrip = cmsInvoices;
             }
             else if (mode == enMode.ShowDocuments)
@@ -80,6 +83,7 @@ namespace LawFirmManagementSystem.Presentation.Cases
                 _caseId = caseId;
                 _mode = enMode.ShowDocuments;
                 lblTitle.Text = "المستندات الخاصة بالقضية";
+                this.Text = "المستندات الخاصة بالقضية";
                 dgvCaseInvoicesOrDocuments.ContextMenuStrip = cmsDocuments;
 
             }
@@ -98,6 +102,10 @@ namespace LawFirmManagementSystem.Presentation.Cases
                     InvoicesColumnsFormatting();
 
                 }
+                else
+                {
+                    dgvCaseInvoicesOrDocuments.DataSource = null;
+                }
             }
             else if (Mode == enMode.ShowDocuments)
             {
@@ -107,6 +115,10 @@ namespace LawFirmManagementSystem.Presentation.Cases
                 {
                     dgvCaseInvoicesOrDocuments.DataSource = _dtDocuments;
                     DocumentsColumnsFormatting();
+                }
+                else
+                {
+                    dgvCaseInvoicesOrDocuments.DataSource = null;
                 }
 
             }
@@ -123,5 +135,91 @@ namespace LawFirmManagementSystem.Presentation.Cases
             string number = (string)dgvCaseInvoicesOrDocuments.CurrentRow.Cells[0].Value;
         }
 
+        private void tsmiShowInvoiceInfo_Click(object sender, EventArgs e)
+        {
+            if (dgvCaseInvoicesOrDocuments.Rows.Count > 0)
+            {
+                // Get invoiceId.
+                int invoiceId = _dtAllInvoicesForSpecificCase.Rows[dgvCaseInvoicesOrDocuments.CurrentRow.Index]["InvoiceId"] != DBNull.Value ?
+                    (int)_dtAllInvoicesForSpecificCase.Rows[dgvCaseInvoicesOrDocuments.CurrentRow.Index]["InvoiceId"] : 0;
+
+                frmShowInvoiceInfo frm = new frmShowInvoiceInfo(invoiceId, (decimal)dgvCaseInvoicesOrDocuments.CurrentRow.Cells[5].Value, (decimal)dgvCaseInvoicesOrDocuments.CurrentRow.Cells[6].Value);
+                frm.ShowDialog();
+
+                // Refresh the data grid
+                frmShowCaseInvoices_Load(null, null);
+
+            }
+        }
+
+        private void tsmiUpdateInvoice_Click(object sender, EventArgs e)
+        {
+            if (dgvCaseInvoicesOrDocuments.Rows.Count > 0)
+            {
+                // Get invoiceId.
+                int invoiceId = _dtAllInvoicesForSpecificCase.Rows[dgvCaseInvoicesOrDocuments.CurrentRow.Index]["InvoiceId"] != DBNull.Value ?
+                    (int)_dtAllInvoicesForSpecificCase.Rows[dgvCaseInvoicesOrDocuments.CurrentRow.Index]["InvoiceId"] : 0;
+
+                frmAddUpdateInvoice frm = new frmAddUpdateInvoice(invoiceId, (decimal)dgvCaseInvoicesOrDocuments.CurrentRow.Cells[5].Value);
+                frm.ShowDialog();
+
+                frmShowCaseInvoices_Load(null, null);
+
+            }
+        }
+
+        private void tsmiDeleteInvoice_Click(object sender, EventArgs e)
+        {
+            if (dgvCaseInvoicesOrDocuments.Rows.Count > 0)
+            {
+                // Get invoiceId.
+                int invoiceId = _dtAllInvoicesForSpecificCase.Rows[dgvCaseInvoicesOrDocuments.CurrentRow.Index]["InvoiceId"] != DBNull.Value ?
+                    (int)_dtAllInvoicesForSpecificCase.Rows[dgvCaseInvoicesOrDocuments.CurrentRow.Index]["InvoiceId"] : 0;
+
+
+                // 2. Show Confirmation Message
+                if (MessageBox.Show(
+                            $"هل أنت متأكد أنك تريد حذف الفاتوره؟",
+                            "تأكيد الحذف",
+                            MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Question,
+                            MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                {
+                    // 3. Call the Business Layer to delete
+                    if (Invoice.DeleteInvoice(invoiceId))
+                    {
+                        MessageBox.Show("تم حذف الفاتوره بنجاح.", "رسالة", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        // 4. Refresh the data grid
+                        frmShowCaseInvoices_Load(null, null);
+                    }
+                    else
+                    {
+                        MessageBox.Show(
+                            "لم يتم حذف الفاتوره.",
+                            "خطأ",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                        );
+                    }
+                }
+            }
+        }
+
+        private void tsmiAddNewPayment_Click(object sender, EventArgs e)
+        {
+            if (dgvCaseInvoicesOrDocuments.Rows.Count > 0)
+            {
+                // Get invoiceId.
+                int invoiceId = _dtAllInvoicesForSpecificCase.Rows[dgvCaseInvoicesOrDocuments.CurrentRow.Index]["InvoiceId"] != DBNull.Value ?
+                    (int)_dtAllInvoicesForSpecificCase.Rows[dgvCaseInvoicesOrDocuments.CurrentRow.Index]["InvoiceId"] : 0;
+
+                frmAddUpdatePayment frm = new frmAddUpdatePayment(invoiceId, (decimal)dgvCaseInvoicesOrDocuments.CurrentRow.Cells[6].Value, frmAddUpdatePayment.enMode.AddNew);
+                frm.ShowDialog();
+
+                frmShowCaseInvoices_Load(null, null);
+
+            }
+        }
     }
 }

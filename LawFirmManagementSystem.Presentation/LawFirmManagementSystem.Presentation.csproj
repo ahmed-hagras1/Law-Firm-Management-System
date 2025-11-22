@@ -106,6 +106,30 @@
     <Compile Include="Clients\frmShowClientInfo.Designer.cs">
       <DependentUpon>frmShowClientInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Invoices\Controls\ctrlInvoiceInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Invoices\Controls\ctrlInvoiceInfo.Designer.cs">
+      <DependentUpon>ctrlInvoiceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoices\frmAddUpdateInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoices\frmAddUpdateInvoice.Designer.cs">
+      <DependentUpon>frmAddUpdateInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoices\frmShowInvoiceInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoices\frmShowInvoiceInfo.Designer.cs">
+      <DependentUpon>frmShowInvoiceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoices\frmShowInvoicePayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoices\frmShowInvoicePayments.Designer.cs">
+      <DependentUpon>frmShowInvoicePayments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lawyers\Controls\ctrlLawyerInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +147,24 @@
     </Compile>
     <Compile Include="Lawyers\frmShowLawyerInfo.Designer.cs">
       <DependentUpon>frmShowLawyerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payments\Controls\ctrlPaymentInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Payments\Controls\ctrlPaymentInfo.Designer.cs">
+      <DependentUpon>ctrlPaymentInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payments\frmAddUpdatePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments\frmAddUpdatePayment.Designer.cs">
+      <DependentUpon>frmAddUpdatePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payments\frmShowPaymentInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payments\frmShowPaymentInfo.Designer.cs">
+      <DependentUpon>frmShowPaymentInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -174,6 +216,18 @@
     <EmbeddedResource Include="Clients\frmShowClientInfo.resx">
       <DependentUpon>frmShowClientInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Invoices\Controls\ctrlInvoiceInfo.resx">
+      <DependentUpon>ctrlInvoiceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoices\frmAddUpdateInvoice.resx">
+      <DependentUpon>frmAddUpdateInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoices\frmShowInvoiceInfo.resx">
+      <DependentUpon>frmShowInvoiceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoices\frmShowInvoicePayments.resx">
+      <DependentUpon>frmShowInvoicePayments.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lawyers\Controls\ctrlLawyerInfo.resx">
       <DependentUpon>ctrlLawyerInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +236,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Lawyers\frmShowLawyerInfo.resx">
       <DependentUpon>frmShowLawyerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments\Controls\ctrlPaymentInfo.resx">
+      <DependentUpon>ctrlPaymentInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments\frmAddUpdatePayment.resx">
+      <DependentUpon>frmAddUpdatePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payments\frmShowPaymentInfo.resx">
+      <DependentUpon>frmShowPaymentInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -349,6 +412,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lawyerIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PaymentsInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paymentIcon1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

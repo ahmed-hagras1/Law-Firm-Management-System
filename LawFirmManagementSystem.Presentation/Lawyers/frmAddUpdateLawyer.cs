@@ -54,10 +54,12 @@ namespace LawFirmManagementSystem.Presentation.Lawyers
             {
                 LoadData();
                 lblTitle.Text = "تعديل المحامي";
+                this.Text = "تعديل المحامي";
             }
             else if (_mode == enMode.AddNewMode)
             {
                 lblTitle.Text = "اضافه محامي";
+                this.Text = "اضافه محامي";
             }
         }
         private delegate bool ValidateDataDelegate(ref string errorMessage, string text);

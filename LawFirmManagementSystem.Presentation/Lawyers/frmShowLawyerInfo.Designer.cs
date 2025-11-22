@@ -50,7 +50,7 @@
             // 
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 579);
+            this.label2.Location = new System.Drawing.Point(12, 553);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label2.Size = new System.Drawing.Size(778, 51);
@@ -84,7 +84,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvActiveLawyerSessions.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvActiveLawyerSessions.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvActiveLawyerSessions.Location = new System.Drawing.Point(0, 690);
+            this.dgvActiveLawyerSessions.Location = new System.Drawing.Point(0, 681);
             this.dgvActiveLawyerSessions.MultiSelect = false;
             this.dgvActiveLawyerSessions.Name = "dgvActiveLawyerSessions";
             this.dgvActiveLawyerSessions.ReadOnly = true;
@@ -98,7 +98,7 @@
             this.dgvActiveLawyerSessions.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvActiveLawyerSessions.RowHeadersWidth = 51;
             this.dgvActiveLawyerSessions.RowTemplate.Height = 24;
-            this.dgvActiveLawyerSessions.Size = new System.Drawing.Size(800, 198);
+            this.dgvActiveLawyerSessions.Size = new System.Drawing.Size(800, 207);
             this.dgvActiveLawyerSessions.TabIndex = 30;
             // 
             // cmsSessions
@@ -112,7 +112,7 @@
             this.tsmiEditSession,
             this.tsmiDeleteSession});
             this.cmsSessions.Name = "cmsClients";
-            this.cmsSessions.Size = new System.Drawing.Size(291, 182);
+            this.cmsSessions.Size = new System.Drawing.Size(291, 154);
             // 
             // tsmiShowSessionInfo
             // 
@@ -155,18 +155,19 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(776, 50);
+            this.label1.Size = new System.Drawing.Size(800, 50);
             this.label1.TabIndex = 29;
             this.label1.Text = "معلومات المحامي";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ctrlLawyerInfo1
             // 
-            this.ctrlLawyerInfo1.Location = new System.Drawing.Point(0, 62);
+            this.ctrlLawyerInfo1.Location = new System.Drawing.Point(0, 36);
             this.ctrlLawyerInfo1.Name = "ctrlLawyerInfo1";
             this.ctrlLawyerInfo1.Size = new System.Drawing.Size(790, 514);
             this.ctrlLawyerInfo1.TabIndex = 0;

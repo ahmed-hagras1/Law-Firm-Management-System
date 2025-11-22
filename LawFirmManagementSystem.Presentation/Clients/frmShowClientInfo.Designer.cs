@@ -35,16 +35,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgvClientCases = new System.Windows.Forms.DataGridView();
             this.cmsCases = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.tsmiShowCaseInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tsmiShowCaseInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAddCase = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiEditCase = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDeleteCase = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiAddSession = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAddDocument = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiAddInvoice = new System.Windows.Forms.ToolStripMenuItem();
-            this.label2 = new System.Windows.Forms.Label();
             this.ctrlClientInfo1 = new LawFirmManagementSystem.Presentation.ctrlClientInfo();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientCases)).BeginInit();
             this.cmsCases.SuspendLayout();
@@ -53,11 +53,12 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(819, 50);
+            this.label1.Size = new System.Drawing.Size(843, 50);
             this.label1.TabIndex = 1;
             this.label1.Text = "معلومات العميل";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,7 +89,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvClientCases.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvClientCases.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvClientCases.Location = new System.Drawing.Point(0, 636);
+            this.dgvClientCases.Location = new System.Drawing.Point(0, 619);
             this.dgvClientCases.MultiSelect = false;
             this.dgvClientCases.Name = "dgvClientCases";
             this.dgvClientCases.ReadOnly = true;
@@ -102,7 +103,7 @@
             this.dgvClientCases.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvClientCases.RowHeadersWidth = 51;
             this.dgvClientCases.RowTemplate.Height = 24;
-            this.dgvClientCases.Size = new System.Drawing.Size(843, 225);
+            this.dgvClientCases.Size = new System.Drawing.Size(843, 242);
             this.dgvClientCases.TabIndex = 27;
             // 
             // cmsCases
@@ -122,6 +123,29 @@
             this.cmsCases.Name = "cmsClients";
             this.cmsCases.Size = new System.Drawing.Size(291, 296);
             // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(287, 6);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(287, 6);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 540);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label2.Size = new System.Drawing.Size(819, 51);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "القضايا الخاصه بالعميل";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // tsmiShowCaseInfo
             // 
             this.tsmiShowCaseInfo.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.ShowIcon;
@@ -130,11 +154,6 @@
             this.tsmiShowCaseInfo.Size = new System.Drawing.Size(290, 36);
             this.tsmiShowCaseInfo.Text = "عرض معلومات القضيه";
             this.tsmiShowCaseInfo.Click += new System.EventHandler(this.tsmiShowCaseInfo_Click);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(287, 6);
             // 
             // tsmiAddCase
             // 
@@ -160,11 +179,6 @@
             this.tsmiDeleteCase.Text = "ازاله القضيه";
             this.tsmiDeleteCase.Click += new System.EventHandler(this.tsmiDeleteCase_Click);
             // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(287, 6);
-            // 
             // tsmiAddSession
             // 
             this.tsmiAddSession.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddNewIcon2;
@@ -186,22 +200,11 @@
             this.tsmiAddInvoice.Name = "tsmiAddInvoice";
             this.tsmiAddInvoice.Size = new System.Drawing.Size(290, 36);
             this.tsmiAddInvoice.Text = "اضافه فاتوره";
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 565);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label2.Size = new System.Drawing.Size(819, 51);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "القضايا الخاصه بالعميل";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tsmiAddInvoice.Click += new System.EventHandler(this.tsmiAddInvoice_Click);
             // 
             // ctrlClientInfo1
             // 
-            this.ctrlClientInfo1.Location = new System.Drawing.Point(31, 62);
+            this.ctrlClientInfo1.Location = new System.Drawing.Point(28, 37);
             this.ctrlClientInfo1.Name = "ctrlClientInfo1";
             this.ctrlClientInfo1.Size = new System.Drawing.Size(787, 500);
             this.ctrlClientInfo1.TabIndex = 29;
@@ -211,13 +214,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 861);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ctrlClientInfo1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvClientCases);
-            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmShowClientInfo";
-            this.Text = "frmShowClientInfo";
+            this.Text = "عرض معلومات العميل";
             this.Load += new System.EventHandler(this.frmShowClientInfo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientCases)).EndInit();
             this.cmsCases.ResumeLayout(false);
