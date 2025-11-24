@@ -324,7 +324,7 @@
             this.tsmiAddDocument,
             this.tsmiAddInvoiceForCase});
             this.cmsCases.Name = "cmsClients";
-            this.cmsCases.Size = new System.Drawing.Size(291, 268);
+            this.cmsCases.Size = new System.Drawing.Size(291, 296);
             // 
             // toolStripSeparator4
             // 
@@ -368,7 +368,7 @@
             this.toolStripSeparator8,
             this.tsmiAddNewPayment});
             this.cmsInvoices.Name = "cmsClients";
-            this.cmsInvoices.Size = new System.Drawing.Size(292, 260);
+            this.cmsInvoices.Size = new System.Drawing.Size(292, 232);
             // 
             // toolStripSeparator7
             // 
@@ -643,6 +643,7 @@
             this.tsmiAddDocument.Name = "tsmiAddDocument";
             this.tsmiAddDocument.Size = new System.Drawing.Size(290, 36);
             this.tsmiAddDocument.Text = "اضافه ملف";
+            this.tsmiAddDocument.Click += new System.EventHandler(this.tsmiAddDocument_Click);
             // 
             // tsmiAddInvoiceForCase
             // 
@@ -741,6 +742,7 @@
             this.tsmiShowUserInfo.Name = "tsmiShowUserInfo";
             this.tsmiShowUserInfo.Size = new System.Drawing.Size(313, 36);
             this.tsmiShowUserInfo.Text = "عرض معلومات المستخدم";
+            this.tsmiShowUserInfo.Click += new System.EventHandler(this.tsmiShowUserInfo_Click);
             // 
             // tsmiAddUser
             // 
@@ -748,6 +750,7 @@
             this.tsmiAddUser.Name = "tsmiAddUser";
             this.tsmiAddUser.Size = new System.Drawing.Size(313, 36);
             this.tsmiAddUser.Text = "اضافه مستخدم";
+            this.tsmiAddUser.Click += new System.EventHandler(this.tsmiAddUser_Click);
             // 
             // tsmiUpdateUser
             // 
@@ -755,6 +758,7 @@
             this.tsmiUpdateUser.Name = "tsmiUpdateUser";
             this.tsmiUpdateUser.Size = new System.Drawing.Size(313, 36);
             this.tsmiUpdateUser.Text = "تعديل المستخدم";
+            this.tsmiUpdateUser.Click += new System.EventHandler(this.tsmiUpdateUser_Click);
             // 
             // tsmiDeleteUser
             // 
@@ -762,6 +766,7 @@
             this.tsmiDeleteUser.Name = "tsmiDeleteUser";
             this.tsmiDeleteUser.Size = new System.Drawing.Size(313, 36);
             this.tsmiDeleteUser.Text = "ازاله المستخدم";
+            this.tsmiDeleteUser.Click += new System.EventHandler(this.tsmiDeleteUser_Click);
             // 
             // frmMainScreen
             // 

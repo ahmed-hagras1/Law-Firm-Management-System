@@ -4,6 +4,7 @@ using LawFirmManagementSystem.Presentation.Invoices;
 using LawFirmManagementSystem.Presentation.Lawyers;
 using LawFirmManagementSystem.Presentation.Payments;
 using LawFirmManagementSystem.Presentation.Sessions;
+using LawFirmManagementSystem.Presentation.Users;
 using LawFirmManagementSystem_Business;
 using System;
 using System.Collections.Generic;
@@ -895,6 +896,14 @@ namespace LawFirmManagementSystem.Presentation
 
                 HandelLawyersPage();
             }
+            else if (page == enPages.UsersPage)
+            {
+                frmAddUser frm = new frmAddUser();
+                frm.ShowDialog();
+
+                HandelUsersPage();
+
+            }
 
         }
 
@@ -1332,6 +1341,93 @@ namespace LawFirmManagementSystem.Presentation
 
                 HandelInvoicesPage();
             }
+        }
+
+        private void tsmiShowUserInfo_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get userId.
+                int userId = _dtAllUsers.Rows[dgvFormData.CurrentRow.Index]["UserId"] != DBNull.Value ?
+                    (int)_dtAllUsers.Rows[dgvFormData.CurrentRow.Index]["UserId"] : 0;
+
+                frmShowUserInfo frm = new frmShowUserInfo(userId);
+                frm.ShowDialog();
+
+                HandelUsersPage();
+            }
+        }
+
+        private void tsmiAddUser_Click(object sender, EventArgs e)
+        {
+            frmAddUser frm = new frmAddUser();
+            frm.ShowDialog();
+
+            HandelUsersPage();
+        }
+
+        private void tsmiUpdateUser_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0)
+            {
+                // Get userId.
+                int userId = _dtAllUsers.Rows[dgvFormData.CurrentRow.Index]["UserId"] != DBNull.Value ?
+                    (int)_dtAllUsers.Rows[dgvFormData.CurrentRow.Index]["UserId"] : 0;
+
+                frmUpdateUser frm = new frmUpdateUser(userId);
+                frm.ShowDialog();
+
+                HandelUsersPage();
+            }
+        }
+
+        private void tsmiDeleteUser_Click(object sender, EventArgs e)
+        {
+            if (dgvFormData.Rows.Count > 0 && dgvFormData.CurrentRow != null)
+            {
+                // Get userId.
+                int userId = _dtAllUsers.Rows[dgvFormData.CurrentRow.Index]["UserId"] != DBNull.Value ?
+                    (int)_dtAllUsers.Rows[dgvFormData.CurrentRow.Index]["UserId"] : 0;
+                string userName = dgvFormData.CurrentRow.Cells[0].Value.ToString();
+
+                if (userId == 1)
+                {
+                    MessageBox.Show("لا يمكن حذف المستخدم الرئيسي للنظام (Admin).", "منع الحذف", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // 3. رسالة التأكيد
+                if (MessageBox.Show(
+                    $"هل أنت متأكد أنك تريد حذف المستخدم: {userName} ؟\n\nتحذير: لا يمكن التراجع عن هذا الإجراء.",
+                    "تأكيد الحذف",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning,
+                    MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+                {
+                    // 4. استدعاء طبقة البيزنس للحذف
+                    if (User.DeleteUser(userId))
+                    {
+                        MessageBox.Show("تم حذف المستخدم بنجاح.", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        // 5. تحديث الجدول
+                        HandelUsersPage();
+                    }
+                    else
+                    {
+                        MessageBox.Show(
+                            "فشل حذف المستخدم. ربما يكون هذا المستخدم مرتبطاً بسجلات تتبع (Tracking Records) ولا يمكن حذفه.\nيفضل استخدام خاصية 'غير نشط' بدلاً من الحذف.",
+                            "خطأ",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                        );
+                    }
+                }
+            }
+        }
+
+        private void tsmiAddDocument_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

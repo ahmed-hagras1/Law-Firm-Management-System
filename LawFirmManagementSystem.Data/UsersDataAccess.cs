@@ -66,7 +66,7 @@ namespace LawFirmManagementSystem.Data
         }
         public static int AddUser(string userName, string password, int createdBy, string notes)
         {
-            string storedProcedureName = "sp_AddUser";
+            string storedProcedureName = "sp_AddNewUser";
             int newUserId = -1; // Default to -1 (failure)
 
             try
@@ -76,13 +76,10 @@ namespace LawFirmManagementSystem.Data
                 {
                     command.CommandType = CommandType.StoredProcedure;
 
-                    // Add parameters
                     command.Parameters.AddWithValue("@UserName", userName);
-                    command.Parameters.AddWithValue("@Password", password); // Assumes password, not hash
-                    command.Parameters.AddWithValue("@CreatedBy", createdBy);
-
-                    // Handle nullable parameter
+                    command.Parameters.AddWithValue("@Password", password);
                     command.Parameters.AddWithValue("@Notes", string.IsNullOrEmpty(notes) ? (object)DBNull.Value : notes);
+                    command.Parameters.AddWithValue("@CreatedBy", createdBy);
 
                     connection.Open();
 
@@ -153,6 +150,38 @@ namespace LawFirmManagementSystem.Data
             catch (Exception) { return false; }
 
             return (success == 1);
+        }
+        static public bool IsUserExist(string username)
+        {
+            bool isFound = false;
+
+            SqlConnection connection = new SqlConnection(DataAccessSettings.connectionString);
+
+            string query = @"Select Found =1 from Users where username = @username;";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@username", username);
+
+            try
+            {
+                connection.Open();
+                object result = command.ExecuteScalar();
+
+                if (result != null)
+                {
+                    isFound = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return isFound;
         }
     }
 }

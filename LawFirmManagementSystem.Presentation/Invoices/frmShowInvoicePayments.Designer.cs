@@ -34,12 +34,12 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvCaseInvoicesOrDocuments = new System.Windows.Forms.DataGridView();
             this.cmsPayments = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.tsmiShowPaymentInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.tsmiShowPaymentInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.AddPayment = new System.Windows.Forms.ToolStripMenuItem();
             this.UpdatePayment = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDeletePayment = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCaseInvoicesOrDocuments)).BeginInit();
             this.cmsPayments.SuspendLayout();
             this.SuspendLayout();
@@ -100,7 +100,25 @@
             this.UpdatePayment,
             this.tsmiDeletePayment});
             this.cmsPayments.Name = "cmsClients";
-            this.cmsPayments.Size = new System.Drawing.Size(330, 154);
+            this.cmsPayments.Size = new System.Drawing.Size(330, 182);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(326, 6);
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(1066, 50);
+            this.lblTitle.TabIndex = 29;
+            this.lblTitle.Text = "عرض المدفوعات الخاصة بالفاتورة";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tsmiShowPaymentInfo
             // 
@@ -110,11 +128,6 @@
             this.tsmiShowPaymentInfo.Size = new System.Drawing.Size(329, 36);
             this.tsmiShowPaymentInfo.Text = "عرض معلومات عمليه الدفع";
             this.tsmiShowPaymentInfo.Click += new System.EventHandler(this.tsmiShowPaymentInfo_Click);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(326, 6);
             // 
             // AddPayment
             // 
@@ -139,19 +152,6 @@
             this.tsmiDeletePayment.Size = new System.Drawing.Size(329, 36);
             this.tsmiDeletePayment.Text = "ازاله عمليه الدفع";
             this.tsmiDeletePayment.Click += new System.EventHandler(this.tsmiDeletePayment_Click);
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(0, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(1066, 50);
-            this.lblTitle.TabIndex = 29;
-            this.lblTitle.Text = "عرض المدفوعات الخاصة بالفاتورة";
-            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmShowInvoicePayments
             // 

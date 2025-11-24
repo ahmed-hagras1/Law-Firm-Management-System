@@ -186,6 +186,30 @@
     <Compile Include="Sessions\frmShowSessionInfo.Designer.cs">
       <DependentUpon>frmShowSessionInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Users\Controls\ctrlUserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Users\Controls\ctrlUserInfo.Designer.cs">
+      <DependentUpon>ctrlUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmShowUserInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmShowUserInfo.Designer.cs">
+      <DependentUpon>frmShowUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\frmUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\frmUpdateUser.Designer.cs">
+      <DependentUpon>frmUpdateUser.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cases\Controls\ctrlCaseInfo.resx">
       <DependentUpon>ctrlCaseInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -264,6 +288,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sessions\frmShowSessionInfo.resx">
       <DependentUpon>frmShowSessionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\Controls\ctrlUserInfo.resx">
+      <DependentUpon>ctrlUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmAddUser.resx">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmShowUserInfo.resx">
+      <DependentUpon>frmShowUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\frmUpdateUser.resx">
+      <DependentUpon>frmUpdateUser.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -424,6 +460,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\paymentIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password Icon.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password 32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -35,3 +35,7 @@ C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\Law
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Payments.ctrlPaymentInfo.resources
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.frmShowPaymentInfo.resources
 C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Payments.frmAddUpdatePayment.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Users.Controls.ctrlUserInfo.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Users.frmShowUserInfo.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Users.frmAddUser.resources
+C:\C#\LawFirmManagementSystem\LawFirmManagementSystem.Presentation\obj\Debug\LawFirmManagementSystem.Presentation.Users.frmUpdateUser.resources

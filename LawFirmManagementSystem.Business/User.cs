@@ -69,6 +69,7 @@ namespace LawFirmManagementSystem_Business
             return UsersDataAccess.GetAllUsers();
         }
         public static bool DeleteUser(int userId) => UsersDataAccess.DeleteUser(userId);
+        public static bool IsUserExist(string username) => UsersDataAccess.IsUserExist(username);
         private bool _UpdateUser()
         {
             // This relies on TrackingChangesInfo.LastUpdatedBy being available
