@@ -35,17 +35,15 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.dgvCaseInvoicesOrDocuments = new System.Windows.Forms.DataGridView();
             this.cmsInvoices = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
-            this.cmsDocuments = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiShowInvoiceInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiUpdateInvoice = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDeleteInvoice = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiAddNewPayment = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsDocuments = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmiOpenDocument = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmiShowDocumentInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmiAddDocument = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiEditDocument = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmiDeleteDocument = new System.Windows.Forms.ToolStripMenuItem();
@@ -125,42 +123,7 @@
             this.toolStripSeparator8,
             this.tsmiAddNewPayment});
             this.cmsInvoices.Name = "cmsClients";
-            this.cmsInvoices.Size = new System.Drawing.Size(292, 188);
-            // 
-            // toolStripSeparator7
-            // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(288, 6);
-            // 
-            // toolStripSeparator8
-            // 
-            this.toolStripSeparator8.Name = "toolStripSeparator8";
-            this.toolStripSeparator8.Size = new System.Drawing.Size(288, 6);
-            // 
-            // cmsDocuments
-            // 
-            this.cmsDocuments.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsDocuments.ImageScalingSize = new System.Drawing.Size(30, 30);
-            this.cmsDocuments.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmiOpenDocument,
-            this.toolStripSeparator2,
-            this.tsmiShowDocumentInfo,
-            this.toolStripSeparator1,
-            this.tsmiAddDocument,
-            this.tsmiEditDocument,
-            this.tsmiDeleteDocument});
-            this.cmsDocuments.Name = "cmsClients";
-            this.cmsDocuments.Size = new System.Drawing.Size(283, 196);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(279, 6);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(279, 6);
+            this.cmsInvoices.Size = new System.Drawing.Size(292, 160);
             // 
             // tsmiShowInvoiceInfo
             // 
@@ -170,6 +133,11 @@
             this.tsmiShowInvoiceInfo.Size = new System.Drawing.Size(291, 36);
             this.tsmiShowInvoiceInfo.Text = "عرض معلومات الفاتوره";
             this.tsmiShowInvoiceInfo.Click += new System.EventHandler(this.tsmiShowInvoiceInfo_Click);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(288, 6);
             // 
             // tsmiUpdateInvoice
             // 
@@ -187,6 +155,11 @@
             this.tsmiDeleteInvoice.Text = "ازاله الفاتوره";
             this.tsmiDeleteInvoice.Click += new System.EventHandler(this.tsmiDeleteInvoice_Click);
             // 
+            // toolStripSeparator8
+            // 
+            this.toolStripSeparator8.Name = "toolStripSeparator8";
+            this.toolStripSeparator8.Size = new System.Drawing.Size(288, 6);
+            // 
             // tsmiAddNewPayment
             // 
             this.tsmiAddNewPayment.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddNewPayment;
@@ -195,43 +168,56 @@
             this.tsmiAddNewPayment.Text = "اضافه عمليه دفع";
             this.tsmiAddNewPayment.Click += new System.EventHandler(this.tsmiAddNewPayment_Click);
             // 
+            // cmsDocuments
+            // 
+            this.cmsDocuments.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsDocuments.ImageScalingSize = new System.Drawing.Size(30, 30);
+            this.cmsDocuments.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiOpenDocument,
+            this.toolStripSeparator1,
+            this.tsmiAddDocument,
+            this.tsmiEditDocument,
+            this.tsmiDeleteDocument});
+            this.cmsDocuments.Name = "cmsClients";
+            this.cmsDocuments.Size = new System.Drawing.Size(225, 182);
+            // 
             // tsmiOpenDocument
             // 
             this.tsmiOpenDocument.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.OpenDocumentIcon;
             this.tsmiOpenDocument.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.tsmiOpenDocument.Name = "tsmiOpenDocument";
-            this.tsmiOpenDocument.Size = new System.Drawing.Size(282, 36);
+            this.tsmiOpenDocument.Size = new System.Drawing.Size(224, 36);
             this.tsmiOpenDocument.Text = "فتح الملف";
             this.tsmiOpenDocument.Click += new System.EventHandler(this.tsmiOpenDocument_Click);
             // 
-            // tsmiShowDocumentInfo
+            // toolStripSeparator1
             // 
-            this.tsmiShowDocumentInfo.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.DocumentsIcon;
-            this.tsmiShowDocumentInfo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.tsmiShowDocumentInfo.Name = "tsmiShowDocumentInfo";
-            this.tsmiShowDocumentInfo.Size = new System.Drawing.Size(282, 36);
-            this.tsmiShowDocumentInfo.Text = "عرض معلومات الملف";
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
             // 
             // tsmiAddDocument
             // 
             this.tsmiAddDocument.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.AddDocument;
             this.tsmiAddDocument.Name = "tsmiAddDocument";
-            this.tsmiAddDocument.Size = new System.Drawing.Size(282, 36);
+            this.tsmiAddDocument.Size = new System.Drawing.Size(224, 36);
             this.tsmiAddDocument.Text = "اضافه ملف";
+            this.tsmiAddDocument.Click += new System.EventHandler(this.tsmiAddDocument_Click);
             // 
             // tsmiEditDocument
             // 
             this.tsmiEditDocument.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.edit_32;
             this.tsmiEditDocument.Name = "tsmiEditDocument";
-            this.tsmiEditDocument.Size = new System.Drawing.Size(282, 36);
+            this.tsmiEditDocument.Size = new System.Drawing.Size(224, 36);
             this.tsmiEditDocument.Text = "تعديل الملف";
+            this.tsmiEditDocument.Click += new System.EventHandler(this.tsmiEditDocument_Click);
             // 
             // tsmiDeleteDocument
             // 
             this.tsmiDeleteDocument.Image = global::LawFirmManagementSystem.Presentation.Properties.Resources.Delete_32_2;
             this.tsmiDeleteDocument.Name = "tsmiDeleteDocument";
-            this.tsmiDeleteDocument.Size = new System.Drawing.Size(282, 36);
+            this.tsmiDeleteDocument.Size = new System.Drawing.Size(224, 36);
             this.tsmiDeleteDocument.Text = "ازاله الملف";
+            this.tsmiDeleteDocument.Click += new System.EventHandler(this.tsmiDeleteDocument_Click);
             // 
             // frmShowCaseInvoicesOrDocuments
             // 
@@ -264,12 +250,10 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripMenuItem tsmiAddNewPayment;
         private System.Windows.Forms.ContextMenuStrip cmsDocuments;
-        private System.Windows.Forms.ToolStripMenuItem tsmiShowDocumentInfo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem tsmiEditDocument;
         private System.Windows.Forms.ToolStripMenuItem tsmiDeleteDocument;
         private System.Windows.Forms.ToolStripMenuItem tsmiAddDocument;
         private System.Windows.Forms.ToolStripMenuItem tsmiOpenDocument;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }
